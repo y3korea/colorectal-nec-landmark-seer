@@ -1,6 +1,6 @@
 # colorectal-nec-landmark-seer
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23249641.svg)](https://doi.org/10.5281/zenodo.23249641) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/y3korea/colorectal-nec-landmark-seer/blob/main/notebooks/reproduce_colab.ipynb)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23249640.svg)](https://doi.org/10.5281/zenodo.23249640) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/y3korea/colorectal-nec-landmark-seer/blob/main/notebooks/reproduce_colab.ipynb)
 
 Analysis code for:
 
@@ -23,9 +23,9 @@ The repository regenerates every SEER-based result and figure of the manuscript 
 
 Please cite the article above and this repository:
 
-> Wang J, Zhang S, Liang W, Choi W. colorectal-nec-landmark-seer: reproducible analysis code for a SEER landmark study of conditional cancer mortality in distant-stage colorectal neuroendocrine carcinoma. Version 1.0.0. Zenodo; 2026. doi:[10.5281/zenodo.23249641](https://doi.org/10.5281/zenodo.23249641)
+> Wang J, Zhang S, Liang W, Choi W. colorectal-nec-landmark-seer: reproducible analysis code for a SEER landmark study of conditional cancer mortality in distant-stage colorectal neuroendocrine carcinoma. Version 1.0.1. Zenodo; 2026. doi:[10.5281/zenodo.23249650](https://doi.org/10.5281/zenodo.23249650)
 
-The concept DOI [10.5281/zenodo.23249640](https://doi.org/10.5281/zenodo.23249640) always resolves to the latest version. Machine-readable metadata: [`CITATION.cff`](CITATION.cff), [`.zenodo.json`](.zenodo.json).
+The concept DOI [10.5281/zenodo.23249640](https://doi.org/10.5281/zenodo.23249640) always resolves to the latest version (v1.0.0: [10.5281/zenodo.23249641](https://doi.org/10.5281/zenodo.23249641)). Machine-readable metadata: [`CITATION.cff`](CITATION.cff), [`.zenodo.json`](.zenodo.json).
 
 ## SEER data access and Data Use Agreement (read first)
 

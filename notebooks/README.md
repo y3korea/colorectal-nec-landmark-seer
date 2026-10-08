@@ -1,6 +1,6 @@
 # notebooks/
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23249641.svg)](https://doi.org/10.5281/zenodo.23249641) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/y3korea/colorectal-nec-landmark-seer/blob/main/notebooks/reproduce_colab.ipynb)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23249640.svg)](https://doi.org/10.5281/zenodo.23249640) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/y3korea/colorectal-nec-landmark-seer/blob/main/notebooks/reproduce_colab.ipynb)
 
 `reproduce_colab.ipynb` reproduces every SEER-based result and figure of the manuscript from **your own** SEER*Stat exports, in Google Colab or in a local Jupyter session. It is a guided front end to the same pipeline as `run_all.py`; nothing in it changes the analysis.
 
