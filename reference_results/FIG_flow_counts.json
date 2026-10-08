@@ -1,0 +1,42 @@
+{
+ "NEN_all_n": 32620,
+ "NEC_main_n": 1417,
+ "NEC_stage": {
+  "Distant": 908,
+  "Regional": 346,
+  "Localized": 116,
+  "Unknown": 47
+ },
+ "NEC_hist": {
+  "8041": 844,
+  "8013": 546,
+  "8045": 24,
+  "8044": 1,
+  "8042": 1,
+  "8043": 1
+ },
+ "NEC_expanded_n": 3179,
+ "NEC_expanded_distant": 1975,
+ "n_8246_total": 4619,
+ "n_8246_g34": 1762,
+ "LUNG_n": 115475,
+ "SCLC_n": 109315,
+ "SCLC_distant": 77707,
+ "LCNEC_n": 6136,
+ "LCNEC_distant": 3185,
+ "LUNG_hist": {
+  "8041": 102678,
+  "8013": 6136,
+  "8042": 3822,
+  "8045": 2174,
+  "8044": 579,
+  "8043": 62,
+  "8002": 23,
+  "8040": 1
+ },
+ "PANC_n": 137489,
+ "PANC_excl_islet_n": 136197,
+ "PANC_distant": 75634,
+ "AC_n": 737816,
+ "AC_distant": 147014
+}

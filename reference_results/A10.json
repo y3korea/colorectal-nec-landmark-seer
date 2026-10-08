@@ -1,0 +1,3120 @@
+{
+ "id": "A10",
+ "task": "data_quality_censoring",
+ "date": "2026-10-07",
+ "bootstrap": null,
+ "seed": null,
+ "B": null,
+ "reproduction_check": {
+  "pass": true,
+  "manuscript": {
+   "cif": [
+    72.29,
+    71.62,
+    72.33,
+    60.03,
+    30.51
+   ],
+   "nrisk": [
+    908,
+    553,
+    396,
+    169,
+    48
+   ],
+   "surg_yes": 354,
+   "surg_no": 554,
+   "flagc": 881,
+   "unkcod": 10,
+   "unkcod_dist": 7,
+   "n": 1417,
+   "n_dist": 908
+  },
+  "mine": {
+   "cif": [
+    72.29,
+    71.62,
+    72.33,
+    60.03,
+    30.51
+   ],
+   "nrisk": [
+    908,
+    553,
+    396,
+    169,
+    48
+   ],
+   "surg_yes": 354,
+   "surg_no": 554,
+   "flagc": 881,
+   "unkcod": 10,
+   "unkcod_dist": 7,
+   "n": 1417,
+   "n_dist": 908
+  }
+ },
+ "sec1_survival_fields": {
+  "flag_all": [
+   {
+    "Survival months flag": "Complete dates are available and there are more than 0 days of survival",
+    "n": 1379,
+    "%": 97.31827805222301
+   },
+   {
+    "Survival months flag": "Incomplete dates are available and there cannot be zero days of follow-up",
+    "n": 32,
+    "%": 2.2582921665490474
+   },
+   {
+    "Survival months flag": "Incomplete dates are available and there could be zero days of follow-up",
+    "n": 4,
+    "%": 0.2822865208186309
+   },
+   {
+    "Survival months flag": "Complete dates are available and there are 0 days of survival",
+    "n": 2,
+    "%": 0.14114326040931546
+   }
+  ],
+  "consistency_all": {
+   "n": 1417,
+   "smonths_nonnumeric": 0,
+   "discrepant_floor_days_vs_months": 0,
+   "pct_discrepant": 0.0,
+   "diff_distribution": {
+    "0": 1417
+   },
+   "zero_day_survivors": 2,
+   "zero_day_flag": {
+    "Complete dates are available and there are 0 days of survival": 2
+   },
+   "sdays_min": "suppressed (SEER small-cell rule)",
+   "sdays_max": "suppressed (SEER small-cell rule)",
+   "sdays_median": 209.0,
+   "tm_set_to_half_day": 7,
+   "max_abs_days_months_diff_months": 0.9979466119096507
+  },
+  "flag_by_event_all": {
+   "Complete dates are available and there a": {
+    "cancer death": 1007,
+    "censored": 212,
+    "other death": 162
+   },
+   "Incomplete dates are available and there": {
+    "cancer death": 32,
+    "censored": 1,
+    "other death": 3
+   }
+  },
+  "flag_distant": [
+   {
+    "Survival months flag": "Complete dates are available and there are more than 0 days of survival",
+    "n": 881,
+    "%": 97.02643171806167
+   },
+   {
+    "Survival months flag": "Incomplete dates are available and there cannot be zero days of follow-up",
+    "n": 22,
+    "%": 2.4229074889867843
+   },
+   {
+    "Survival months flag": "Incomplete dates are available and there could be zero days of follow-up",
+    "n": 4,
+    "%": 0.44052863436123346
+   },
+   {
+    "Survival months flag": "Complete dates are available and there are 0 days of survival",
+    "n": 1,
+    "%": 0.11013215859030837
+   }
+  ],
+  "consistency_distant": {
+   "n": 908,
+   "smonths_nonnumeric": 0,
+   "discrepant_floor_days_vs_months": 0,
+   "pct_discrepant": 0.0,
+   "diff_distribution": {
+    "0": 908
+   },
+   "zero_day_survivors": 1,
+   "zero_day_flag": {
+    "Complete dates are available and there are 0 days of survival": 1
+   },
+   "sdays_min": "suppressed (SEER small-cell rule)",
+   "sdays_max": "suppressed (SEER small-cell rule)",
+   "sdays_median": 149.0,
+   "tm_set_to_half_day": 2,
+   "max_abs_days_months_diff_months": 0.9979466119096507
+  },
+  "flag_by_event_distant": {
+   "Complete dates are available and there a": {
+    "cancer death": 731,
+    "censored": 71,
+    "other death": 80
+   },
+   "Incomplete dates are available and there": {
+    "cancer death": 25,
+    "censored": 0,
+    "other death": 1
+   }
+  }
+ },
+ "sec2_administrative_censoring": {
+  "all stages": [
+   {
+    "cohort": "all stages",
+    "landmark": 0,
+    "n_at_risk": 1417,
+    "cancer_deaths_in_window": 793,
+    "other_deaths_in_window": 100,
+    "censored_alive_before_window_end": 74,
+    "pct_censored": 5.222300635144672,
+    "followed_to_window_end": 450,
+    "pct_followed_to_end": 31.75723359209598
+   },
+   {
+    "cohort": "all stages",
+    "landmark": 3,
+    "n_at_risk": 971,
+    "cancer_deaths_in_window": 503,
+    "other_deaths_in_window": 53,
+    "censored_alive_before_window_end": 55,
+    "pct_censored": 5.664263645726056,
+    "followed_to_window_end": 360,
+    "pct_followed_to_end": 37.075180226570545
+   },
+   {
+    "cohort": "all stages",
+    "landmark": 6,
+    "n_at_risk": 768,
+    "cancer_deaths_in_window": 391,
+    "other_deaths_in_window": 29,
+    "censored_alive_before_window_end": 39,
+    "pct_censored": 5.078125,
+    "followed_to_window_end": 309,
+    "pct_followed_to_end": 40.234375
+   },
+   {
+    "cohort": "all stages",
+    "landmark": 12,
+    "n_at_risk": 450,
+    "cancer_deaths_in_window": 172,
+    "other_deaths_in_window": 15,
+    "censored_alive_before_window_end": 22,
+    "pct_censored": 4.888888888888889,
+    "followed_to_window_end": 241,
+    "pct_followed_to_end": 53.55555555555556
+   },
+   {
+    "cohort": "all stages",
+    "landmark": 24,
+    "n_at_risk": 241,
+    "cancer_deaths_in_window": 45,
+    "other_deaths_in_window": 10,
+    "censored_alive_before_window_end": 23,
+    "pct_censored": 9.54356846473029,
+    "followed_to_window_end": 163,
+    "pct_followed_to_end": 67.63485477178423
+   }
+  ],
+  "all stages_by_year": [
+   {
+    "cohort": "all stages dx<=2020",
+    "landmark": 0,
+    "n_at_risk": 1089,
+    "cancer_deaths_in_window": 632,
+    "other_deaths_in_window": 79,
+    "censored_alive_before_window_end": 3,
+    "pct_censored": 0.27548209366391185,
+    "followed_to_window_end": 375,
+    "pct_followed_to_end": 34.43526170798898
+   },
+   {
+    "cohort": "all stages dx<=2020",
+    "landmark": 3,
+    "n_at_risk": 755,
+    "cancer_deaths_in_window": 404,
+    "other_deaths_in_window": 45,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 0.13245033112582782,
+    "followed_to_window_end": 305,
+    "pct_followed_to_end": 40.397350993377486
+   },
+   {
+    "cohort": "all stages dx<=2020",
+    "landmark": 6,
+    "n_at_risk": 610,
+    "cancer_deaths_in_window": 317,
+    "other_deaths_in_window": 24,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 0.16393442622950818,
+    "followed_to_window_end": 268,
+    "pct_followed_to_end": 43.9344262295082
+   },
+   {
+    "cohort": "all stages dx<=2020",
+    "landmark": 12,
+    "n_at_risk": 375,
+    "cancer_deaths_in_window": 146,
+    "other_deaths_in_window": 14,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": 0.0,
+    "followed_to_window_end": 215,
+    "pct_followed_to_end": 57.333333333333336
+   },
+   {
+    "cohort": "all stages dx<=2020",
+    "landmark": 24,
+    "n_at_risk": 215,
+    "cancer_deaths_in_window": 43,
+    "other_deaths_in_window": 8,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 0.46511627906976744,
+    "followed_to_window_end": 163,
+    "pct_followed_to_end": 75.81395348837209
+   },
+   {
+    "cohort": "all stages dx 2021",
+    "landmark": 0,
+    "n_at_risk": 111,
+    "cancer_deaths_in_window": 61,
+    "other_deaths_in_window": 6,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 0.9009009009009009,
+    "followed_to_window_end": 43,
+    "pct_followed_to_end": 38.73873873873874
+   },
+   {
+    "cohort": "all stages dx 2021",
+    "landmark": 3,
+    "n_at_risk": 89,
+    "cancer_deaths_in_window": 48,
+    "other_deaths_in_window": 3,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 1.1235955056179776,
+    "followed_to_window_end": 37,
+    "pct_followed_to_end": 41.57303370786517
+   },
+   {
+    "cohort": "all stages dx 2021",
+    "landmark": 6,
+    "n_at_risk": 73,
+    "cancer_deaths_in_window": 39,
+    "other_deaths_in_window": 3,
+    "censored_alive_before_window_end": 2,
+    "pct_censored": 2.73972602739726,
+    "followed_to_window_end": 29,
+    "pct_followed_to_end": 39.726027397260275
+   },
+   {
+    "cohort": "all stages dx 2021",
+    "landmark": 12,
+    "n_at_risk": 43,
+    "cancer_deaths_in_window": 15,
+    "other_deaths_in_window": 1,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 2.3255813953488373,
+    "followed_to_window_end": 26,
+    "pct_followed_to_end": 60.46511627906977
+   },
+   {
+    "cohort": "all stages dx 2021",
+    "landmark": 24,
+    "n_at_risk": 26,
+    "cancer_deaths_in_window": 2,
+    "other_deaths_in_window": 2,
+    "censored_alive_before_window_end": 22,
+    "pct_censored": 84.61538461538461,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "all stages dx 2022",
+    "landmark": 0,
+    "n_at_risk": 98,
+    "cancer_deaths_in_window": 57,
+    "other_deaths_in_window": 8,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 1.0204081632653061,
+    "followed_to_window_end": 32,
+    "pct_followed_to_end": 32.6530612244898
+   },
+   {
+    "cohort": "all stages dx 2022",
+    "landmark": 3,
+    "n_at_risk": 70,
+    "cancer_deaths_in_window": 38,
+    "other_deaths_in_window": 4,
+    "censored_alive_before_window_end": 10,
+    "pct_censored": 14.285714285714286,
+    "followed_to_window_end": 18,
+    "pct_followed_to_end": 25.714285714285715
+   },
+   {
+    "cohort": "all stages dx 2022",
+    "landmark": 6,
+    "n_at_risk": 57,
+    "cancer_deaths_in_window": 30,
+    "other_deaths_in_window": 2,
+    "censored_alive_before_window_end": 13,
+    "pct_censored": 22.80701754385965,
+    "followed_to_window_end": 12,
+    "pct_followed_to_end": 21.05263157894737
+   },
+   {
+    "cohort": "all stages dx 2022",
+    "landmark": 12,
+    "n_at_risk": 32,
+    "cancer_deaths_in_window": 11,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 21,
+    "pct_censored": 65.625,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "all stages dx 2022",
+    "landmark": 24,
+    "n_at_risk": 0,
+    "cancer_deaths_in_window": 0,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": NaN,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": NaN
+   },
+   {
+    "cohort": "all stages dx 2023",
+    "landmark": 0,
+    "n_at_risk": 119,
+    "cancer_deaths_in_window": 43,
+    "other_deaths_in_window": 7,
+    "censored_alive_before_window_end": 69,
+    "pct_censored": 57.983193277310924,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "all stages dx 2023",
+    "landmark": 3,
+    "n_at_risk": 57,
+    "cancer_deaths_in_window": 13,
+    "other_deaths_in_window": 1,
+    "censored_alive_before_window_end": 43,
+    "pct_censored": 75.43859649122807,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "all stages dx 2023",
+    "landmark": 6,
+    "n_at_risk": 28,
+    "cancer_deaths_in_window": 5,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 23,
+    "pct_censored": 82.14285714285714,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "all stages dx 2023",
+    "landmark": 12,
+    "n_at_risk": 0,
+    "cancer_deaths_in_window": 0,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": NaN,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": NaN
+   },
+   {
+    "cohort": "all stages dx 2023",
+    "landmark": 24,
+    "n_at_risk": 0,
+    "cancer_deaths_in_window": 0,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": NaN,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": NaN
+   }
+  ],
+  "all stages_LM0_censored_by_year": [
+   {
+    "diagnosis year": "2023",
+    "n": 69,
+    "%": 93.24324324324324
+   },
+   {
+    "diagnosis year": "2016",
+    "n": 2,
+    "%": 2.7027027027027026
+   },
+   {
+    "diagnosis year": "2007",
+    "n": 1,
+    "%": 1.3513513513513513
+   },
+   {
+    "diagnosis year": "2022",
+    "n": 1,
+    "%": 1.3513513513513513
+   },
+   {
+    "diagnosis year": "2021",
+    "n": 1,
+    "%": 1.3513513513513513
+   }
+  ],
+  "distant": [
+   {
+    "cohort": "distant",
+    "landmark": 0,
+    "n_at_risk": 908,
+    "cancer_deaths_in_window": 634,
+    "other_deaths_in_window": 62,
+    "censored_alive_before_window_end": 43,
+    "pct_censored": 4.73568281938326,
+    "followed_to_window_end": 169,
+    "pct_followed_to_end": 18.612334801762113
+   },
+   {
+    "cohort": "distant",
+    "landmark": 3,
+    "n_at_risk": 553,
+    "cancer_deaths_in_window": 381,
+    "other_deaths_in_window": 32,
+    "censored_alive_before_window_end": 28,
+    "pct_censored": 5.063291139240507,
+    "followed_to_window_end": 112,
+    "pct_followed_to_end": 20.253164556962027
+   },
+   {
+    "cohort": "distant",
+    "landmark": 6,
+    "n_at_risk": 396,
+    "cancer_deaths_in_window": 276,
+    "other_deaths_in_window": 18,
+    "censored_alive_before_window_end": 20,
+    "pct_censored": 5.05050505050505,
+    "followed_to_window_end": 82,
+    "pct_followed_to_end": 20.707070707070706
+   },
+   {
+    "cohort": "distant",
+    "landmark": 12,
+    "n_at_risk": 169,
+    "cancer_deaths_in_window": 98,
+    "other_deaths_in_window": 12,
+    "censored_alive_before_window_end": 11,
+    "pct_censored": 6.508875739644971,
+    "followed_to_window_end": 48,
+    "pct_followed_to_end": 28.402366863905325
+   },
+   {
+    "cohort": "distant",
+    "landmark": 24,
+    "n_at_risk": 48,
+    "cancer_deaths_in_window": 14,
+    "other_deaths_in_window": 3,
+    "censored_alive_before_window_end": 4,
+    "pct_censored": 8.333333333333334,
+    "followed_to_window_end": 27,
+    "pct_followed_to_end": 56.25
+   }
+  ],
+  "distant_by_year": [
+   {
+    "cohort": "distant dx<=2020",
+    "landmark": 0,
+    "n_at_risk": 683,
+    "cancer_deaths_in_window": 501,
+    "other_deaths_in_window": 45,
+    "censored_alive_before_window_end": 2,
+    "pct_censored": 0.29282576866764276,
+    "followed_to_window_end": 135,
+    "pct_followed_to_end": 19.765739385065885
+   },
+   {
+    "cohort": "distant dx<=2020",
+    "landmark": 3,
+    "n_at_risk": 414,
+    "cancer_deaths_in_window": 300,
+    "other_deaths_in_window": 26,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": 0.0,
+    "followed_to_window_end": 88,
+    "pct_followed_to_end": 21.256038647342994
+   },
+   {
+    "cohort": "distant dx<=2020",
+    "landmark": 6,
+    "n_at_risk": 298,
+    "cancer_deaths_in_window": 217,
+    "other_deaths_in_window": 14,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": 0.0,
+    "followed_to_window_end": 67,
+    "pct_followed_to_end": 22.483221476510067
+   },
+   {
+    "cohort": "distant dx<=2020",
+    "landmark": 12,
+    "n_at_risk": 135,
+    "cancer_deaths_in_window": 81,
+    "other_deaths_in_window": 11,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": 0.0,
+    "followed_to_window_end": 43,
+    "pct_followed_to_end": 31.85185185185185
+   },
+   {
+    "cohort": "distant dx<=2020",
+    "landmark": 24,
+    "n_at_risk": 43,
+    "cancer_deaths_in_window": 13,
+    "other_deaths_in_window": 2,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 2.3255813953488373,
+    "followed_to_window_end": 27,
+    "pct_followed_to_end": 62.7906976744186
+   },
+   {
+    "cohort": "distant dx 2021",
+    "landmark": 0,
+    "n_at_risk": 75,
+    "cancer_deaths_in_window": 54,
+    "other_deaths_in_window": 4,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": 0.0,
+    "followed_to_window_end": 17,
+    "pct_followed_to_end": 22.666666666666668
+   },
+   {
+    "cohort": "distant dx 2021",
+    "landmark": 3,
+    "n_at_risk": 53,
+    "cancer_deaths_in_window": 39,
+    "other_deaths_in_window": 1,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": 0.0,
+    "followed_to_window_end": 13,
+    "pct_followed_to_end": 24.528301886792452
+   },
+   {
+    "cohort": "distant dx 2021",
+    "landmark": 6,
+    "n_at_risk": 42,
+    "cancer_deaths_in_window": 31,
+    "other_deaths_in_window": 2,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 2.380952380952381,
+    "followed_to_window_end": 8,
+    "pct_followed_to_end": 19.047619047619047
+   },
+   {
+    "cohort": "distant dx 2021",
+    "landmark": 12,
+    "n_at_risk": 17,
+    "cancer_deaths_in_window": 10,
+    "other_deaths_in_window": 1,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 5.882352941176471,
+    "followed_to_window_end": 5,
+    "pct_followed_to_end": 29.41176470588235
+   },
+   {
+    "cohort": "distant dx 2021",
+    "landmark": 24,
+    "n_at_risk": 5,
+    "cancer_deaths_in_window": 1,
+    "other_deaths_in_window": 1,
+    "censored_alive_before_window_end": 3,
+    "pct_censored": 60.0,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "distant dx 2022",
+    "landmark": 0,
+    "n_at_risk": 69,
+    "cancer_deaths_in_window": 45,
+    "other_deaths_in_window": 6,
+    "censored_alive_before_window_end": 1,
+    "pct_censored": 1.4492753623188406,
+    "followed_to_window_end": 17,
+    "pct_followed_to_end": 24.63768115942029
+   },
+   {
+    "cohort": "distant dx 2022",
+    "landmark": 3,
+    "n_at_risk": 50,
+    "cancer_deaths_in_window": 31,
+    "other_deaths_in_window": 4,
+    "censored_alive_before_window_end": 4,
+    "pct_censored": 8.0,
+    "followed_to_window_end": 11,
+    "pct_followed_to_end": 22.0
+   },
+   {
+    "cohort": "distant dx 2022",
+    "landmark": 6,
+    "n_at_risk": 38,
+    "cancer_deaths_in_window": 24,
+    "other_deaths_in_window": 2,
+    "censored_alive_before_window_end": 5,
+    "pct_censored": 13.157894736842104,
+    "followed_to_window_end": 7,
+    "pct_followed_to_end": 18.42105263157895
+   },
+   {
+    "cohort": "distant dx 2022",
+    "landmark": 12,
+    "n_at_risk": 17,
+    "cancer_deaths_in_window": 7,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 10,
+    "pct_censored": 58.8235294117647,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "distant dx 2022",
+    "landmark": 24,
+    "n_at_risk": 0,
+    "cancer_deaths_in_window": 0,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": NaN,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": NaN
+   },
+   {
+    "cohort": "distant dx 2023",
+    "landmark": 0,
+    "n_at_risk": 81,
+    "cancer_deaths_in_window": 34,
+    "other_deaths_in_window": 7,
+    "censored_alive_before_window_end": 40,
+    "pct_censored": 49.382716049382715,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "distant dx 2023",
+    "landmark": 3,
+    "n_at_risk": 36,
+    "cancer_deaths_in_window": 11,
+    "other_deaths_in_window": 1,
+    "censored_alive_before_window_end": 24,
+    "pct_censored": 66.66666666666667,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "distant dx 2023",
+    "landmark": 6,
+    "n_at_risk": 18,
+    "cancer_deaths_in_window": 4,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 14,
+    "pct_censored": 77.77777777777777,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": 0.0
+   },
+   {
+    "cohort": "distant dx 2023",
+    "landmark": 12,
+    "n_at_risk": 0,
+    "cancer_deaths_in_window": 0,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": NaN,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": NaN
+   },
+   {
+    "cohort": "distant dx 2023",
+    "landmark": 24,
+    "n_at_risk": 0,
+    "cancer_deaths_in_window": 0,
+    "other_deaths_in_window": 0,
+    "censored_alive_before_window_end": 0,
+    "pct_censored": NaN,
+    "followed_to_window_end": 0,
+    "pct_followed_to_end": NaN
+   }
+  ],
+  "distant_LM0_censored_by_year": [
+   {
+    "diagnosis year": "2023",
+    "n": 40,
+    "%": 93.02325581395348
+   },
+   {
+    "diagnosis year": "2007",
+    "n": 1,
+    "%": 2.3255813953488373
+   },
+   {
+    "diagnosis year": "2022",
+    "n": 1,
+    "%": 2.3255813953488373
+   },
+   {
+    "diagnosis year": "2016",
+    "n": 1,
+    "%": 2.3255813953488373
+   }
+  ]
+ },
+ "sec3_diagnosis_year": {
+  "all stages_period": [
+   {
+    "diagnosis period": "2000-2004",
+    "n": 166,
+    "%": 11.714890613973182
+   },
+   {
+    "diagnosis period": "2005-2009",
+    "n": 194,
+    "%": 13.6908962597036
+   },
+   {
+    "diagnosis period": "2010-2014",
+    "n": 266,
+    "%": 18.772053634438954
+   },
+   {
+    "diagnosis period": "2015-2019",
+    "n": 382,
+    "%": 26.95836273817925
+   },
+   {
+    "diagnosis period": "2020-2023",
+    "n": 409,
+    "%": 28.86379675370501
+   }
+  ],
+  "all stages_by_year": [
+   {
+    "year": 2000,
+    "n": 18,
+    "%": 1.2702893436838392,
+    "potential follow-up to 2023-12-31 (years, min-max)": "23-24",
+    "observed tm median (mo)": 8.19712525667351,
+    "censored alive n": 0
+   },
+   {
+    "year": 2001,
+    "n": 39,
+    "%": 2.7522935779816513,
+    "potential follow-up to 2023-12-31 (years, min-max)": "22-23",
+    "observed tm median (mo)": 8.41067761806982,
+    "censored alive n": 1
+   },
+   {
+    "year": 2002,
+    "n": 34,
+    "%": 2.399435426958363,
+    "potential follow-up to 2023-12-31 (years, min-max)": "21-22",
+    "observed tm median (mo)": 7.81930184804928,
+    "censored alive n": 1
+   },
+   {
+    "year": 2003,
+    "n": 36,
+    "%": 2.5405786873676783,
+    "potential follow-up to 2023-12-31 (years, min-max)": "20-21",
+    "observed tm median (mo)": 8.427104722792604,
+    "censored alive n": 3
+   },
+   {
+    "year": 2004,
+    "n": 39,
+    "%": 2.7522935779816513,
+    "potential follow-up to 2023-12-31 (years, min-max)": "19-20",
+    "observed tm median (mo)": 8.87063655030801,
+    "censored alive n": 0
+   },
+   {
+    "year": 2005,
+    "n": 44,
+    "%": 3.10515172900494,
+    "potential follow-up to 2023-12-31 (years, min-max)": "18-19",
+    "observed tm median (mo)": 5.17453798767967,
+    "censored alive n": 3
+   },
+   {
+    "year": 2006,
+    "n": 39,
+    "%": 2.7522935779816513,
+    "potential follow-up to 2023-12-31 (years, min-max)": "17-18",
+    "observed tm median (mo)": 6.96509240246407,
+    "censored alive n": 1
+   },
+   {
+    "year": 2007,
+    "n": 30,
+    "%": 2.117148906139732,
+    "potential follow-up to 2023-12-31 (years, min-max)": "16-17",
+    "observed tm median (mo)": 9.544147843942504,
+    "censored alive n": 2
+   },
+   {
+    "year": 2008,
+    "n": 36,
+    "%": 2.5405786873676783,
+    "potential follow-up to 2023-12-31 (years, min-max)": "15-16",
+    "observed tm median (mo)": 10.9240246406571,
+    "censored alive n": 2
+   },
+   {
+    "year": 2009,
+    "n": 45,
+    "%": 3.1757233592095977,
+    "potential follow-up to 2023-12-31 (years, min-max)": "14-15",
+    "observed tm median (mo)": 6.17659137577002,
+    "censored alive n": 3
+   },
+   {
+    "year": 2010,
+    "n": 50,
+    "%": 3.5285815102328866,
+    "potential follow-up to 2023-12-31 (years, min-max)": "13-14",
+    "observed tm median (mo)": 7.04722792607803,
+    "censored alive n": 2
+   },
+   {
+    "year": 2011,
+    "n": 43,
+    "%": 3.0345800988002822,
+    "potential follow-up to 2023-12-31 (years, min-max)": "12-13",
+    "observed tm median (mo)": 6.27515400410678,
+    "censored alive n": 4
+   },
+   {
+    "year": 2012,
+    "n": 55,
+    "%": 3.881439661256175,
+    "potential follow-up to 2023-12-31 (years, min-max)": "11-12",
+    "observed tm median (mo)": 6.57084188911704,
+    "censored alive n": 3
+   },
+   {
+    "year": 2013,
+    "n": 62,
+    "%": 4.375441072688779,
+    "potential follow-up to 2023-12-31 (years, min-max)": "10-11",
+    "observed tm median (mo)": 9.80698151950717,
+    "censored alive n": 8
+   },
+   {
+    "year": 2014,
+    "n": 56,
+    "%": 3.952011291460833,
+    "potential follow-up to 2023-12-31 (years, min-max)": "9-10",
+    "observed tm median (mo)": 6.11088295687885,
+    "censored alive n": 6
+   },
+   {
+    "year": 2015,
+    "n": 69,
+    "%": 4.869442484121383,
+    "potential follow-up to 2023-12-31 (years, min-max)": "8-9",
+    "observed tm median (mo)": 6.80082135523614,
+    "censored alive n": 5
+   },
+   {
+    "year": 2016,
+    "n": 56,
+    "%": 3.952011291460833,
+    "potential follow-up to 2023-12-31 (years, min-max)": "7-8",
+    "observed tm median (mo)": 6.718685831622175,
+    "censored alive n": 7
+   },
+   {
+    "year": 2017,
+    "n": 65,
+    "%": 4.587155963302752,
+    "potential follow-up to 2023-12-31 (years, min-max)": "6-7",
+    "observed tm median (mo)": 10.1519507186858,
+    "censored alive n": 11
+   },
+   {
+    "year": 2018,
+    "n": 90,
+    "%": 6.351446718419195,
+    "potential follow-up to 2023-12-31 (years, min-max)": "5-6",
+    "observed tm median (mo)": 6.81724845995893,
+    "censored alive n": 8
+   },
+   {
+    "year": 2019,
+    "n": 102,
+    "%": 7.198306280875088,
+    "potential follow-up to 2023-12-31 (years, min-max)": "4-5",
+    "observed tm median (mo)": 7.57289527720739,
+    "censored alive n": 16
+   },
+   {
+    "year": 2020,
+    "n": 81,
+    "%": 5.716302046577276,
+    "potential follow-up to 2023-12-31 (years, min-max)": "3-4",
+    "observed tm median (mo)": 6.86652977412731,
+    "censored alive n": 12
+   },
+   {
+    "year": 2021,
+    "n": 111,
+    "%": 7.8334509527170075,
+    "potential follow-up to 2023-12-31 (years, min-max)": "2-3",
+    "observed tm median (mo)": 8.11498973305955,
+    "censored alive n": 24
+   },
+   {
+    "year": 2022,
+    "n": 98,
+    "%": 6.916019760056457,
+    "potential follow-up to 2023-12-31 (years, min-max)": "1-2",
+    "observed tm median (mo)": 7.655030800821355,
+    "censored alive n": 22
+   },
+   {
+    "year": 2023,
+    "n": 119,
+    "%": 8.39802399435427,
+    "potential follow-up to 2023-12-31 (years, min-max)": "0-1",
+    "observed tm median (mo)": 2.82546201232033,
+    "censored alive n": 69
+   }
+  ],
+  "all stages_summary": {
+   "year_median": 2016.0,
+   "year_IQR": [
+    2009.0,
+    2020.0
+   ],
+   "n_2021_2023": 328,
+   "pct_2021_2023": 23.147494707127734,
+   "potential_fu_years_min_median": 7.0,
+   "n_potential_fu_lt_36mo (dx>=2021)": 328,
+   "n_potential_fu_lt_12mo (dx 2023)": 119,
+   "fu_year_values": {
+    "2023": 318,
+    "2020": 96,
+    "2022": 95,
+    "2019": 78,
+    "2021": 73,
+    "2018": 68,
+    "2017": 60,
+    "2014": 57,
+    "2015": 51,
+    "2012": 50,
+    "2011": 46,
+    "2006": 45,
+    "2005": 45,
+    "2010": 44,
+    "2016": 43,
+    "2013": 41,
+    "2009": 37,
+    "2004": 34,
+    "2003": 32,
+    "2008": 31,
+    "2002": 25,
+    "2001": 23,
+    "2007": 19,
+    "2000": 6
+   }
+  },
+  "distant_period": [
+   {
+    "diagnosis period": "2000-2004",
+    "n": 93,
+    "%": 10.242290748898679
+   },
+   {
+    "diagnosis period": "2005-2009",
+    "n": 120,
+    "%": 13.215859030837004
+   },
+   {
+    "diagnosis period": "2010-2014",
+    "n": 167,
+    "%": 18.3920704845815
+   },
+   {
+    "diagnosis period": "2015-2019",
+    "n": 247,
+    "%": 27.202643171806166
+   },
+   {
+    "diagnosis period": "2020-2023",
+    "n": 281,
+    "%": 30.94713656387665
+   }
+  ],
+  "distant_by_year": [
+   {
+    "year": 2000,
+    "n": 6,
+    "%": 0.6607929515418502,
+    "potential follow-up to 2023-12-31 (years, min-max)": "23-24",
+    "observed tm median (mo)": 3.3182751540041053,
+    "censored alive n": 0
+   },
+   {
+    "year": 2001,
+    "n": 24,
+    "%": 2.643171806167401,
+    "potential follow-up to 2023-12-31 (years, min-max)": "22-23",
+    "observed tm median (mo)": 3.876796714579055,
+    "censored alive n": 0
+   },
+   {
+    "year": 2002,
+    "n": 27,
+    "%": 2.973568281938326,
+    "potential follow-up to 2023-12-31 (years, min-max)": "21-22",
+    "observed tm median (mo)": 7.22792607802875,
+    "censored alive n": 0
+   },
+   {
+    "year": 2003,
+    "n": 18,
+    "%": 1.9823788546255507,
+    "potential follow-up to 2023-12-31 (years, min-max)": "20-21",
+    "observed tm median (mo)": 4.320328542094455,
+    "censored alive n": 0
+   },
+   {
+    "year": 2004,
+    "n": 18,
+    "%": 1.9823788546255507,
+    "potential follow-up to 2023-12-31 (years, min-max)": "19-20",
+    "observed tm median (mo)": 6.915811088295685,
+    "censored alive n": 0
+   },
+   {
+    "year": 2005,
+    "n": 29,
+    "%": 3.193832599118943,
+    "potential follow-up to 2023-12-31 (years, min-max)": "18-19",
+    "observed tm median (mo)": 4.23819301848049,
+    "censored alive n": 1
+   },
+   {
+    "year": 2006,
+    "n": 30,
+    "%": 3.303964757709251,
+    "potential follow-up to 2023-12-31 (years, min-max)": "17-18",
+    "observed tm median (mo)": 2.6611909650924,
+    "censored alive n": 0
+   },
+   {
+    "year": 2007,
+    "n": 16,
+    "%": 1.7621145374449338,
+    "potential follow-up to 2023-12-31 (years, min-max)": "16-17",
+    "observed tm median (mo)": 4.632443531827515,
+    "censored alive n": 1
+   },
+   {
+    "year": 2008,
+    "n": 17,
+    "%": 1.8722466960352422,
+    "potential follow-up to 2023-12-31 (years, min-max)": "15-16",
+    "observed tm median (mo)": 1.54414784394251,
+    "censored alive n": 1
+   },
+   {
+    "year": 2009,
+    "n": 28,
+    "%": 3.0837004405286343,
+    "potential follow-up to 2023-12-31 (years, min-max)": "14-15",
+    "observed tm median (mo)": 5.388090349075975,
+    "censored alive n": 1
+   },
+   {
+    "year": 2010,
+    "n": 33,
+    "%": 3.6343612334801763,
+    "potential follow-up to 2023-12-31 (years, min-max)": "13-14",
+    "observed tm median (mo)": 5.15811088295688,
+    "censored alive n": 1
+   },
+   {
+    "year": 2011,
+    "n": 31,
+    "%": 3.4140969162995596,
+    "potential follow-up to 2023-12-31 (years, min-max)": "12-13",
+    "observed tm median (mo)": 4.8952772073922,
+    "censored alive n": 2
+   },
+   {
+    "year": 2012,
+    "n": 36,
+    "%": 3.9647577092511015,
+    "potential follow-up to 2023-12-31 (years, min-max)": "11-12",
+    "observed tm median (mo)": 3.367556468172485,
+    "censored alive n": 0
+   },
+   {
+    "year": 2013,
+    "n": 32,
+    "%": 3.5242290748898677,
+    "potential follow-up to 2023-12-31 (years, min-max)": "10-11",
+    "observed tm median (mo)": 6.340862422997946,
+    "censored alive n": 1
+   },
+   {
+    "year": 2014,
+    "n": 35,
+    "%": 3.854625550660793,
+    "potential follow-up to 2023-12-31 (years, min-max)": "9-10",
+    "observed tm median (mo)": 4.435318275154,
+    "censored alive n": 0
+   },
+   {
+    "year": 2015,
+    "n": 51,
+    "%": 5.616740088105727,
+    "potential follow-up to 2023-12-31 (years, min-max)": "8-9",
+    "observed tm median (mo)": 4.53388090349076,
+    "censored alive n": 2
+   },
+   {
+    "year": 2016,
+    "n": 29,
+    "%": 3.193832599118943,
+    "potential follow-up to 2023-12-31 (years, min-max)": "7-8",
+    "observed tm median (mo)": 4.0082135523614,
+    "censored alive n": 1
+   },
+   {
+    "year": 2017,
+    "n": 42,
+    "%": 4.6255506607929515,
+    "potential follow-up to 2023-12-31 (years, min-max)": "6-7",
+    "observed tm median (mo)": 7.29363449691992,
+    "censored alive n": 0
+   },
+   {
+    "year": 2018,
+    "n": 59,
+    "%": 6.497797356828194,
+    "potential follow-up to 2023-12-31 (years, min-max)": "5-6",
+    "observed tm median (mo)": 4.50102669404517,
+    "censored alive n": 0
+   },
+   {
+    "year": 2019,
+    "n": 66,
+    "%": 7.2687224669603525,
+    "potential follow-up to 2023-12-31 (years, min-max)": "4-5",
+    "observed tm median (mo)": 4.1396303901437355,
+    "censored alive n": 3
+   },
+   {
+    "year": 2020,
+    "n": 56,
+    "%": 6.167400881057269,
+    "potential follow-up to 2023-12-31 (years, min-max)": "3-4",
+    "observed tm median (mo)": 4.878850102669405,
+    "censored alive n": 2
+   },
+   {
+    "year": 2021,
+    "n": 75,
+    "%": 8.259911894273127,
+    "potential follow-up to 2023-12-31 (years, min-max)": "2-3",
+    "observed tm median (mo)": 6.34086242299795,
+    "censored alive n": 4
+   },
+   {
+    "year": 2022,
+    "n": 69,
+    "%": 7.599118942731278,
+    "potential follow-up to 2023-12-31 (years, min-max)": "1-2",
+    "observed tm median (mo)": 6.93223819301848,
+    "censored alive n": 11
+   },
+   {
+    "year": 2023,
+    "n": 81,
+    "%": 8.920704845814978,
+    "potential follow-up to 2023-12-31 (years, min-max)": "0-1",
+    "observed tm median (mo)": 2.72689938398357,
+    "censored alive n": 40
+   }
+  ],
+  "distant_summary": {
+   "year_median": 2016.0,
+   "year_IQR": [
+    2010.0,
+    2020.0
+   ],
+   "n_2021_2023": 225,
+   "pct_2021_2023": 24.779735682819386,
+   "potential_fu_years_min_median": 7.0,
+   "n_potential_fu_lt_36mo (dx>=2021)": 225,
+   "n_potential_fu_lt_12mo (dx 2023)": 81,
+   "fu_year_values": {
+    "2023": 147,
+    "2022": 71,
+    "2020": 67,
+    "2019": 57,
+    "2018": 54,
+    "2021": 48,
+    "2017": 41,
+    "2015": 39,
+    "2014": 38,
+    "2012": 35,
+    "2011": 35,
+    "2006": 31,
+    "2016": 30,
+    "2005": 29,
+    "2013": 27,
+    "2002": 23,
+    "2008": 22,
+    "2010": 22,
+    "2009": 22,
+    "2003": 21,
+    "2004": 19,
+    "2001": 14,
+    "2007": 12,
+    "2000": 4
+   }
+  }
+ },
+ "sec4_treatment_timing": {
+  "groups": [
+   {
+    "label": "distant, chemo recorded yes",
+    "n": 580,
+    "numeric_n": 554,
+    "median": 15.0,
+    "q1": 5.0,
+    "q3": 27.0,
+    "mean": 19.981949458483754,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 548,
+    "le90_pct_of_all": 94.48275862068965,
+    "le90_pct_of_numeric": 98.91696750902527,
+    "gt90_n": 6,
+    "gt90_pct_of_all": 1.0344827586206897,
+    "zero_n": 61,
+    "zero_pct_of_all": 10.517241379310345,
+    "le30_n": 433,
+    "le60_n": 528,
+    "non_numeric_n": 26,
+    "non_numeric_pct": 4.482758620689655,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 26,
+      "%": 4.482758620689655
+     }
+    ]
+   },
+   {
+    "label": "distant, chemo yes & survived >3 months (tm>3)",
+    "n": 465,
+    "numeric_n": 441,
+    "median": 16.0,
+    "q1": 5.0,
+    "q3": 28.0,
+    "mean": 20.84580498866213,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 436,
+    "le90_pct_of_all": 93.76344086021506,
+    "le90_pct_of_numeric": 98.86621315192744,
+    "gt90_n": 5,
+    "gt90_pct_of_all": 1.075268817204301,
+    "zero_n": 54,
+    "zero_pct_of_all": 11.612903225806452,
+    "le30_n": 336,
+    "le60_n": 417,
+    "non_numeric_n": 24,
+    "non_numeric_pct": 5.161290322580645,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 24,
+      "%": 5.161290322580645
+     }
+    ]
+   },
+   {
+    "label": "distant, chemo no/unknown",
+    "n": 328,
+    "numeric_n": 158,
+    "median": 4.0,
+    "q1": 0.0,
+    "q3": 13.0,
+    "mean": 11.183544303797468,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 157,
+    "le90_pct_of_all": 47.86585365853659,
+    "le90_pct_of_numeric": 99.36708860759494,
+    "gt90_n": 1,
+    "gt90_pct_of_all": 0.3048780487804878,
+    "zero_n": 42,
+    "zero_pct_of_all": 12.804878048780488,
+    "le30_n": 139,
+    "le60_n": 153,
+    "non_numeric_n": 170,
+    "non_numeric_pct": 51.829268292682926,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 170,
+      "%": 51.829268292682926
+     }
+    ]
+   },
+   {
+    "label": "distant, chemo no/unknown & tm>3",
+    "n": 88,
+    "numeric_n": 60,
+    "median": 7.0,
+    "q1": 1.0,
+    "q3": 30.75,
+    "mean": 20.233333333333334,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 59,
+    "le90_pct_of_all": 67.04545454545455,
+    "le90_pct_of_numeric": 98.33333333333333,
+    "gt90_n": 1,
+    "gt90_pct_of_all": 1.1363636363636365,
+    "zero_n": 11,
+    "zero_pct_of_all": 12.5,
+    "le30_n": 45,
+    "le60_n": 55,
+    "non_numeric_n": 28,
+    "non_numeric_pct": 31.818181818181817,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 28,
+      "%": 31.818181818181817
+     }
+    ]
+   },
+   {
+    "label": "distant, surgery yes",
+    "n": 354,
+    "numeric_n": 343,
+    "median": 4.0,
+    "q1": 0.0,
+    "q3": 14.0,
+    "mean": 10.518950437317784,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 342,
+    "le90_pct_of_all": 96.61016949152543,
+    "le90_pct_of_numeric": 99.70845481049562,
+    "gt90_n": 1,
+    "gt90_pct_of_all": 0.2824858757062147,
+    "zero_n": 98,
+    "zero_pct_of_all": 27.683615819209038,
+    "le30_n": 311,
+    "le60_n": 333,
+    "non_numeric_n": 11,
+    "non_numeric_pct": 3.1073446327683616,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 11,
+      "%": 3.1073446327683616
+     }
+    ]
+   },
+   {
+    "label": "distant, surgery yes & chemo yes",
+    "n": 207,
+    "numeric_n": 201,
+    "median": 4.0,
+    "q1": 0.0,
+    "q3": 14.0,
+    "mean": 11.223880597014926,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 200,
+    "le90_pct_of_all": 96.61835748792271,
+    "le90_pct_of_numeric": 99.50248756218906,
+    "gt90_n": 1,
+    "gt90_pct_of_all": 0.4830917874396135,
+    "zero_n": 58,
+    "zero_pct_of_all": 28.019323671497585,
+    "le30_n": 182,
+    "le60_n": 194,
+    "non_numeric_n": 6,
+    "non_numeric_pct": 2.898550724637681,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 6,
+      "%": 2.898550724637681
+     }
+    ]
+   },
+   {
+    "label": "distant, surgery no",
+    "n": 554,
+    "numeric_n": 369,
+    "median": 21.0,
+    "q1": 11.0,
+    "q3": 33.0,
+    "mean": 25.010840108401084,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 363,
+    "le90_pct_of_all": 65.52346570397111,
+    "le90_pct_of_numeric": 98.3739837398374,
+    "gt90_n": 6,
+    "gt90_pct_of_all": 1.0830324909747293,
+    "zero_n": 5,
+    "zero_pct_of_all": 0.9025270758122743,
+    "le30_n": 261,
+    "le60_n": 348,
+    "non_numeric_n": 185,
+    "non_numeric_pct": 33.39350180505416,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 185,
+      "%": 33.39350180505415
+     }
+    ]
+   },
+   {
+    "label": "distant, all",
+    "n": 908,
+    "numeric_n": 712,
+    "median": 12.5,
+    "q1": 3.0,
+    "q3": 26.0,
+    "mean": 18.02949438202247,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 705,
+    "le90_pct_of_all": 77.6431718061674,
+    "le90_pct_of_numeric": 99.01685393258427,
+    "gt90_n": 7,
+    "gt90_pct_of_all": 0.7709251101321586,
+    "zero_n": 103,
+    "zero_pct_of_all": 11.343612334801762,
+    "le30_n": 572,
+    "le60_n": 681,
+    "non_numeric_n": 196,
+    "non_numeric_pct": 21.58590308370044,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 196,
+      "%": 21.58590308370044
+     }
+    ]
+   },
+   {
+    "label": "all stages, chemo yes",
+    "n": 860,
+    "numeric_n": 821,
+    "median": 16.0,
+    "q1": 4.0,
+    "q3": 30.0,
+    "mean": 20.779537149817298,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 810,
+    "le90_pct_of_all": 94.18604651162791,
+    "le90_pct_of_numeric": 98.66017052375152,
+    "gt90_n": 11,
+    "gt90_pct_of_all": 1.2790697674418605,
+    "zero_n": 114,
+    "zero_pct_of_all": 13.255813953488373,
+    "le30_n": 617,
+    "le60_n": 775,
+    "non_numeric_n": 39,
+    "non_numeric_pct": 4.534883720930233,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 39,
+      "%": 4.534883720930233
+     }
+    ]
+   },
+   {
+    "label": "all stages, surgery yes",
+    "n": 705,
+    "numeric_n": 687,
+    "median": 4.0,
+    "q1": 0.0,
+    "q3": 19.0,
+    "mean": 13.630276564774382,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 680,
+    "le90_pct_of_all": 96.45390070921985,
+    "le90_pct_of_numeric": 98.98107714701602,
+    "gt90_n": 7,
+    "gt90_pct_of_all": 0.9929078014184397,
+    "zero_n": 214,
+    "zero_pct_of_all": 30.354609929078013,
+    "le30_n": 582,
+    "le60_n": 661,
+    "non_numeric_n": 18,
+    "non_numeric_pct": 2.553191489361702,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 18,
+      "%": 2.5531914893617023
+     }
+    ]
+   },
+   {
+    "label": "all stages, all",
+    "n": 1417,
+    "numeric_n": 1152,
+    "median": 13.0,
+    "q1": 2.0,
+    "q3": 27.25,
+    "mean": 18.893229166666668,
+    "max": "suppressed (SEER small-cell rule)",
+    "le90_n": 1135,
+    "le90_pct_of_all": 80.09880028228652,
+    "le90_pct_of_numeric": 98.52430555555556,
+    "gt90_n": 17,
+    "gt90_pct_of_all": 1.1997177134791814,
+    "zero_n": 219,
+    "zero_pct_of_all": 15.455187014820043,
+    "le30_n": 894,
+    "le60_n": 1091,
+    "non_numeric_n": 265,
+    "non_numeric_pct": 18.7014820042343,
+    "non_numeric_values": [
+     {
+      "non-numeric tt_days value": "Unable to calculate",
+      "n": 265,
+      "%": 18.701482004234297
+     }
+    ]
+   }
+  ],
+  "manuscript_check": {
+   "manuscript": {
+    "n": 580,
+    "le90": 548,
+    "gt90": 6,
+    "unable": 26,
+    "median": 15
+   },
+   "mine": {
+    "n": 580,
+    "le90": 548,
+    "gt90": 6,
+    "unable": 26,
+    "median": 15.0
+   },
+   "agree": true
+  },
+  "bins_distant_chemo": [
+   {
+    "tt_days (distant, chemo yes)": "0",
+    "n": 61,
+    "%": 10.517241379310345
+   },
+   {
+    "tt_days (distant, chemo yes)": "1-7",
+    "n": 111,
+    "%": 19.137931034482758
+   },
+   {
+    "tt_days (distant, chemo yes)": "8-14",
+    "n": 103,
+    "%": 17.75862068965517
+   },
+   {
+    "tt_days (distant, chemo yes)": "15-30",
+    "n": 158,
+    "%": 27.24137931034483
+   },
+   {
+    "tt_days (distant, chemo yes)": "31-60",
+    "n": 95,
+    "%": 16.379310344827587
+   },
+   {
+    "tt_days (distant, chemo yes)": "61-90",
+    "n": 20,
+    "%": 3.4482758620689653
+   },
+   {
+    "tt_days (distant, chemo yes)": "91-180",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "tt_days (distant, chemo yes)": ">180",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "tt_days (distant, chemo yes)": "Unable to calculate",
+    "n": 26,
+    "%": 4.482758620689655
+   }
+  ]
+ },
+ "sec5_multiple_primaries": {
+  "all stages_seq": [
+   {
+    "Sequence number": "One primary only",
+    "n": 1019,
+    "%": 71.91249117854622
+   },
+   {
+    "Sequence number": "1st of 2 or more primaries",
+    "n": 74,
+    "%": 5.222300635144672
+   },
+   {
+    "Sequence number": "2nd of 2 or more primaries",
+    "n": 267,
+    "%": 18.842625264643612
+   },
+   {
+    "Sequence number": "3rd of 3 or more primaries",
+    "n": 49,
+    "%": 3.4580098800282286
+   },
+   {
+    "Sequence number": "4th of 4 or more primaries",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "Sequence number": "5th of 5 or more primaries",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   }
+  ],
+  "all stages_ntum": [
+   {
+    "Total number of in-situ/malignant tumours for patient": "01",
+    "n": 1033,
+    "%": 72.90049400141143
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "02",
+    "n": 303,
+    "%": 21.383203952011293
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "03",
+    "n": 65,
+    "%": 4.587155963302752
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "04",
+    "n": 12,
+    "%": 0.8468595624558928
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "05",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "07",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   }
+  ],
+  "distant_seq": [
+   {
+    "Sequence number": "One primary only",
+    "n": 677,
+    "%": 74.55947136563877
+   },
+   {
+    "Sequence number": "1st of 2 or more primaries",
+    "n": 29,
+    "%": 3.193832599118943
+   },
+   {
+    "Sequence number": "2nd of 2 or more primaries",
+    "n": 171,
+    "%": 18.83259911894273
+   },
+   {
+    "Sequence number": "3rd of 3 or more primaries",
+    "n": 27,
+    "%": 2.973568281938326
+   },
+   {
+    "Sequence number": "4th of 4 or more primaries",
+    "n": 4,
+    "%": 0.44052863436123346
+   }
+  ],
+  "distant_ntum": [
+   {
+    "Total number of in-situ/malignant tumours for patient": "01",
+    "n": 681,
+    "%": 75.0
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "02",
+    "n": 183,
+    "%": 20.154185022026432
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "03",
+    "n": 39,
+    "%": 4.295154185022026
+   },
+   {
+    "Total number of in-situ/malignant tumours for patient": "04",
+    "n": 5,
+    "%": 0.5506607929515418
+   }
+  ],
+  "first_primary_by_stage": {
+   "Distant": {
+    "first/only primary": 706,
+    "later primary (2nd+)": 202,
+    "All": 908,
+    "% first/only": 77.7533039647577
+   },
+   "Localized": {
+    "first/only primary": 86,
+    "later primary (2nd+)": 30,
+    "All": 116,
+    "% first/only": 74.13793103448276
+   },
+   "Regional": {
+    "first/only primary": 274,
+    "later primary (2nd+)": 72,
+    "All": 346,
+    "% first/only": 79.1907514450867
+   },
+   "Unknown": {
+    "first/only primary": 27,
+    "later primary (2nd+)": 20,
+    "All": 47,
+    "% first/only": 57.4468085106383
+   },
+   "All": {
+    "first/only primary": 1093,
+    "later primary (2nd+)": 324,
+    "All": 1417,
+    "% first/only": 77.1347918136909
+   }
+  },
+  "seq_by_stage": {
+   "One primary only": {
+    "Distant": 677,
+    "Localized": 77,
+    "Regional": 244,
+    "Unknown": 21
+   },
+   "1st of 2 or more primaries": {
+    "Distant": 29,
+    "Localized": 9,
+    "Regional": 30,
+    "Unknown": 6
+   },
+   "2nd of 2 or more primaries": {
+    "Distant": 171,
+    "Localized": "suppressed (SEER small-cell rule)",
+    "Regional": "suppressed (SEER small-cell rule)",
+    "Unknown": "suppressed (SEER small-cell rule)"
+   },
+   "3rd of 3 or more primaries": {
+    "Distant": 27,
+    "Localized": "suppressed (SEER small-cell rule)",
+    "Regional": "suppressed (SEER small-cell rule)",
+    "Unknown": "suppressed (SEER small-cell rule)"
+   },
+   "4th of 4 or more primaries": {
+    "Distant": 4,
+    "Localized": "suppressed (SEER small-cell rule)",
+    "Regional": "suppressed (SEER small-cell rule)",
+    "Unknown": "suppressed (SEER small-cell rule)"
+   },
+   "5th of 5 or more primaries": {
+    "Distant": 0,
+    "Localized": "suppressed (SEER small-cell rule)",
+    "Regional": "suppressed (SEER small-cell rule)",
+    "Unknown": "suppressed (SEER small-cell rule)"
+   }
+  },
+  "seq_ntum_inconsistent": 14
+ },
+ "sec6_cause_of_death": {
+  "unknown_cod_by_stage": [
+   {
+    "stage": "Regional",
+    "n": 2,
+    "%": 20.0
+   },
+   {
+    "stage": "Distant",
+    "n": 7,
+    "%": 70.0
+   },
+   {
+    "stage": "Unknown",
+    "n": 1,
+    "%": 10.0
+   }
+  ],
+  "all stages_othercod": [
+   {
+    "SEER other cause of death classification": "Alive or dead due to cancer",
+    "n": 1252,
+    "%": 88.35568101623147
+   },
+   {
+    "SEER other cause of death classification": "Dead (attributable to causes other than this cancer dx)",
+    "n": 155,
+    "%": 10.938602681721948
+   },
+   {
+    "SEER other cause of death classification": "Dead (missing/unknown COD)",
+    "n": 10,
+    "%": 0.7057163020465773
+   }
+  ],
+  "all stages_ev_by_vital": {
+   "cancer death": {
+    "Alive": 0,
+    "Dead": 1039
+   },
+   "censored": {
+    "Alive": 213,
+    "Dead": 0
+   },
+   "other/unknown death": {
+    "Alive": 0,
+    "Dead": 165
+   }
+  },
+  "all stages_cod_site_top10_ev2": [
+   {
+    "COD site recode (ev = 2)": "Other Cause of Death",
+    "n": 29,
+    "%": 17.575757575757574
+   },
+   {
+    "COD site recode (ev = 2)": "Diseases of Heart",
+    "n": 23,
+    "%": 13.93939393939394
+   },
+   {
+    "COD site recode (ev = 2)": "Lung and Bronchus",
+    "n": 17,
+    "%": 10.303030303030303
+   },
+   {
+    "COD site recode (ev = 2)": "State DC not available or state DC available but no COD",
+    "n": 10,
+    "%": 6.0606060606060606
+   },
+   {
+    "COD site recode (ev = 2)": "Prostate",
+    "n": 9,
+    "%": 5.454545454545454
+   },
+   {
+    "COD site recode (ev = 2)": "Nephritis, Nephrotic Syndrome and Nephrosis",
+    "n": 7,
+    "%": 4.242424242424242
+   },
+   {
+    "COD site recode (ev = 2)": "Septicemia",
+    "n": 7,
+    "%": 4.242424242424242
+   },
+   {
+    "COD site recode (ev = 2)": "Chronic Obstructive Pulmonary Disease and Allied Cond",
+    "n": 6,
+    "%": 3.6363636363636362
+   },
+   {
+    "COD site recode (ev = 2)": "Cerebrovascular Diseases",
+    "n": 5,
+    "%": 3.0303030303030303
+   },
+   {
+    "COD site recode (ev = 2)": "Accidents and Adverse Effects",
+    "n": 5,
+    "%": 3.0303030303030303
+   }
+  ],
+  "all stages_cod_site_top10_ev1": [
+   {
+    "COD site recode (ev = 1)": "Colon excluding Rectum",
+    "n": 503,
+    "%": 48.411934552454284
+   },
+   {
+    "COD site recode (ev = 1)": "Rectum and Rectosigmoid Junction",
+    "n": 235,
+    "%": 22.617901828681426
+   },
+   {
+    "COD site recode (ev = 1)": "Miscellaneous Malignant Cancer",
+    "n": 216,
+    "%": 20.78922040423484
+   },
+   {
+    "COD site recode (ev = 1)": "In situ, benign or unknown behavior neoplasm",
+    "n": 22,
+    "%": 2.1174205967276225
+   },
+   {
+    "COD site recode (ev = 1)": "Lung and Bronchus",
+    "n": 16,
+    "%": 1.5399422521655437
+   },
+   {
+    "COD site recode (ev = 1)": "Anus, Anal Canal and Anorectum",
+    "n": 12,
+    "%": 1.1549566891241578
+   },
+   {
+    "COD site recode (ev = 1)": "Liver",
+    "n": 7,
+    "%": 0.6737247353224254
+   },
+   {
+    "COD site recode (ev = 1)": "Other Cause of Death",
+    "n": 6,
+    "%": 0.5774783445620789
+   },
+   {
+    "COD site recode (ev = 1)": "Other Digestive Organs",
+    "n": 4,
+    "%": 0.3849855630413859
+   },
+   {
+    "COD site recode (ev = 1)": "Stomach",
+    "n": 3,
+    "%": 0.28873917228103946
+   }
+  ],
+  "distant_othercod": [
+   {
+    "SEER other cause of death classification": "Alive or dead due to cancer",
+    "n": 827,
+    "%": 91.07929515418502
+   },
+   {
+    "SEER other cause of death classification": "Dead (attributable to causes other than this cancer dx)",
+    "n": 74,
+    "%": 8.14977973568282
+   },
+   {
+    "SEER other cause of death classification": "Dead (missing/unknown COD)",
+    "n": 7,
+    "%": 0.7709251101321586
+   }
+  ],
+  "distant_ev_by_vital": {
+   "cancer death": {
+    "Alive": 0,
+    "Dead": 756
+   },
+   "censored": {
+    "Alive": 71,
+    "Dead": 0
+   },
+   "other/unknown death": {
+    "Alive": 0,
+    "Dead": 81
+   }
+  },
+  "distant_cod_site_top10_ev2": [
+   {
+    "COD site recode (ev = 2)": "Other Cause of Death",
+    "n": 11,
+    "%": 13.580246913580247
+   },
+   {
+    "COD site recode (ev = 2)": "Diseases of Heart",
+    "n": 7,
+    "%": 8.641975308641975
+   },
+   {
+    "COD site recode (ev = 2)": "State DC not available or state DC available but no COD",
+    "n": 7,
+    "%": 8.641975308641975
+   },
+   {
+    "COD site recode (ev = 2)": "Lung and Bronchus",
+    "n": 7,
+    "%": 8.641975308641975
+   },
+   {
+    "COD site recode (ev = 2)": "Prostate",
+    "n": 6,
+    "%": 7.407407407407407
+   },
+   {
+    "COD site recode (ev = 2)": "Liver",
+    "n": 4,
+    "%": 4.938271604938271
+   },
+   {
+    "COD site recode (ev = 2)": "Nephritis, Nephrotic Syndrome and Nephrosis",
+    "n": 4,
+    "%": 4.938271604938271
+   },
+   {
+    "COD site recode (ev = 2)": "Miscellaneous Malignant Cancer",
+    "n": 4,
+    "%": 4.938271604938271
+   },
+   {
+    "COD site recode (ev = 2)": "Septicemia",
+    "n": 4,
+    "%": 4.938271604938271
+   },
+   {
+    "COD site recode (ev = 2)": "Accidents and Adverse Effects",
+    "n": 4,
+    "%": 4.938271604938271
+   }
+  ],
+  "distant_cod_site_top10_ev1": [
+   {
+    "COD site recode (ev = 1)": "Colon excluding Rectum",
+    "n": 367,
+    "%": 48.544973544973544
+   },
+   {
+    "COD site recode (ev = 1)": "Miscellaneous Malignant Cancer",
+    "n": 177,
+    "%": 23.41269841269841
+   },
+   {
+    "COD site recode (ev = 1)": "Rectum and Rectosigmoid Junction",
+    "n": 151,
+    "%": 19.973544973544975
+   },
+   {
+    "COD site recode (ev = 1)": "In situ, benign or unknown behavior neoplasm",
+    "n": 18,
+    "%": 2.380952380952381
+   },
+   {
+    "COD site recode (ev = 1)": "Lung and Bronchus",
+    "n": 15,
+    "%": 1.9841269841269842
+   },
+   {
+    "COD site recode (ev = 1)": "Liver",
+    "n": 7,
+    "%": 0.9259259259259259
+   },
+   {
+    "COD site recode (ev = 1)": "Other Digestive Organs",
+    "n": 4,
+    "%": 0.5291005291005291
+   },
+   {
+    "COD site recode (ev = 1)": "Anus, Anal Canal and Anorectum",
+    "n": 4,
+    "%": 0.5291005291005291
+   },
+   {
+    "COD site recode (ev = 1)": "Other Cause of Death",
+    "n": 3,
+    "%": 0.3968253968253968
+   },
+   {
+    "COD site recode (ev = 1)": "Pancreas",
+    "n": 2,
+    "%": 0.26455026455026454
+   }
+  ]
+ },
+ "sec7_distant_mets_treatment": {
+  "mets_2010plus": [
+   {
+    "site": "liver",
+    "Yes": 559,
+    "No": 132,
+    "Unknown": 2,
+    "Blank": 2,
+    "% Yes (of 2010+)": 80.43165467625899,
+    "% Yes (of known)": 80.8972503617945
+   },
+   {
+    "site": "lung",
+    "Yes": 118,
+    "No": 562,
+    "Unknown": 13,
+    "Blank": 2,
+    "% Yes (of 2010+)": 16.97841726618705,
+    "% Yes (of known)": 17.352941176470587
+   },
+   {
+    "site": "bone",
+    "Yes": 117,
+    "No": 564,
+    "Unknown": 12,
+    "Blank": 2,
+    "% Yes (of 2010+)": 16.834532374100718,
+    "% Yes (of known)": 17.180616740088105
+   },
+   {
+    "site": "brain",
+    "Yes": 22,
+    "No": 662,
+    "Unknown": 9,
+    "Blank": 2,
+    "% Yes (of 2010+)": 3.1654676258992804,
+    "% Yes (of known)": 3.216374269005848
+   }
+  ],
+  "mets_dln_2016plus": [
+   {
+    "mets_dln": "None; no lymph node metastases",
+    "n": 336,
+    "%": 70.44025157232704
+   },
+   {
+    "mets_dln": "Yes; distant lymph node metastases",
+    "n": 135,
+    "%": 28.30188679245283
+   },
+   {
+    "mets_dln": "Unknown",
+    "n": 6,
+    "%": 1.2578616352201257
+   }
+  ],
+  "mets_other_2016plus": [
+   {
+    "mets_other": "None; no other metastases",
+    "n": 355,
+    "%": 74.42348008385744
+   },
+   {
+    "mets_other": "Yes; distant mets in known site(s) other than bone, brain, liver, lung, dist LN",
+    "n": 110,
+    "%": 23.060796645702307
+   },
+   {
+    "mets_other": "generalized metastases such as carinomatosis",
+    "n": 6,
+    "%": 1.2578616352201257
+   },
+   {
+    "mets_other": "Unknown",
+    "n": 6,
+    "%": 1.2578616352201257
+   }
+  ],
+  "n_sites_2010plus_known4": [
+   {
+    "number of the 4 recorded sites involved (2010+, all 4 known)": "0",
+    "n": 79,
+    "%": 11.755952380952381
+   },
+   {
+    "number of the 4 recorded sites involved (2010+, all 4 known)": "1",
+    "n": 437,
+    "%": 65.0297619047619
+   },
+   {
+    "number of the 4 recorded sites involved (2010+, all 4 known)": "2",
+    "n": 115,
+    "%": 17.113095238095237
+   },
+   {
+    "number of the 4 recorded sites involved (2010+, all 4 known)": "3",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "number of the 4 recorded sites involved (2010+, all 4 known)": "4",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   }
+  ],
+  "liver_only_n": 389,
+  "surg_chemo_rad": [
+   {
+    "surgery": "no",
+    "chemo": "no/unk",
+    "no/unk": 170,
+    "yes": 11,
+    "All": 181
+   },
+   {
+    "surgery": "no",
+    "chemo": "yes",
+    "no/unk": 279,
+    "yes": 94,
+    "All": 373
+   },
+   {
+    "surgery": "yes",
+    "chemo": "no/unk",
+    "no/unk": 145,
+    "yes": 2,
+    "All": 147
+   },
+   {
+    "surgery": "yes",
+    "chemo": "yes",
+    "no/unk": 185,
+    "yes": 22,
+    "All": 207
+   },
+   {
+    "surgery": "All",
+    "chemo": "",
+    "no/unk": 779,
+    "yes": 129,
+    "All": 908
+   }
+  ],
+  "surg_chemo": {
+   "no": {
+    "no/unk": 181,
+    "yes": 373,
+    "All": 554
+   },
+   "yes": {
+    "no/unk": 147,
+    "yes": 207,
+    "All": 354
+   },
+   "All": {
+    "no/unk": 328,
+    "yes": 580,
+    "All": 908
+   }
+  },
+  "combo": [
+   {
+    "surgery/chemo/rad": "no/yes/no/unk",
+    "n": 279,
+    "%": 30.726872246696036
+   },
+   {
+    "surgery/chemo/rad": "yes/yes/no/unk",
+    "n": 185,
+    "%": 20.374449339207047
+   },
+   {
+    "surgery/chemo/rad": "no/no/unk/no/unk",
+    "n": 170,
+    "%": 18.722466960352424
+   },
+   {
+    "surgery/chemo/rad": "yes/no/unk/no/unk",
+    "n": 145,
+    "%": 15.969162995594713
+   },
+   {
+    "surgery/chemo/rad": "no/yes/yes",
+    "n": 94,
+    "%": 10.352422907488986
+   },
+   {
+    "surgery/chemo/rad": "yes/yes/yes",
+    "n": 22,
+    "%": 2.4229074889867843
+   },
+   {
+    "surgery/chemo/rad": "no/no/unk/yes",
+    "n": 11,
+    "%": 1.2114537444933922
+   },
+   {
+    "surgery/chemo/rad": "yes/no/unk/yes",
+    "n": 2,
+    "%": 0.22026431718061673
+   }
+  ],
+  "sys_surg_seq": [
+   {
+    "Systemic therapy / surgery sequence (distant)": "No systemic therapy and/or surgical procedures",
+    "n": 587,
+    "%": 64.64757709251101
+   },
+   {
+    "Systemic therapy / surgery sequence (distant)": "Blank(s)",
+    "n": 152,
+    "%": 16.740088105726873
+   },
+   {
+    "Systemic therapy / surgery sequence (distant)": "Systemic therapy after surgery",
+    "n": 146,
+    "%": 16.079295154185022
+   },
+   {
+    "Systemic therapy / surgery sequence (distant)": "Systemic therapy before surgery",
+    "n": 16,
+    "%": 1.7621145374449338
+   },
+   {
+    "Systemic therapy / surgery sequence (distant)": "Systemic therapy both before and after surgery",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "Systemic therapy / surgery sequence (distant)": "Sequence unknown",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "Systemic therapy / surgery sequence (distant)": "Surgery both before and after systemic therapy",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   }
+  ],
+  "sys_surg_seq_by_surgery": {
+   "Blank(s)": {
+    "no": 78,
+    "yes": 74
+   },
+   "No systemic therapy and/or surgical procedures": {
+    "no": 468,
+    "yes": 119
+   },
+   "Sequence unknown": {
+    "no": 0,
+    "yes": "suppressed (SEER small-cell rule)"
+   },
+   "Surgery both before and after systemic therapy": {
+    "no": 0,
+    "yes": "suppressed (SEER small-cell rule)"
+   },
+   "Systemic therapy after surgery": {
+    "no": 7,
+    "yes": 139
+   },
+   "Systemic therapy before surgery": {
+    "no": 1,
+    "yes": 15
+   },
+   "Systemic therapy both before and after surgery": {
+    "no": 0,
+    "yes": "suppressed (SEER small-cell rule)"
+   }
+  },
+  "no_surg_reason_surgno": [
+   {
+    "Reason no surgery (distant, surgery = no)": "Not recommended",
+    "n": 508,
+    "%": 91.69675090252707
+   },
+   {
+    "Reason no surgery (distant, surgery = no)": "Not recommended, contraindicated due to other cond; autopsy only (1973-2002)",
+    "n": 29,
+    "%": 5.234657039711191
+   },
+   {
+    "Reason no surgery (distant, surgery = no)": "Recommended but not performed, unknown reason",
+    "n": 9,
+    "%": 1.6245487364620939
+   },
+   {
+    "Reason no surgery (distant, surgery = no)": "Not performed, patient died prior to recommended surgery",
+    "n": 5,
+    "%": 0.9025270758122743
+   },
+   {
+    "Reason no surgery (distant, surgery = no)": "Recommended, unknown if performed",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   },
+   {
+    "Reason no surgery (distant, surgery = no)": "Recommended but not performed, patient refused",
+    "n": "suppressed (SEER small-cell rule)",
+    "%": "suppressed (SEER small-cell rule)"
+   }
+  ],
+  "no_surg_reason_by_surgery": {
+   "Not performed, patient died prior to recommended surgery": {
+    "no": 5,
+    "yes": 0
+   },
+   "Not recommended": {
+    "no": 508,
+    "yes": 0
+   },
+   "Not recommended, contraindicated due to other cond; autopsy only (1973-2002)": {
+    "no": 29,
+    "yes": 0
+   },
+   "Recommended but not performed, patient refused": {
+    "no": "suppressed (SEER small-cell rule)",
+    "yes": 0
+   },
+   "Recommended but not performed, unknown reason": {
+    "no": 9,
+    "yes": 0
+   },
+   "Recommended, unknown if performed": {
+    "no": "suppressed (SEER small-cell rule)",
+    "yes": 0
+   },
+   "Surgery performed": {
+    "no": 0,
+    "yes": 354
+   }
+  },
+  "s1_codes_surg_yes_top": [
+   {
+    "s1 surgery code (distant, surgery yes)": "40",
+    "n": 197,
+    "%": 55.64971751412429
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "30",
+    "n": 70,
+    "%": 19.774011299435028
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "Blank(s)",
+    "n": 26,
+    "%": 7.344632768361582
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "41",
+    "n": 19,
+    "%": 5.367231638418079
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "27",
+    "n": 10,
+    "%": 2.824858757062147
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "50",
+    "n": 8,
+    "%": 2.2598870056497176
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "32",
+    "n": 4,
+    "%": 1.1299435028248588
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "22",
+    "n": 3,
+    "%": 0.847457627118644
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "20",
+    "n": 3,
+    "%": 0.847457627118644
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "26",
+    "n": 3,
+    "%": 0.847457627118644
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "60",
+    "n": 2,
+    "%": 0.5649717514124294
+   },
+   {
+    "s1 surgery code (distant, surgery yes)": "90",
+    "n": 2,
+    "%": 0.5649717514124294
+   }
+  ]
+ },
+ "sec8_comparators": {
+  "cohort_summary_distant": [
+   {
+    "cohort": "NEC (main)",
+    "n all stages": 1417,
+    "n distant": 908,
+    "expected distant": 908,
+    "complete dates & >0 d (%)": 97.02643171806167,
+    "zero-day (%)": 0.11013215859030838,
+    "incomplete dates (%)": 2.8634361233480177,
+    "days/months discrepant": 0,
+    "unknown COD n": 7,
+    "dx 2021-2023 (%)": 24.779735682819386,
+    "first/only primary (%)": 77.75330396475772
+   },
+   {
+    "cohort": "SCLC",
+    "n all stages": 109315,
+    "n distant": 77707,
+    "expected distant": 77707,
+    "complete dates & >0 d (%)": 96.37999150655668,
+    "zero-day (%)": 0.1338360765439407,
+    "incomplete dates (%)": 3.486172416899378,
+    "days/months discrepant": 4,
+    "unknown COD n": 536,
+    "dx 2021-2023 (%)": 11.995058360250685,
+    "first/only primary (%)": 82.43015429755363
+   },
+   {
+    "cohort": "LCNEC_lung",
+    "n all stages": 6136,
+    "n distant": 3185,
+    "expected distant": 3185,
+    "complete dates & >0 d (%)": 98.02197802197801,
+    "zero-day (%)": 0.15698587127158556,
+    "incomplete dates (%)": 1.8210361067503924,
+    "days/months discrepant": 0,
+    "unknown COD n": 25,
+    "dx 2021-2023 (%)": 15.541601255886969,
+    "first/only primary (%)": 83.10832025117739
+   },
+   {
+    "cohort": "PANC_AC",
+    "n all stages": 136197,
+    "n distant": 75634,
+    "expected distant": 75634,
+    "complete dates & >0 d (%)": 97.13091995663325,
+    "zero-day (%)": 0.20361213210989765,
+    "incomplete dates (%)": 2.665467911256842,
+    "days/months discrepant": 1,
+    "unknown COD n": 771,
+    "dx 2021-2023 (%)": 18.53134833540471,
+    "first/only primary (%)": 82.03056826295052
+   },
+   {
+    "cohort": "CRC_AC",
+    "n all stages": 737816,
+    "n distant": 147014,
+    "expected distant": 147014,
+    "complete dates & >0 d (%)": 96.33436271375516,
+    "zero-day (%)": 0.08842695253513272,
+    "incomplete dates (%)": 3.577210333709715,
+    "days/months discrepant": 27,
+    "unknown COD n": 1544,
+    "dx 2021-2023 (%)": 14.530588923503885,
+    "first/only primary (%)": 87.01076087991619
+   }
+  ],
+  "flag_distant": {
+   "SCLC": [
+    {
+     "flag": "Complete dates are available and there are more than 0 days of survival",
+     "n": 74894,
+     "%": 96.37999150655668
+    },
+    {
+     "flag": "Incomplete dates are available and there cannot be zero days of follow-up",
+     "n": 2456,
+     "%": 3.160590422999215
+    },
+    {
+     "flag": "Incomplete dates are available and there could be zero days of follow-up",
+     "n": 253,
+     "%": 0.32558199390016346
+    },
+    {
+     "flag": "Complete dates are available and there are 0 days of survival",
+     "n": 104,
+     "%": 0.1338360765439407
+    }
+   ],
+   "LCNEC_lung": [
+    {
+     "flag": "Complete dates are available and there are more than 0 days of survival",
+     "n": 3122,
+     "%": 98.02197802197803
+    },
+    {
+     "flag": "Incomplete dates are available and there cannot be zero days of follow-up",
+     "n": 57,
+     "%": 1.7896389324960753
+    },
+    {
+     "flag": "Complete dates are available and there are 0 days of survival",
+     "n": 5,
+     "%": 0.15698587127158556
+    },
+    {
+     "flag": "Incomplete dates are available and there could be zero days of follow-up",
+     "n": 1,
+     "%": 0.03139717425431711
+    }
+   ],
+   "PANC_AC": [
+    {
+     "flag": "Complete dates are available and there are more than 0 days of survival",
+     "n": 73464,
+     "%": 97.13091995663326
+    },
+    {
+     "flag": "Incomplete dates are available and there cannot be zero days of follow-up",
+     "n": 1858,
+     "%": 2.456567152338895
+    },
+    {
+     "flag": "Incomplete dates are available and there could be zero days of follow-up",
+     "n": 158,
+     "%": 0.20890075891794696
+    },
+    {
+     "flag": "Complete dates are available and there are 0 days of survival",
+     "n": 154,
+     "%": 0.20361213210989768
+    }
+   ],
+   "CRC_AC": [
+    {
+     "flag": "Complete dates are available and there are more than 0 days of survival",
+     "n": 141625,
+     "%": 96.33436271375516
+    },
+    {
+     "flag": "Incomplete dates are available and there cannot be zero days of follow-up",
+     "n": 5033,
+     "%": 3.4234834777640226
+    },
+    {
+     "flag": "Incomplete dates are available and there could be zero days of follow-up",
+     "n": 226,
+     "%": 0.15372685594569224
+    },
+    {
+     "flag": "Complete dates are available and there are 0 days of survival",
+     "n": 130,
+     "%": 0.0884269525351327
+    }
+   ]
+  },
+  "diag_confirmation": [
+   {
+    "cohort": "NEC (main)",
+    "stages": "all / distant",
+    "n (histology + cytology)": 1417,
+    "positive histology": 1417,
+    "cytology only": 0,
+    "% cytology only": 0.0,
+    "other diag values": "(cohort restricted to positive histology)"
+   },
+   {
+    "cohort": "SCLC",
+    "stages": "all stages",
+    "n (histology + cytology)": 131959,
+    "positive histology": 109315,
+    "cytology only": 22644,
+    "% cytology only": 17.159875415848862,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   },
+   {
+    "cohort": "SCLC",
+    "stages": "distant",
+    "n (histology + cytology)": 93917,
+    "positive histology": 77707,
+    "cytology only": 16210,
+    "% cytology only": 17.25992099406923,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   },
+   {
+    "cohort": "LCNEC_lung",
+    "stages": "all stages",
+    "n (histology + cytology)": 6566,
+    "positive histology": 6136,
+    "cytology only": 430,
+    "% cytology only": 6.548888212001218,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   },
+   {
+    "cohort": "LCNEC_lung",
+    "stages": "distant",
+    "n (histology + cytology)": 3485,
+    "positive histology": 3185,
+    "cytology only": 300,
+    "% cytology only": 8.60832137733142,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   },
+   {
+    "cohort": "PANC_AC",
+    "stages": "all stages",
+    "n (histology + cytology)": 179834,
+    "positive histology": 136197,
+    "cytology only": 43637,
+    "% cytology only": 24.26515564353793,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   },
+   {
+    "cohort": "PANC_AC",
+    "stages": "distant",
+    "n (histology + cytology)": 96137,
+    "positive histology": 75634,
+    "cytology only": 20503,
+    "% cytology only": 21.326856465252714,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   },
+   {
+    "cohort": "CRC_AC",
+    "stages": "all stages",
+    "n (histology + cytology)": 739691,
+    "positive histology": 737809,
+    "cytology only": 1882,
+    "% cytology only": 0.25443056627699945,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   },
+   {
+    "cohort": "CRC_AC",
+    "stages": "distant",
+    "n (histology + cytology)": 148564,
+    "positive histology": 147012,
+    "cytology only": 1552,
+    "% cytology only": 1.0446676179962844,
+    "other diag values": "Positive exfoliative cytology, no positive histology"
+   }
+  ],
+  "pid_overlap": [
+   {
+    "cohort A": "NEC",
+    "cohort B": "SCLC",
+    "shared pids (distant/distant)": 1,
+    "shared pids (all stages/all stages)": 3
+   },
+   {
+    "cohort A": "NEC",
+    "cohort B": "LCNEC_lung",
+    "shared pids (distant/distant)": 0,
+    "shared pids (all stages/all stages)": 0
+   },
+   {
+    "cohort A": "NEC",
+    "cohort B": "PANC_AC",
+    "shared pids (distant/distant)": 0,
+    "shared pids (all stages/all stages)": 0
+   },
+   {
+    "cohort A": "NEC",
+    "cohort B": "CRC_AC",
+    "shared pids (distant/distant)": 3,
+    "shared pids (all stages/all stages)": 31
+   },
+   {
+    "cohort A": "SCLC",
+    "cohort B": "LCNEC_lung",
+    "shared pids (distant/distant)": 0,
+    "shared pids (all stages/all stages)": 0
+   },
+   {
+    "cohort A": "SCLC",
+    "cohort B": "PANC_AC",
+    "shared pids (distant/distant)": 7,
+    "shared pids (all stages/all stages)": 59
+   },
+   {
+    "cohort A": "SCLC",
+    "cohort B": "CRC_AC",
+    "shared pids (distant/distant)": 41,
+    "shared pids (all stages/all stages)": 1210
+   },
+   {
+    "cohort A": "LCNEC_lung",
+    "cohort B": "PANC_AC",
+    "shared pids (distant/distant)": 0,
+    "shared pids (all stages/all stages)": 4
+   },
+   {
+    "cohort A": "LCNEC_lung",
+    "cohort B": "CRC_AC",
+    "shared pids (distant/distant)": 3,
+    "shared pids (all stages/all stages)": 109
+   },
+   {
+    "cohort A": "PANC_AC",
+    "cohort B": "CRC_AC",
+    "shared pids (distant/distant)": 65,
+    "shared pids (all stages/all stages)": 1895
+   }
+  ],
+  "pid_overlap_manuscript_check": {
+   "manuscript": {
+    "CRC_AC": 3,
+    "SCLC": 1,
+    "PANC_AC": 0
+   },
+   "mine": {
+    "CRC_AC": 3,
+    "SCLC": 1,
+    "PANC_AC": 0
+   },
+   "agree": true
+  },
+  "shared_NEC_CRC_AC_seq": {
+   "2nd of 2 or more primaries": "suppressed (SEER small-cell rule)",
+   "1st of 2 or more primaries": "suppressed (SEER small-cell rule)"
+  },
+  "shared_NEC_SCLC_seq": {
+   "1st of 2 or more primaries": "suppressed (SEER small-cell rule)"
+  },
+  "pid_unique_within_cohort": {
+   "SCLC": true,
+   "LCNEC_lung": true,
+   "PANC_AC": true,
+   "CRC_AC": true,
+   "NEC": true
+  }
+ },
+ "runtime_minutes": 0.15,
+ "_suppression": {
+  "marker": "suppressed (SEER small-cell rule)",
+  "note": "Cells based on 1-4 patients are suppressed in accordance with the SEER Research Data Use Agreement (item 14: statistics about geography or demographic information based on counts 1 to 4).",
+  "tool": "tools/suppress_small_cells.py",
+  "fields": [
+   {
+    "path": "sec8_comparators/shared_NEC_CRC_AC_seq/2nd of 2 or more primaries",
+    "reason": "characteristic of 1-4 individual patients (shared between two cohorts)"
+   },
+   {
+    "path": "sec8_comparators/shared_NEC_CRC_AC_seq/1st of 2 or more primaries",
+    "reason": "characteristic of 1-4 individual patients (shared between two cohorts)"
+   },
+   {
+    "path": "sec8_comparators/shared_NEC_SCLC_seq/1st of 2 or more primaries",
+    "reason": "characteristic of 1-4 individual patients (shared between two cohorts)"
+   },
+   {
+    "path": "sec1_survival_fields/consistency_all/sdays_min",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec1_survival_fields/consistency_all/sdays_max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec1_survival_fields/consistency_distant/sdays_min",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec1_survival_fields/consistency_distant/sdays_max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[0]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[1]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[2]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[3]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[4]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[5]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[6]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[7]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[8]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[9]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec4_treatment_timing/groups[10]/max",
+    "reason": "information on an individual patient (withheld in the Supplement)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_ntum[4] (05)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_ntum[4] (05)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_ntum[5] (07)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_ntum[5] (07)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_seq[4] (4th of 4 or more primaries)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_seq[4] (4th of 4 or more primaries)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_seq[5] (5th of 5 or more primaries)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/all stages_seq[5] (5th of 5 or more primaries)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/n_sites_2010plus_known4[3] (3)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/n_sites_2010plus_known4[3] (3)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/n_sites_2010plus_known4[4] (4)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/n_sites_2010plus_known4[4] (4)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/no_surg_reason_surgno[4] (Recommended, unknown if performed)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/no_surg_reason_surgno[4] (Recommended, unknown if performed)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/no_surg_reason_surgno[5] (Recommended but not performed, patient refused)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/no_surg_reason_surgno[5] (Recommended but not performed, patient refused)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq[4] (Systemic therapy both before and after surgery)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq[4] (Systemic therapy both before and after surgery)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq[5] (Sequence unknown)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq[5] (Sequence unknown)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq[6] (Surgery both before and after systemic therapy)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq[6] (Surgery both before and after systemic therapy)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec4_treatment_timing/bins_distant_chemo[6] (91-180)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec4_treatment_timing/bins_distant_chemo[6] (91-180)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec4_treatment_timing/bins_distant_chemo[7] (>180)/n",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec4_treatment_timing/bins_distant_chemo[7] (>180)/%",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq_by_surgery/Systemic therapy both before and after surgery/yes",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq_by_surgery/Sequence unknown/yes",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/sys_surg_seq_by_surgery/Surgery both before and after systemic therapy/yes",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/no_surg_reason_by_surgery/Recommended, unknown if performed/no",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec7_distant_mets_treatment/no_surg_reason_by_surgery/Recommended but not performed, patient refused/no",
+    "reason": "category pooled in the Supplement (single patients; components suppressed so none can be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/3rd of 3 or more primaries/Unknown",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/4th of 4 or more primaries/Regional",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/4th of 4 or more primaries/Unknown",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/5th of 5 or more primaries/Regional",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/2nd of 2 or more primaries/Localized",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/2nd of 2 or more primaries/Regional",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/2nd of 2 or more primaries/Unknown",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/3rd of 3 or more primaries/Localized",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/3rd of 3 or more primaries/Regional",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/4th of 4 or more primaries/Localized",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/5th of 5 or more primaries/Localized",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   },
+   {
+    "path": "sec5_multiple_primaries/seq_by_stage/5th of 5 or more primaries/Unknown",
+    "reason": "sequence x stage cell outside the distant column (later-primary rows; not shown in the Supplement; suppressed together so that single-patient cells cannot be recovered)"
+   }
+  ]
+ }
+}

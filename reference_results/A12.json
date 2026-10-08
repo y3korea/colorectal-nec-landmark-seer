@@ -1,0 +1,795 @@
+{
+ "id": "A12",
+ "date": "2026-10-08",
+ "software": {
+  "R": "R version 4.5.3 (2026-03-11)",
+  "survival": "3.8.6",
+  "sandwich": "3.1.1"
+ },
+ "methods": {
+  "model": "piecewise-exponential Poisson GLM, offset log(person-months), intervals 0-3/3-6/6-9/9-12/12-15/15-18/18-24 months (and 0-6/6-15/15-24), follow-up truncated at 24 months; outcome cancer-specific death; cluster-robust (vcovCL by patient) SE",
+  "covariates": {
+   "lung": "age10 + age10sq + male + year10",
+   "colorectal_subtype": "age10 + age10sq + male + year10 + rectum",
+   "colorectal_main": "age10 + age10sq + male + year10 + large + rectum",
+   "pooled_shape": "age10 + age10sq + male + year10 + factor(per) + factor(per):tumour"
+  },
+  "LCNEC_definition": "lung/bronchus, histology 8013, SEER combined summary stage Distant, histologically confirmed (cohort_LUNG)"
+ },
+ "n": {
+  "NEC": 908,
+  "SCLC": 77707,
+  "LCNEC": 3185,
+  "CRC_small": 599,
+  "CRC_large": 309
+ },
+ "reproduction": {
+  "all_ok": true,
+  "table": [
+   {
+    "quantity": "NEC distant n",
+    "source": "A06",
+    "target": 908,
+    "ours": 908,
+    "tol": 0,
+    "ok": true
+   },
+   {
+    "quantity": "NEC adj RR 6-9 vs 3-6",
+    "source": "A06",
+    "target": 1.49,
+    "ours": 1.49047465481717,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  lower 95% CI",
+    "source": "A06",
+    "target": 1.17,
+    "ours": 1.16815510744156,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  upper 95% CI",
+    "source": "A06",
+    "target": 1.9,
+    "ours": 1.90172921600951,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "NEC vs SCLC shape W (6 df)",
+    "source": "A06",
+    "target": 12.05,
+    "ours": 12.0523342205709,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "NEC vs SCLC shape P",
+    "source": "A06",
+    "target": 0.061,
+    "ours": 0.0608114241518779,
+    "tol": 0.00051,
+    "ok": true
+   },
+   {
+    "quantity": "CRC small-cell n",
+    "source": "A04",
+    "target": 599,
+    "ours": 599,
+    "tol": 0,
+    "ok": true
+   },
+   {
+    "quantity": "CRC small-cell RR 6-9 vs 3-6",
+    "source": "A04",
+    "target": 1.75,
+    "ours": 1.75154367963829,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  lower",
+    "source": "A04",
+    "target": 1.29,
+    "ours": 1.28808459075871,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  upper",
+    "source": "A04",
+    "target": 2.38,
+    "ours": 2.38175759860135,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "CRC large-cell n",
+    "source": "A04",
+    "target": 309,
+    "ours": 309,
+    "tol": 0,
+    "ok": true
+   },
+   {
+    "quantity": "CRC large-cell RR 6-9 vs 3-6",
+    "source": "A04",
+    "target": 1.18,
+    "ours": 1.18389315855646,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  lower",
+    "source": "A04",
+    "target": 0.79,
+    "ours": 0.787849467879005,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  upper",
+    "source": "A04",
+    "target": 1.78,
+    "ours": 1.77902387197151,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "SCLC distant n",
+    "source": "A06",
+    "target": 77707,
+    "ours": 77707,
+    "tol": 0,
+    "ok": true
+   },
+   {
+    "quantity": "SCLC RR 6-9 vs 3-6",
+    "source": "A06",
+    "target": 1.38,
+    "ours": 1.37936241514358,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  lower",
+    "source": "A06",
+    "target": 1.34,
+    "ours": 1.34125407622585,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "  upper",
+    "source": "A06",
+    "target": 1.42,
+    "ours": 1.41855350603263,
+    "tol": 0.0051,
+    "ok": true
+   },
+   {
+    "quantity": "LCNEC distant n",
+    "source": "task spec",
+    "target": 3185,
+    "ours": 3185,
+    "tol": 0,
+    "ok": true
+   }
+  ]
+ },
+ "lcnec": {
+  "n": 3185,
+  "cancer_deaths_24m": 2481,
+  "crude_rates": [
+   {
+    "interval": "0-3",
+    "deaths": 982,
+    "person_months": 7672.2,
+    "rate": 0.127995036864874
+   },
+   {
+    "interval": "3-6",
+    "deaths": 489,
+    "person_months": 5300.1,
+    "rate": 0.0922616487871779
+   },
+   {
+    "interval": "6-9",
+    "deaths": 340,
+    "person_months": 3866.3,
+    "rate": 0.0879390513013206
+   },
+   {
+    "interval": "9-12",
+    "deaths": 270,
+    "person_months": 2824.8,
+    "rate": 0.095582724598322
+   },
+   {
+    "interval": "12-15",
+    "deaths": 148,
+    "person_months": 2126.3,
+    "rate": 0.0696060972453461
+   },
+   {
+    "interval": "15-18",
+    "deaths": 130,
+    "person_months": 1641.7,
+    "rate": 0.0791883785332076
+   },
+   {
+    "interval": "18-24",
+    "deaths": 122,
+    "person_months": 2399.5,
+    "rate": 0.0508445567211106
+   }
+  ],
+  "rr_6_9_vs_3_6": {
+   "RR": 0.966587854006585,
+   "lo": 0.84180875332157,
+   "hi": 1.10986263308212,
+   "p": 0.629882394263414,
+   "logRR": -0.0339830853374754,
+   "se": 0.0705200709303528
+  },
+  "rr_6_15_vs_0_6": {
+   "RR": 0.789867723166824,
+   "lo": 0.72227808732805,
+   "hi": 0.863782289739297,
+   "p": 2.36058713590974e-07,
+   "logRR": -0.235889786569886,
+   "se": 0.0456404414138967
+  },
+  "rr_15_24_vs_6_15": {
+   "RR": 0.749100719756078,
+   "lo": 0.646724910316582,
+   "hi": 0.86768250207709,
+   "p": 0.00011667706436837,
+   "logRR": -0.288881832200998,
+   "se": 0.0749757244631833
+  },
+  "rr_each_interval_vs_0_3": [
+   {
+    "interval": "3-6",
+    "RR_vs_0_3": 0.742670980810677,
+    "lo_vs_0_3": 0.666592839868064,
+    "hi_vs_0_3": 0.827431908580747
+   },
+   {
+    "interval": "6-9",
+    "RR_vs_0_3": 0.717856749574758,
+    "lo_vs_0_3": 0.634353789924424,
+    "hi_vs_0_3": 0.812351594796069
+   },
+   {
+    "interval": "9-12",
+    "RR_vs_0_3": 0.7870285551169,
+    "lo_vs_0_3": 0.687072962722278,
+    "hi_vs_0_3": 0.901525718775473
+   },
+   {
+    "interval": "12-15",
+    "RR_vs_0_3": 0.580636625562568,
+    "lo_vs_0_3": 0.48792823064231,
+    "hi_vs_0_3": 0.690960001434791
+   },
+   {
+    "interval": "15-18",
+    "RR_vs_0_3": 0.669100499507016,
+    "lo_vs_0_3": 0.556324096003959,
+    "hi_vs_0_3": 0.804738607686251
+   },
+   {
+    "interval": "18-24",
+    "RR_vs_0_3": 0.433117489079639,
+    "lo_vs_0_3": 0.358769411513243,
+    "hi_vs_0_3": 0.522872779358245
+   }
+  ],
+  "period_2016_2023": {
+   "n": 1330,
+   "rr_6_9_vs_3_6": {
+    "RR": 0.921480981342066,
+    "lo": 0.734027742444949,
+    "hi": 1.15680532202612,
+    "p": 0.480992325019649,
+    "logRR": -0.0817731408892945,
+    "se": 0.116038425482685
+   },
+   "rr_6_15_vs_0_6": {
+    "RR": 0.661257514255377,
+    "lo": 0.568121965073332,
+    "hi": 0.769661317535504,
+    "p": 9.2849327501833e-08,
+    "logRR": -0.413611932160958,
+    "se": 0.0774526652596121
+   },
+   "rr_15_24_vs_6_15": {
+    "RR": 0.671513682687938,
+    "lo": 0.520443716171152,
+    "hi": 0.866434951611221,
+    "p": 0.0021941960661221,
+    "logRR": -0.398220886922734,
+    "se": 0.130026859188034
+   }
+  }
+ },
+ "comparators_same_code_path": {
+  "NEC": {
+   "n": 908,
+   "crude_rates": [
+    {
+     "interval": "0-3",
+     "deaths": 304,
+     "person_months": 2118.3,
+     "rate": 0.143512293949719
+    },
+    {
+     "interval": "3-6",
+     "deaths": 129,
+     "person_months": 1419.4,
+     "rate": 0.0908819993663735
+    },
+    {
+     "interval": "6-9",
+     "deaths": 128,
+     "person_months": 952.4,
+     "rate": 0.134396384820039
+    },
+    {
+     "interval": "9-12",
+     "deaths": 73,
+     "person_months": 606.1,
+     "rate": 0.120437560555861
+    },
+    {
+     "interval": "12-15",
+     "deaths": 51,
+     "person_months": 414.2,
+     "rate": 0.123143208456458
+    },
+    {
+     "interval": "15-18",
+     "deaths": 24,
+     "person_months": 285.6,
+     "rate": 0.0840355468637658
+    },
+    {
+     "interval": "18-24",
+     "deaths": 23,
+     "person_months": 356,
+     "rate": 0.0646097228951801
+    }
+   ],
+   "rr_6_9_vs_3_6": {
+    "RR": 1.49047465481717,
+    "lo": 1.16815510744156,
+    "hi": 1.90172921600951,
+    "p": 0.00132643801930552,
+    "logRR": 0.399094629507794,
+    "se": 0.124320896148709
+   },
+   "rr_6_15_vs_0_6": {
+    "RR": 1.07534491681379,
+    "lo": 0.916328291869103,
+    "hi": 1.26195676852728,
+    "p": 0.373608015047383,
+    "logRR": 0.0726414629673942,
+    "se": 0.0816439001261924
+   },
+   "rr_15_24_vs_6_15": {
+    "RR": 0.569791841724609,
+    "lo": 0.411892759394584,
+    "hi": 0.788221534588575,
+    "p": 0.000680407667006812,
+    "logRR": -0.562484174808459,
+    "se": 0.165565347672335
+   }
+  },
+  "SCLC": {
+   "n": 77707,
+   "crude_rates": [
+    {
+     "interval": "0-3",
+     "deaths": 26292,
+     "person_months": 178479.2,
+     "rate": 0.147311250113468
+    },
+    {
+     "interval": "3-6",
+     "deaths": 9607,
+     "person_months": 127201.8,
+     "rate": 0.0755256737238407
+    },
+    {
+     "interval": "6-9",
+     "deaths": 9776,
+     "person_months": 95121.3,
+     "rate": 0.102774057129358
+    },
+    {
+     "interval": "9-12",
+     "deaths": 7847,
+     "person_months": 65447.5,
+     "rate": 0.119897614703586
+    },
+    {
+     "interval": "12-15",
+     "deaths": 4881,
+     "person_months": 44746.1,
+     "rate": 0.109082165836124
+    },
+    {
+     "interval": "15-18",
+     "deaths": 2880,
+     "person_months": 32116.6,
+     "rate": 0.0896731739646534
+    },
+    {
+     "interval": "18-24",
+     "deaths": 3090,
+     "person_months": 43257.4,
+     "rate": 0.0714327826074323
+    }
+   ],
+   "rr_6_9_vs_3_6": {
+    "RR": 1.37936241514358,
+    "lo": 1.34125407622585,
+    "hi": 1.41855350603263,
+    "p": 4.11508106811121e-112,
+    "logRR": 0.321621374394011,
+    "se": 0.014294040975139
+   },
+   "rr_6_15_vs_0_6": {
+    "RR": 0.972043978541133,
+    "lo": 0.955619251650955,
+    "hi": 0.988751005785716,
+    "p": 0.00110974088038122,
+    "logRR": -0.0283542301325523,
+    "se": 0.00869463645985188
+   },
+   "rr_15_24_vs_6_15": {
+    "RR": 0.737551395752248,
+    "lo": 0.716265782820131,
+    "hi": 0.75946956342698,
+    "p": 2.80448026912761e-92,
+    "logRR": -0.304419504040748,
+    "se": 0.0149410570429828
+   }
+  },
+  "CRC_small": {
+   "n": 599,
+   "crude_rates": [
+    {
+     "interval": "0-3",
+     "deaths": 204,
+     "person_months": 1377.3,
+     "rate": 0.14811192626904
+    },
+    {
+     "interval": "3-6",
+     "deaths": 73,
+     "person_months": 953.5,
+     "rate": 0.0765579810796202
+    },
+    {
+     "interval": "6-9",
+     "deaths": 86,
+     "person_months": 655.7,
+     "rate": 0.131149286353986
+    },
+    {
+     "interval": "9-12",
+     "deaths": 56,
+     "person_months": 409.2,
+     "rate": 0.13684442927965
+    },
+    {
+     "interval": "12-15",
+     "deaths": 37,
+     "person_months": 266.9,
+     "rate": 0.13864288627113
+    },
+    {
+     "interval": "15-18",
+     "deaths": 14,
+     "person_months": 177,
+     "rate": 0.0791107294942158
+    },
+    {
+     "interval": "18-24",
+     "deaths": 15,
+     "person_months": 218.4,
+     "rate": 0.068680543803238
+    }
+   ],
+   "rr_6_9_vs_3_6": {
+    "RR": 1.75154367963829,
+    "lo": 1.28808459075871,
+    "hi": 2.38175759860135,
+    "p": 0.000350967705016075,
+    "logRR": 0.560497501761972,
+    "se": 0.156806734786475
+   },
+   "rr_6_15_vs_0_6": {
+    "RR": 1.21480891210212,
+    "lo": 1.00246388959222,
+    "hi": 1.47213351846822,
+    "p": 0.0471328123333331,
+    "logRR": 0.194586790433634,
+    "se": 0.0980234343064729
+   },
+   "rr_15_24_vs_6_15": {
+    "RR": 0.564675913641587,
+    "lo": 0.377390925551771,
+    "hi": 0.844903429993097,
+    "p": 0.00544050838141906,
+    "logRR": -0.571503316583689,
+    "se": 0.205597129793863
+   }
+  },
+  "CRC_large": {
+   "n": 309,
+   "crude_rates": [
+    {
+     "interval": "0-3",
+     "deaths": 100,
+     "person_months": 740.9,
+     "rate": 0.134962116383348
+    },
+    {
+     "interval": "3-6",
+     "deaths": 56,
+     "person_months": 465.9,
+     "rate": 0.120198155950849
+    },
+    {
+     "interval": "6-9",
+     "deaths": 42,
+     "person_months": 296.7,
+     "rate": 0.141573686979152
+    },
+    {
+     "interval": "9-12",
+     "deaths": 17,
+     "person_months": 196.9,
+     "rate": 0.0863385128793408
+    },
+    {
+     "interval": "12-15",
+     "deaths": 14,
+     "person_months": 147.3,
+     "rate": 0.095057511327989
+    },
+    {
+     "interval": "15-18",
+     "deaths": 10,
+     "person_months": 108.6,
+     "rate": 0.0920587512523392
+    },
+    {
+     "interval": "18-24",
+     "deaths": 8,
+     "person_months": 137.6,
+     "rate": 0.0581475179845378
+    }
+   ],
+   "rr_6_9_vs_3_6": {
+    "RR": 1.18389315855646,
+    "lo": 0.787849467879005,
+    "hi": 1.77902387197151,
+    "p": 0.416549398826798,
+    "logRR": 0.168808294684457,
+    "se": 0.207783945238666
+   },
+   "rr_6_15_vs_0_6": {
+    "RR": 0.887261475709459,
+    "lo": 0.661517478854648,
+    "hi": 1.19004100638602,
+    "p": 0.424572026974729,
+    "logRR": -0.119615553518934,
+    "se": 0.149797611834992
+   },
+   "rr_15_24_vs_6_15": {
+    "RR": 0.639483267360071,
+    "lo": 0.372197758866186,
+    "hi": 1.09871389467591,
+    "p": 0.105428908424322,
+    "logRR": -0.447094823496999,
+    "se": 0.27614037378118
+   }
+  }
+ },
+ "shape_tests": {
+  "NEC_vs_SCLC_all_years": {
+   "W": 12.0523342205709,
+   "df": 6,
+   "p": 0.0608114241518779,
+   "W7": 17.207275678468,
+   "p7": 0.0161074247925467,
+   "ratio_r69_36_NEC_over_cmp": {
+    "RR": 1.07469044159935,
+    "lo": 0.840785998194276,
+    "hi": 1.37366648320198,
+    "p": 0.565154038211084,
+    "logRR": 0.0720326588078746,
+    "se": 0.125229985368526
+   },
+   "n_nec": 908,
+   "n_cmp": 77707
+  },
+  "NEC_vs_LCNEC_all_years": {
+   "W": 15.3525950435473,
+   "df": 6,
+   "p": 0.0176846486618738,
+   "W7": 35.8216096643895,
+   "p7": 7.83330436992719e-06,
+   "ratio_r69_36_NEC_over_cmp": {
+    "RR": 1.53614737854735,
+    "lo": 1.16071284377088,
+    "hi": 2.03301684932824,
+    "p": 0.00267917293530504,
+    "logRR": 0.429277579697712,
+    "se": 0.142981246340662
+   },
+   "n_nec": 908,
+   "n_cmp": 3185
+  },
+  "NEC_vs_LCNEC_year_factor": {
+   "W": 15.0994794654359,
+   "df": 6,
+   "p": 0.0194969408755312,
+   "W7": 35.4418382094978,
+   "p7": 9.23637526974917e-06,
+   "ratio_r69_36_NEC_over_cmp": {
+    "RR": 1.53492436888338,
+    "lo": 1.1599163464629,
+    "hi": 2.03117476995346,
+    "p": 0.00271809959217063,
+    "logRR": 0.428481108739554,
+    "se": 0.142925112928517
+   },
+   "n_nec": 908,
+   "n_cmp": 3185
+  },
+  "NEC_vs_LCNEC_2016_2023": {
+   "W": 19.7738348542211,
+   "df": 6,
+   "p": 0.00303805036913496,
+   "W7": 31.4064914933513,
+   "p7": 5.23067751524317e-05,
+   "ratio_r69_36_NEC_over_cmp": {
+    "RR": 1.97256909351758,
+    "lo": 1.32158053895808,
+    "hi": 2.9442237638944,
+    "p": 0.000885693463654989,
+    "logRR": 0.67933680152369,
+    "se": 0.204341022047031
+   },
+   "n_nec": 477,
+   "n_cmp": 1330
+  },
+  "LCNEC_vs_SCLC_all_years_note": "dis = LCNEC; ratio is LCNEC/SCLC",
+  "LCNEC_vs_SCLC_all_years": {
+   "W": 72.4874025855666,
+   "df": 6,
+   "p": 1.26167989542465e-13,
+   "W7": 90.6643697494845,
+   "p7": 9.03638780603317e-17,
+   "ratio_r69_36_NEC_over_cmp": {
+    "RR": 0.700224859387765,
+    "lo": 0.608160385501528,
+    "hi": 0.806226228135971,
+    "p": 7.23768705369149e-07,
+    "logRR": -0.356353767824496,
+    "se": 0.0719198326709944
+   },
+   "n_nec": 3185,
+   "n_cmp": 77707
+  }
+ },
+ "morphology_by_organ": {
+  "rr_6_9_vs_3_6": {
+   "CRC_small": {
+    "RR": 1.75154367963829,
+    "lo": 1.28808459075871,
+    "hi": 2.38175759860135,
+    "p": 0.000350967705016075,
+    "logRR": 0.560497501761972,
+    "se": 0.156806734786475
+   },
+   "CRC_large": {
+    "RR": 1.18389315855646,
+    "lo": 0.787849467879005,
+    "hi": 1.77902387197151,
+    "p": 0.416549398826798,
+    "logRR": 0.168808294684457,
+    "se": 0.207783945238666
+   },
+   "lung_small": {
+    "RR": 1.37936241514358,
+    "lo": 1.34125407622585,
+    "hi": 1.41855350603263,
+    "p": 4.11508106811121e-112,
+    "logRR": 0.321621374394011,
+    "se": 0.014294040975139
+   },
+   "lung_large": {
+    "RR": 0.966587854006585,
+    "lo": 0.84180875332157,
+    "hi": 1.10986263308212,
+    "p": 0.629882394263414,
+    "logRR": -0.0339830853374754,
+    "se": 0.0705200709303528
+   }
+  },
+  "n": {
+   "CRC_small": 599,
+   "CRC_large": 309,
+   "lung_small": 77707,
+   "lung_large": 3185
+  },
+  "ratios": {
+   "small_over_large_colorectal": {
+    "RR": 1.47947782870371,
+    "lo": 0.888231385683318,
+    "hi": 2.46428428549838,
+    "p": 0.132403977083033,
+    "logRR": 0.391689207077515,
+    "se": 0.260312350789088
+   },
+   "small_over_large_lung": {
+    "RR": 1.42704298365225,
+    "lo": 1.23933422675558,
+    "hi": 1.64318198693043,
+    "p": 7.72864120858511e-07,
+    "logRR": 0.355604459731486,
+    "se": 0.0719541521485796
+   },
+   "colorectal_over_lung_small": {
+    "RR": 1.26982123074302,
+    "lo": 0.932636857876648,
+    "hi": 1.72891082357265,
+    "p": 0.129244192487162,
+    "logRR": 0.238876127367961,
+    "se": 0.157456888327551
+   },
+   "colorectal_over_lung_large": {
+    "RR": 1.22481692031317,
+    "lo": 0.796696677995858,
+    "hi": 1.88299578712846,
+    "p": 0.355384642988308,
+    "logRR": 0.202791380021933,
+    "se": 0.219424812414109
+   },
+   "morphology_x_organ_interaction": {
+    "RR": 1.03674370404545,
+    "lo": 0.61063240607266,
+    "hi": 1.76020384307935,
+    "p": 0.89371047419671,
+    "logRR": 0.0360847473460284,
+    "se": 0.270073915780036
+   }
+  },
+  "note": "Ratios of independent log RRs (disjoint cohorts), SE = sqrt(se1^2 + se2^2); colorectal models adjust for rectum, lung models do not"
+ },
+ "interpretation": {
+  "synthesis": "7. Synthesis: the 6-9-month rebound was not observed in lung LCNEC (RR 0.97 (0.84-1.11)). Across the 2 x 2 layout the point estimates are consistent with the rebound being associated with small-cell morphology, but the evidence rests mainly on the lung small- vs large-cell contrast (1.43 (1.24-1.64)). The colorectal subtype contrast is imprecise (1.48 (0.89-2.46)), and an organ effect comparable to the morphology effect is not excluded (colorectal/lung 1.27 (0.93-1.73) for small-cell; 1.22 (0.80-1.88) for large-cell). The interaction estimate (1.04 (0.61-1.76)) is too imprecise to show that the morphology effect is the same in both organs.",
+  "exploratory_note": "LCNEC comparisons added at revision; exploratory; not adjusted for multiplicity; 2016-2023 NEC-vs-LCNEC test is one of three unadjusted versions.",
+  "table1b_footnote": "Colorectal NEC row additionally adjusted for large-cell morphology and rectal site (as A06); lung rows adjusted for age, age^2, sex and year only."
+ },
+ "revision_after_audit": {
+  "date": "2026-10-08",
+  "changes": [
+   "Synthesis (item 7) reworded to hedged form; removed 'similar size in both organs' and 'rather than organ of origin'",
+   "Exploratory / no-multiplicity-adjustment label added to section 2 and item 3",
+   "Footnote on covariate sets added to table 1b",
+   "Downstream note: update manuscript Figure 3D legend, Table 3 and Discussion on integration"
+  ],
+  "numbers_changed": false
+ },
+ "runtime_sec": 16.5463349819183
+}

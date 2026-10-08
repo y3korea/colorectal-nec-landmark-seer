@@ -1,0 +1,6740 @@
+{
+ "id": "A02",
+ "date": "2026-10-07",
+ "seed": 20261007,
+ "B": {
+  "NEC": 2000,
+  "SCLC": 500,
+  "AC": 500,
+  "PANC": 500
+ },
+ "windows_months": [
+  3,
+  6,
+  9,
+  12,
+  18,
+  24
+ ],
+ "landmarks": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18
+ ],
+ "sparse_threshold_at_risk": 100,
+ "n": {
+  "NEC": 908,
+  "SCLC": 77707,
+  "PANC": 75634,
+  "AC": 147014
+ },
+ "reproduction_check": [
+  {
+   "tumour": "NEC",
+   "quantity": "12-mo cancer-death prob, landmark 0",
+   "mine": 72.29,
+   "manuscript": 72.29,
+   "n_at_risk_mine": 908,
+   "n_at_risk_manuscript": 908,
+   "agree": true
+  },
+  {
+   "tumour": "NEC",
+   "quantity": "12-mo cancer-death prob, landmark 3",
+   "mine": 71.62,
+   "manuscript": 71.62,
+   "n_at_risk_mine": 553,
+   "n_at_risk_manuscript": 553,
+   "agree": true
+  },
+  {
+   "tumour": "NEC",
+   "quantity": "12-mo cancer-death prob, landmark 6",
+   "mine": 72.33,
+   "manuscript": 72.33,
+   "n_at_risk_mine": 396,
+   "n_at_risk_manuscript": 396,
+   "agree": true
+  },
+  {
+   "tumour": "NEC",
+   "quantity": "12-mo cancer-death prob, landmark 12",
+   "mine": 60.03,
+   "manuscript": 60.03,
+   "n_at_risk_mine": 169,
+   "n_at_risk_manuscript": 169,
+   "agree": true
+  },
+  {
+   "tumour": "NEC",
+   "quantity": "12-mo cancer-death prob, landmark 24",
+   "mine": 30.51,
+   "manuscript": 30.51,
+   "n_at_risk_mine": 48,
+   "n_at_risk_manuscript": 48,
+   "agree": true
+  },
+  {
+   "tumour": "NEC",
+   "quantity": "broken-stick plateau end (12-mo window, LM 0-18)",
+   "mine": 6.75,
+   "manuscript": 6.75,
+   "n_at_risk_mine": null,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "SCLC",
+   "quantity": "12-mo cancer-death prob, landmark 0",
+   "mine": 69.98,
+   "manuscript": 69.98,
+   "n_at_risk_mine": 77707,
+   "n_at_risk_manuscript": 77707,
+   "agree": true
+  },
+  {
+   "tumour": "SCLC",
+   "quantity": "12-mo cancer-death prob, landmark 6",
+   "mine": 69.49,
+   "manuscript": 69.49,
+   "n_at_risk_mine": 37152,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "SCLC",
+   "quantity": "12-mo cancer-death prob, landmark 12",
+   "mine": 61.93,
+   "manuscript": 61.93,
+   "n_at_risk_mine": 17826,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "SCLC",
+   "quantity": "broken-stick plateau end (12-mo window, LM 0-18)",
+   "mine": 8.5,
+   "manuscript": 8.5,
+   "n_at_risk_mine": null,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "AC",
+   "quantity": "12-mo cancer-death prob, landmark 0",
+   "mine": 40.59,
+   "manuscript": 40.59,
+   "n_at_risk_mine": 147014,
+   "n_at_risk_manuscript": 147014,
+   "agree": true
+  },
+  {
+   "tumour": "AC",
+   "quantity": "12-mo cancer-death prob, landmark 6",
+   "mine": 33.92,
+   "manuscript": 33.92,
+   "n_at_risk_mine": 98550,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "AC",
+   "quantity": "12-mo cancer-death prob, landmark 12",
+   "mine": 34.41,
+   "manuscript": 34.41,
+   "n_at_risk_mine": 75885,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "AC",
+   "quantity": "broken-stick plateau end (12-mo window, LM 0-18)",
+   "mine": 0.0,
+   "manuscript": 0.0,
+   "n_at_risk_mine": null,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "PANC",
+   "quantity": "12-mo cancer-death prob, landmark 0",
+   "mine": 77.12,
+   "manuscript": 77.12,
+   "n_at_risk_mine": 75634,
+   "n_at_risk_manuscript": 75634,
+   "agree": true
+  },
+  {
+   "tumour": "PANC",
+   "quantity": "12-mo cancer-death prob, landmark 6",
+   "mine": 69.72,
+   "manuscript": 69.72,
+   "n_at_risk_mine": 26125,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "PANC",
+   "quantity": "12-mo cancer-death prob, landmark 12",
+   "mine": 65.38,
+   "manuscript": 65.38,
+   "n_at_risk_mine": 12373,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  },
+  {
+   "tumour": "PANC",
+   "quantity": "broken-stick plateau end (12-mo window, LM 0-18)",
+   "mine": 0.0,
+   "manuscript": 0.0,
+   "n_at_risk_mine": null,
+   "n_at_risk_manuscript": null,
+   "agree": true
+  }
+ ],
+ "tumours": {
+  "NEC": {
+   "label": "Colorectal NEC (distant)",
+   "n_distant": 908,
+   "B": 2000,
+   "windows": {
+    "3": {
+     "window": 3,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      908,
+      748,
+      637,
+      553,
+      498,
+      447,
+      396,
+      337,
+      290,
+      250,
+      212,
+      190,
+      169,
+      146,
+      127,
+      112,
+      98,
+      91,
+      82
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "cancer_specific": [
+      33.82,
+      28.77,
+      24.93,
+      23.52,
+      27.9,
+      30.88,
+      32.74,
+      33.6,
+      31.08,
+      29.57,
+      27.78,
+      30.23,
+      30.44,
+      28.36,
+      23.0,
+      21.6,
+      19.77,
+      21.36,
+      17.61
+     ],
+     "all_cause": [
+      37.49,
+      31.89,
+      28.11,
+      26.8,
+      30.34,
+      33.38,
+      35.04,
+      35.39,
+      32.12,
+      30.38,
+      29.22,
+      31.82,
+      32.23,
+      31.83,
+      26.97,
+      25.17,
+      23.94,
+      25.88,
+      23.89
+     ],
+     "cancer_specific_ci_lo": [
+      30.79,
+      25.6,
+      21.63,
+      19.93,
+      23.95,
+      26.56,
+      28.16,
+      28.79,
+      25.99,
+      23.97,
+      21.85,
+      23.82,
+      23.37,
+      20.77,
+      15.65,
+      14.07,
+      12.19,
+      12.73,
+      9.84
+     ],
+     "cancer_specific_ci_hi": [
+      37.07,
+      32.11,
+      28.29,
+      27.34,
+      31.69,
+      35.2,
+      37.42,
+      38.77,
+      36.52,
+      35.42,
+      33.88,
+      36.92,
+      37.54,
+      36.06,
+      30.61,
+      29.35,
+      28.18,
+      30.22,
+      26.37
+     ],
+     "all_cause_ci_lo": [
+      34.4,
+      28.63,
+      24.67,
+      23.12,
+      26.12,
+      28.89,
+      30.38,
+      30.58,
+      26.87,
+      24.72,
+      23.09,
+      25.21,
+      25.22,
+      24.18,
+      19.16,
+      16.92,
+      15.83,
+      16.92,
+      15.12
+     ],
+     "all_cause_ci_hi": [
+      40.81,
+      35.36,
+      31.57,
+      30.64,
+      34.39,
+      37.76,
+      39.81,
+      40.78,
+      37.56,
+      36.4,
+      35.38,
+      38.57,
+      39.39,
+      39.74,
+      34.56,
+      33.35,
+      32.91,
+      35.1,
+      33.31
+     ],
+     "plateau_end_cancer_specific": 11.75,
+     "plateau_end_cancer_specific_ci": [
+      6.5,
+      15.0
+     ],
+     "plateau_end_boot_median": 11.5,
+     "plateau_prop_boot_gt0": 0.992,
+     "plateau_prop_boot_ge3": 0.9915,
+     "broken_stick_intercept": 29.576714036723548,
+     "broken_stick_slope_after_c_per_month": -1.9780849403813676,
+     "plateau_end_all_cause": 11.75,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -1.08,
+       "ci": [
+        -6.65,
+        4.59
+       ],
+       "p_boot_two_sided": 0.704
+      },
+      "6-0_all_cause": {
+       "estimate": -2.44,
+       "ci": [
+        -8.05,
+        3.23
+       ],
+       "p_boot_two_sided": 0.374
+      },
+      "3-0_cancer_specific": {
+       "estimate": -10.3,
+       "ci": [
+        -14.97,
+        -5.5
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -10.69,
+       "ci": [
+        -15.55,
+        -5.83
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": 9.22,
+       "ci": [
+        3.18,
+        15.09
+       ],
+       "p_boot_two_sided": 0.002
+      },
+      "6-3_all_cause": {
+       "estimate": 8.24,
+       "ci": [
+        2.04,
+        14.17
+       ],
+       "p_boot_two_sided": 0.007
+      }
+     }
+    },
+    "6": {
+     "window": 6,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      908,
+      748,
+      637,
+      553,
+      498,
+      447,
+      396,
+      337,
+      290,
+      250,
+      212,
+      190,
+      169,
+      146,
+      127,
+      112,
+      98,
+      91,
+      82
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "cancer_specific": [
+      48.52,
+      47.77,
+      47.13,
+      47.49,
+      51.31,
+      51.59,
+      51.94,
+      51.55,
+      51.6,
+      50.76,
+      47.86,
+      45.91,
+      45.07,
+      41.83,
+      38.6,
+      34.78,
+      35.25,
+      34.54,
+      29.5
+     ],
+     "all_cause": [
+      54.24,
+      52.55,
+      52.1,
+      52.45,
+      54.99,
+      54.78,
+      54.78,
+      54.27,
+      53.72,
+      52.82,
+      51.75,
+      50.21,
+      49.29,
+      48.15,
+      45.87,
+      43.04,
+      41.64,
+      40.26,
+      35.77
+     ],
+     "cancer_specific_ci_lo": [
+      45.21,
+      44.03,
+      43.12,
+      43.28,
+      46.85,
+      47.02,
+      47.09,
+      46.52,
+      45.9,
+      44.44,
+      40.97,
+      38.65,
+      37.43,
+      33.76,
+      29.76,
+      25.88,
+      25.67,
+      24.84,
+      19.98
+     ],
+     "cancer_specific_ci_hi": [
+      51.86,
+      51.34,
+      50.93,
+      51.68,
+      55.88,
+      56.44,
+      56.84,
+      57.11,
+      57.49,
+      56.99,
+      54.56,
+      53.0,
+      52.6,
+      50.34,
+      47.42,
+      44.05,
+      45.57,
+      45.3,
+      40.37
+     ],
+     "all_cause_ci_lo": [
+      50.87,
+      48.67,
+      48.01,
+      48.18,
+      50.55,
+      50.23,
+      49.81,
+      49.11,
+      48.09,
+      46.48,
+      44.97,
+      42.98,
+      41.61,
+      40.12,
+      36.99,
+      33.39,
+      31.21,
+      29.92,
+      25.09
+     ],
+     "all_cause_ci_hi": [
+      57.62,
+      56.17,
+      56.09,
+      56.78,
+      59.54,
+      59.56,
+      59.78,
+      59.72,
+      59.75,
+      58.9,
+      58.58,
+      57.06,
+      56.63,
+      56.34,
+      54.62,
+      52.18,
+      51.98,
+      50.93,
+      46.61
+     ],
+     "plateau_end_cancer_specific": 9.25,
+     "plateau_end_cancer_specific_ci": [
+      5.5,
+      13.25
+     ],
+     "plateau_end_boot_median": 9.0,
+     "plateau_prop_boot_gt0": 0.999,
+     "plateau_prop_boot_ge3": 0.998,
+     "broken_stick_intercept": 49.95271527958003,
+     "broken_stick_slope_after_c_per_month": -2.2477932839457315,
+     "plateau_end_all_cause": 9.5,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": 3.42,
+       "ci": [
+        -2.81,
+        9.3
+       ],
+       "p_boot_two_sided": 0.268
+      },
+      "6-0_all_cause": {
+       "estimate": 0.54,
+       "ci": [
+        -5.49,
+        6.47
+       ],
+       "p_boot_two_sided": 0.875
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.04,
+       "ci": [
+        -5.28,
+        3.26
+       ],
+       "p_boot_two_sided": 0.632
+      },
+      "3-0_all_cause": {
+       "estimate": -1.79,
+       "ci": [
+        -5.92,
+        2.34
+       ],
+       "p_boot_two_sided": 0.374
+      },
+      "6-3_cancer_specific": {
+       "estimate": 4.46,
+       "ci": [
+        0.15,
+        9.12
+       ],
+       "p_boot_two_sided": 0.044
+      },
+      "6-3_all_cause": {
+       "estimate": 2.33,
+       "ci": [
+        -1.93,
+        7.07
+       ],
+       "p_boot_two_sided": 0.304
+      }
+     }
+    },
+    "9": {
+     "window": 9,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      908,
+      748,
+      637,
+      553,
+      498,
+      447,
+      396,
+      337,
+      290,
+      250,
+      212,
+      190,
+      169,
+      146,
+      127,
+      112,
+      98,
+      91,
+      82
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "cancer_specific": [
+      63.5,
+      63.72,
+      62.02,
+      61.54,
+      63.81,
+      65.26,
+      65.71,
+      64.52,
+      62.24,
+      60.94,
+      57.39,
+      56.55,
+      54.0,
+      52.39,
+      48.23,
+      43.67,
+      41.02,
+      40.74,
+      39.07
+     ],
+     "all_cause": [
+      70.27,
+      69.34,
+      67.49,
+      66.89,
+      68.14,
+      69.17,
+      69.35,
+      68.83,
+      66.21,
+      64.7,
+      63.3,
+      63.1,
+      61.4,
+      60.22,
+      56.37,
+      51.94,
+      47.41,
+      46.46,
+      48.07
+     ],
+     "cancer_specific_ci_lo": [
+      60.36,
+      60.2,
+      58.18,
+      57.33,
+      59.34,
+      60.73,
+      60.94,
+      59.3,
+      56.66,
+      54.64,
+      50.68,
+      49.12,
+      46.27,
+      43.94,
+      39.19,
+      34.29,
+      30.95,
+      30.56,
+      27.97
+     ],
+     "cancer_specific_ci_hi": [
+      66.61,
+      67.33,
+      65.97,
+      65.76,
+      68.2,
+      69.61,
+      70.27,
+      69.53,
+      67.82,
+      66.9,
+      64.14,
+      63.62,
+      61.82,
+      60.82,
+      57.3,
+      53.19,
+      51.68,
+      51.85,
+      50.86
+     ],
+     "all_cause_ci_lo": [
+      67.0,
+      65.84,
+      63.71,
+      62.73,
+      63.93,
+      64.76,
+      64.66,
+      63.69,
+      60.63,
+      58.56,
+      56.6,
+      55.66,
+      53.48,
+      51.87,
+      46.93,
+      42.06,
+      36.96,
+      35.53,
+      36.42
+     ],
+     "all_cause_ci_hi": [
+      73.1,
+      72.66,
+      71.35,
+      70.92,
+      72.34,
+      73.46,
+      73.99,
+      73.69,
+      71.47,
+      70.49,
+      69.71,
+      69.93,
+      68.72,
+      68.3,
+      64.84,
+      61.26,
+      57.44,
+      57.27,
+      59.96
+     ],
+     "plateau_end_cancer_specific": 7.75,
+     "plateau_end_cancer_specific_ci": [
+      5.0,
+      11.5
+     ],
+     "plateau_end_boot_median": 7.75,
+     "plateau_prop_boot_gt0": 0.9975,
+     "plateau_prop_boot_ge3": 0.9935,
+     "broken_stick_intercept": 63.7726499615594,
+     "broken_stick_slope_after_c_per_month": -2.516703740752018,
+     "plateau_end_all_cause": 7.75,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": 2.21,
+       "ci": [
+        -2.67,
+        6.99
+       ],
+       "p_boot_two_sided": 0.35
+      },
+      "6-0_all_cause": {
+       "estimate": -0.92,
+       "ci": [
+        -5.72,
+        3.57
+       ],
+       "p_boot_two_sided": 0.682
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.96,
+       "ci": [
+        -5.27,
+        1.31
+       ],
+       "p_boot_two_sided": 0.241
+      },
+      "3-0_all_cause": {
+       "estimate": -3.38,
+       "ci": [
+        -6.41,
+        -0.28
+       ],
+       "p_boot_two_sided": 0.034
+      },
+      "6-3_cancer_specific": {
+       "estimate": 4.16,
+       "ci": [
+        0.51,
+        7.9
+       ],
+       "p_boot_two_sided": 0.026
+      },
+      "6-3_all_cause": {
+       "estimate": 2.46,
+       "ci": [
+        -1.19,
+        6.07
+       ],
+       "p_boot_two_sided": 0.184
+      }
+     }
+    },
+    "12": {
+     "window": 12,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      908,
+      748,
+      637,
+      553,
+      498,
+      447,
+      396,
+      337,
+      290,
+      250,
+      212,
+      190,
+      169,
+      146,
+      127,
+      112,
+      98,
+      91,
+      82
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "cancer_specific": [
+      72.29,
+      72.24,
+      71.84,
+      71.62,
+      72.85,
+      72.35,
+      72.33,
+      70.68,
+      69.46,
+      67.16,
+      64.87,
+      63.11,
+      60.03,
+      56.32,
+      52.75,
+      50.83,
+      49.24,
+      48.28,
+      44.65
+     ],
+     "all_cause": [
+      79.3,
+      78.3,
+      77.84,
+      77.57,
+      78.28,
+      77.49,
+      77.07,
+      76.29,
+      74.95,
+      73.13,
+      71.84,
+      70.26,
+      67.43,
+      64.15,
+      60.9,
+      61.14,
+      59.16,
+      57.77,
+      55.06
+     ],
+     "cancer_specific_ci_lo": [
+      69.3,
+      68.87,
+      68.23,
+      67.72,
+      68.51,
+      67.86,
+      67.69,
+      65.75,
+      63.99,
+      60.92,
+      58.02,
+      56.01,
+      52.28,
+      47.92,
+      43.67,
+      40.9,
+      38.03,
+      37.31,
+      33.33
+     ],
+     "cancer_specific_ci_hi": [
+      75.21,
+      75.51,
+      75.44,
+      75.38,
+      76.83,
+      76.47,
+      76.77,
+      75.57,
+      74.84,
+      73.09,
+      71.41,
+      70.17,
+      67.75,
+      64.74,
+      62.18,
+      61.17,
+      60.52,
+      59.57,
+      56.63
+     ],
+     "all_cause_ci_lo": [
+      76.55,
+      75.16,
+      74.5,
+      73.88,
+      74.4,
+      73.42,
+      72.71,
+      71.56,
+      69.66,
+      67.0,
+      65.19,
+      63.13,
+      59.7,
+      55.96,
+      51.4,
+      51.54,
+      47.99,
+      46.5,
+      43.16
+     ],
+     "all_cause_ci_hi": [
+      81.96,
+      81.31,
+      81.15,
+      81.06,
+      81.94,
+      81.34,
+      81.18,
+      80.88,
+      79.97,
+      78.53,
+      78.05,
+      76.91,
+      74.47,
+      71.89,
+      69.5,
+      70.52,
+      69.51,
+      68.73,
+      66.8
+     ],
+     "plateau_end_cancer_specific": 6.75,
+     "plateau_end_cancer_specific_ci": [
+      4.0,
+      9.75
+     ],
+     "plateau_end_boot_median": 6.75,
+     "plateau_prop_boot_gt0": 0.997,
+     "plateau_prop_boot_ge3": 0.9905,
+     "broken_stick_intercept": 72.25531107350923,
+     "broken_stick_slope_after_c_per_month": -2.4628981567251915,
+     "plateau_end_all_cause": 6.5,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": 0.03,
+       "ci": [
+        -4.22,
+        4.02
+       ],
+       "p_boot_two_sided": 0.997
+      },
+      "6-0_all_cause": {
+       "estimate": -2.24,
+       "ci": [
+        -6.19,
+        1.32
+       ],
+       "p_boot_two_sided": 0.24
+      },
+      "3-0_cancer_specific": {
+       "estimate": -0.67,
+       "ci": [
+        -3.62,
+        2.21
+       ],
+       "p_boot_two_sided": 0.634
+      },
+      "3-0_all_cause": {
+       "estimate": -1.74,
+       "ci": [
+        -4.35,
+        0.85
+       ],
+       "p_boot_two_sided": 0.182
+      },
+      "6-3_cancer_specific": {
+       "estimate": 0.71,
+       "ci": [
+        -2.29,
+        3.58
+       ],
+       "p_boot_two_sided": 0.66
+      },
+      "6-3_all_cause": {
+       "estimate": -0.5,
+       "ci": [
+        -3.36,
+        2.26
+       ],
+       "p_boot_two_sided": 0.721
+      }
+     }
+    },
+    "18": {
+     "window": 18,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      908,
+      748,
+      637,
+      553,
+      498,
+      447,
+      396,
+      337,
+      290,
+      250,
+      212,
+      190,
+      169,
+      146,
+      127,
+      112,
+      98,
+      91,
+      82
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "cancer_specific": [
+      81.62,
+      81.31,
+      80.4,
+      79.42,
+      80.5,
+      80.13,
+      79.09,
+      77.31,
+      76.01,
+      74.74,
+      71.61,
+      69.95,
+      67.71,
+      63.56,
+      59.2,
+      56.09,
+      52.88,
+      52.25,
+      49.1
+     ],
+     "all_cause": [
+      89.51,
+      88.75,
+      88.0,
+      87.22,
+      87.33,
+      86.55,
+      85.27,
+      83.61,
+      81.91,
+      81.67,
+      80.29,
+      78.97,
+      77.21,
+      73.8,
+      70.09,
+      67.45,
+      62.8,
+      61.73,
+      59.51
+     ],
+     "cancer_specific_ci_lo": [
+      78.98,
+      78.3,
+      77.09,
+      75.73,
+      76.68,
+      76.2,
+      74.77,
+      72.62,
+      70.96,
+      68.96,
+      64.83,
+      62.89,
+      59.86,
+      55.19,
+      50.0,
+      45.96,
+      42.03,
+      41.26,
+      36.94
+     ],
+     "cancer_specific_ci_hi": [
+      84.17,
+      84.16,
+      83.55,
+      82.78,
+      84.19,
+      84.08,
+      83.31,
+      81.9,
+      81.12,
+      80.62,
+      78.32,
+      76.92,
+      75.49,
+      72.19,
+      68.61,
+      66.14,
+      64.21,
+      63.84,
+      61.45
+     ],
+     "all_cause_ci_lo": [
+      87.3,
+      86.21,
+      85.05,
+      84.01,
+      84.0,
+      82.96,
+      81.34,
+      79.32,
+      77.07,
+      76.15,
+      74.04,
+      72.28,
+      70.08,
+      65.79,
+      60.8,
+      57.73,
+      52.15,
+      50.64,
+      47.74
+     ],
+     "all_cause_ci_hi": [
+      91.51,
+      91.08,
+      90.56,
+      89.95,
+      90.47,
+      89.78,
+      88.91,
+      87.65,
+      86.57,
+      86.74,
+      86.05,
+      85.13,
+      84.0,
+      81.62,
+      78.57,
+      76.94,
+      73.11,
+      72.63,
+      71.1
+     ],
+     "plateau_end_cancer_specific": 6.75,
+     "plateau_end_cancer_specific_ci": [
+      4.75,
+      9.25
+     ],
+     "plateau_end_boot_median": 6.75,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 0.9995,
+     "broken_stick_intercept": 80.2775790971508,
+     "broken_stick_slope_after_c_per_month": -2.788214026852288,
+     "plateau_end_all_cause": 6.5,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -2.53,
+       "ci": [
+        -5.62,
+        0.68
+       ],
+       "p_boot_two_sided": 0.13
+      },
+      "6-0_all_cause": {
+       "estimate": -4.23,
+       "ci": [
+        -6.96,
+        -1.63
+       ],
+       "p_boot_two_sided": 0.002
+      },
+      "3-0_cancer_specific": {
+       "estimate": -2.2,
+       "ci": [
+        -4.44,
+        -0.0
+       ],
+       "p_boot_two_sided": 0.05
+      },
+      "3-0_all_cause": {
+       "estimate": -2.28,
+       "ci": [
+        -3.99,
+        -0.62
+       ],
+       "p_boot_two_sided": 0.008
+      },
+      "6-3_cancer_specific": {
+       "estimate": -0.33,
+       "ci": [
+        -2.67,
+        1.99
+       ],
+       "p_boot_two_sided": 0.79
+      },
+      "6-3_all_cause": {
+       "estimate": -1.95,
+       "ci": [
+        -3.73,
+        -0.07
+       ],
+       "p_boot_two_sided": 0.041
+      }
+     }
+    },
+    "24": {
+     "window": 24,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      908,
+      748,
+      637,
+      553,
+      498,
+      447,
+      396,
+      337,
+      290,
+      250,
+      212,
+      190,
+      169,
+      146,
+      127,
+      112,
+      98,
+      91,
+      82
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true,
+      true
+     ],
+     "cancer_specific": [
+      84.72,
+      84.46,
+      83.54,
+      83.02,
+      83.54,
+      83.22,
+      82.57,
+      80.62,
+      78.99,
+      77.22,
+      73.37,
+      71.93,
+      69.97,
+      66.15,
+      63.19,
+      59.5,
+      58.11,
+      57.93,
+      55.46
+     ],
+     "all_cause": [
+      93.26,
+      92.22,
+      91.33,
+      91.28,
+      91.13,
+      90.49,
+      89.69,
+      88.02,
+      86.16,
+      84.64,
+      82.05,
+      80.95,
+      79.47,
+      76.39,
+      74.09,
+      70.86,
+      68.03,
+      67.42,
+      65.87
+     ],
+     "cancer_specific_ci_lo": [
+      82.2,
+      81.66,
+      80.48,
+      79.54,
+      79.91,
+      79.41,
+      78.62,
+      76.13,
+      73.98,
+      71.59,
+      67.06,
+      64.78,
+      62.29,
+      57.49,
+      53.86,
+      49.43,
+      47.28,
+      46.81,
+      43.64
+     ],
+     "cancer_specific_ci_hi": [
+      87.14,
+      87.22,
+      86.6,
+      86.41,
+      87.08,
+      86.95,
+      86.62,
+      85.27,
+      84.15,
+      83.02,
+      80.02,
+      78.86,
+      77.39,
+      74.61,
+      72.61,
+      69.81,
+      69.09,
+      69.37,
+      67.27
+     ],
+     "all_cause_ci_lo": [
+      91.44,
+      90.03,
+      88.83,
+      88.57,
+      88.21,
+      87.35,
+      86.29,
+      84.0,
+      81.64,
+      79.38,
+      76.12,
+      74.48,
+      72.67,
+      68.79,
+      65.67,
+      61.5,
+      57.34,
+      56.48,
+      54.42
+     ],
+     "all_cause_ci_hi": [
+      94.98,
+      94.26,
+      93.71,
+      93.84,
+      93.83,
+      93.4,
+      92.97,
+      91.8,
+      90.49,
+      89.4,
+      87.55,
+      86.88,
+      85.94,
+      84.04,
+      82.45,
+      80.11,
+      78.09,
+      77.97,
+      76.96
+     ],
+     "plateau_end_cancer_specific": 5.75,
+     "plateau_end_cancer_specific_ci": [
+      4.0,
+      7.75
+     ],
+     "plateau_end_boot_median": 5.75,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 0.9985,
+     "broken_stick_intercept": 83.81086344772432,
+     "broken_stick_slope_after_c_per_month": -2.3986982997293347,
+     "plateau_end_all_cause": 5.5,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -2.15,
+       "ci": [
+        -5.13,
+        0.86
+       ],
+       "p_boot_two_sided": 0.161
+      },
+      "6-0_all_cause": {
+       "estimate": -3.57,
+       "ci": [
+        -5.83,
+        -1.31
+       ],
+       "p_boot_two_sided": 0.001
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.69,
+       "ci": [
+        -3.66,
+        0.34
+       ],
+       "p_boot_two_sided": 0.101
+      },
+      "3-0_all_cause": {
+       "estimate": -1.98,
+       "ci": [
+        -3.4,
+        -0.53
+       ],
+       "p_boot_two_sided": 0.009
+      },
+      "6-3_cancer_specific": {
+       "estimate": -0.46,
+       "ci": [
+        -2.41,
+        1.66
+       ],
+       "p_boot_two_sided": 0.663
+      },
+      "6-3_all_cause": {
+       "estimate": -1.59,
+       "ci": [
+        -3.01,
+        -0.11
+       ],
+       "p_boot_two_sided": 0.035
+      }
+     }
+    }
+   }
+  },
+  "SCLC": {
+   "label": "Small-cell lung cancer (distant)",
+   "n_distant": 77707,
+   "B": 500,
+   "windows": {
+    "3": {
+     "window": 3,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      77707,
+      62588,
+      53593,
+      47958,
+      44107,
+      40584,
+      37152,
+      33499,
+      29883,
+      26400,
+      23144,
+      20316,
+      17826,
+      15730,
+      13910,
+      12440,
+      11207,
+      10101,
+      9237
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      33.99,
+      26.38,
+      21.53,
+      20.13,
+      21.56,
+      23.97,
+      26.45,
+      28.31,
+      29.37,
+      29.89,
+      29.51,
+      29.01,
+      27.51,
+      26.11,
+      24.69,
+      23.28,
+      22.47,
+      21.17,
+      20.46
+     ],
+     "all_cause": [
+      37.56,
+      28.78,
+      23.42,
+      21.71,
+      23.2,
+      25.61,
+      28.18,
+      30.11,
+      31.21,
+      31.68,
+      31.29,
+      30.8,
+      29.37,
+      27.85,
+      26.38,
+      24.85,
+      24.02,
+      22.76,
+      22.1
+     ],
+     "cancer_specific_ci_lo": [
+      33.65,
+      26.05,
+      21.16,
+      19.76,
+      21.16,
+      23.57,
+      25.95,
+      27.79,
+      28.86,
+      29.36,
+      28.89,
+      28.35,
+      26.8,
+      25.4,
+      23.92,
+      22.51,
+      21.77,
+      20.41,
+      19.68
+     ],
+     "cancer_specific_ci_hi": [
+      34.32,
+      26.75,
+      21.89,
+      20.51,
+      21.93,
+      24.42,
+      26.91,
+      28.8,
+      29.86,
+      30.42,
+      30.11,
+      29.69,
+      28.14,
+      26.81,
+      25.43,
+      24.04,
+      23.22,
+      22.01,
+      21.28
+     ],
+     "all_cause_ci_lo": [
+      37.22,
+      28.43,
+      23.05,
+      21.33,
+      22.83,
+      25.21,
+      27.69,
+      29.66,
+      30.71,
+      31.16,
+      30.67,
+      30.14,
+      28.66,
+      27.12,
+      25.6,
+      24.05,
+      23.32,
+      21.97,
+      21.26
+     ],
+     "all_cause_ci_hi": [
+      37.94,
+      29.15,
+      23.8,
+      22.1,
+      23.6,
+      26.05,
+      28.65,
+      30.62,
+      31.66,
+      32.21,
+      31.87,
+      31.45,
+      29.99,
+      28.62,
+      27.15,
+      25.62,
+      24.8,
+      23.65,
+      22.93
+     ],
+     "plateau_end_cancer_specific": 12.25,
+     "plateau_end_cancer_specific_ci": [
+      11.75,
+      12.881249999999994
+     ],
+     "plateau_end_boot_median": 12.25,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 1.0,
+     "broken_stick_intercept": 26.736924614682255,
+     "broken_stick_slope_after_c_per_month": -1.1383837063595497,
+     "plateau_end_all_cause": 12.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -7.54,
+       "ci": [
+        -8.1,
+        -6.99
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -9.38,
+       "ci": [
+        -9.95,
+        -8.86
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -13.86,
+       "ci": [
+        -14.34,
+        -13.35
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -15.85,
+       "ci": [
+        -16.4,
+        -15.32
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": 6.32,
+       "ci": [
+        5.76,
+        6.89
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": 6.46,
+       "ci": [
+        5.84,
+        7.05
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "6": {
+     "window": 6,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      77707,
+      62588,
+      53593,
+      47958,
+      44107,
+      40584,
+      37152,
+      33499,
+      29883,
+      26400,
+      23144,
+      20316,
+      17826,
+      15730,
+      13910,
+      12440,
+      11207,
+      10101,
+      9237
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      46.56,
+      41.73,
+      39.89,
+      40.84,
+      43.3,
+      45.81,
+      47.92,
+      48.93,
+      49.33,
+      48.69,
+      47.45,
+      46.1,
+      43.95,
+      42.32,
+      40.28,
+      38.66,
+      37.14,
+      35.26,
+      33.86
+     ],
+     "all_cause": [
+      51.12,
+      45.3,
+      43.03,
+      43.77,
+      46.33,
+      48.83,
+      50.93,
+      51.98,
+      52.4,
+      51.75,
+      50.43,
+      49.06,
+      46.92,
+      45.18,
+      43.14,
+      41.45,
+      39.89,
+      38.04,
+      36.75
+     ],
+     "cancer_specific_ci_lo": [
+      46.19,
+      41.32,
+      39.48,
+      40.4,
+      42.83,
+      45.31,
+      47.39,
+      48.41,
+      48.75,
+      48.02,
+      46.76,
+      45.37,
+      43.19,
+      41.58,
+      39.49,
+      37.81,
+      36.23,
+      34.34,
+      32.93
+     ],
+     "cancer_specific_ci_hi": [
+      46.91,
+      42.15,
+      40.32,
+      41.28,
+      43.76,
+      46.32,
+      48.4,
+      49.41,
+      49.92,
+      49.3,
+      48.12,
+      46.78,
+      44.75,
+      43.13,
+      41.13,
+      39.53,
+      38.04,
+      36.17,
+      34.87
+     ],
+     "all_cause_ci_lo": [
+      50.75,
+      44.92,
+      42.61,
+      43.31,
+      45.86,
+      48.33,
+      50.4,
+      51.47,
+      51.8,
+      51.09,
+      49.76,
+      48.37,
+      46.15,
+      44.43,
+      42.37,
+      40.59,
+      38.95,
+      37.02,
+      35.77
+     ],
+     "all_cause_ci_hi": [
+      51.46,
+      45.71,
+      43.44,
+      44.18,
+      46.79,
+      49.32,
+      51.44,
+      52.49,
+      52.94,
+      52.34,
+      51.13,
+      49.75,
+      47.73,
+      46.05,
+      44.0,
+      42.29,
+      40.75,
+      39.03,
+      37.8
+     ],
+     "plateau_end_cancer_specific": 11.0,
+     "plateau_end_cancer_specific_ci": [
+      10.75,
+      11.5
+     ],
+     "plateau_end_boot_median": 11.0,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 1.0,
+     "broken_stick_intercept": 45.54912335175379,
+     "broken_stick_slope_after_c_per_month": -1.6931417531806197,
+     "plateau_end_all_cause": 11.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": 1.36,
+       "ci": [
+        0.72,
+        1.96
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -0.19,
+       "ci": [
+        -0.77,
+        0.41
+       ],
+       "p_boot_two_sided": 0.596
+      },
+      "3-0_cancer_specific": {
+       "estimate": -5.72,
+       "ci": [
+        -6.16,
+        -5.27
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -7.35,
+       "ci": [
+        -7.79,
+        -6.92
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": 7.08,
+       "ci": [
+        6.6,
+        7.58
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": 7.16,
+       "ci": [
+        6.68,
+        7.64
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "9": {
+     "window": 9,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      77707,
+      62588,
+      53593,
+      47958,
+      44107,
+      40584,
+      37152,
+      33499,
+      29883,
+      26400,
+      23144,
+      20316,
+      17826,
+      15730,
+      13910,
+      12440,
+      11207,
+      10101,
+      9237
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      59.49,
+      57.22,
+      56.62,
+      57.65,
+      59.14,
+      60.66,
+      61.42,
+      61.47,
+      61.08,
+      59.92,
+      58.59,
+      56.89,
+      54.82,
+      52.91,
+      50.65,
+      48.72,
+      46.96,
+      44.9,
+      43.31
+     ],
+     "all_cause": [
+      64.89,
+      61.78,
+      60.81,
+      61.59,
+      63.12,
+      64.59,
+      65.34,
+      65.35,
+      64.96,
+      63.74,
+      62.33,
+      60.65,
+      58.65,
+      56.63,
+      54.38,
+      52.47,
+      50.61,
+      48.6,
+      47.04
+     ],
+     "cancer_specific_ci_lo": [
+      59.13,
+      56.79,
+      56.19,
+      57.18,
+      58.67,
+      60.19,
+      60.87,
+      60.9,
+      60.48,
+      59.28,
+      57.97,
+      56.23,
+      54.12,
+      52.17,
+      49.85,
+      47.94,
+      46.02,
+      43.92,
+      42.28
+     ],
+     "cancer_specific_ci_hi": [
+      59.84,
+      57.6,
+      57.05,
+      58.09,
+      59.56,
+      61.11,
+      61.91,
+      62.0,
+      61.64,
+      60.55,
+      59.29,
+      57.62,
+      55.58,
+      53.72,
+      51.52,
+      49.61,
+      47.96,
+      45.89,
+      44.37
+     ],
+     "all_cause_ci_lo": [
+      64.52,
+      61.37,
+      60.39,
+      61.13,
+      62.63,
+      64.1,
+      64.79,
+      64.79,
+      64.36,
+      63.14,
+      61.66,
+      59.99,
+      57.97,
+      55.9,
+      53.5,
+      51.64,
+      49.65,
+      47.58,
+      45.98
+     ],
+     "all_cause_ci_hi": [
+      65.26,
+      62.16,
+      61.21,
+      62.02,
+      63.58,
+      65.03,
+      65.86,
+      65.9,
+      65.54,
+      64.37,
+      62.99,
+      61.38,
+      59.43,
+      57.43,
+      55.18,
+      53.34,
+      51.6,
+      49.54,
+      48.12
+     ],
+     "plateau_end_cancer_specific": 9.5,
+     "plateau_end_cancer_specific_ci": [
+      9.25,
+      10.0
+     ],
+     "plateau_end_boot_median": 9.5,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 1.0,
+     "broken_stick_intercept": 59.49706478324031,
+     "broken_stick_slope_after_c_per_month": -1.926756696927441,
+     "plateau_end_all_cause": 9.5,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": 1.93,
+       "ci": [
+        1.38,
+        2.45
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": 0.45,
+       "ci": [
+        -0.06,
+        0.92
+       ],
+       "p_boot_two_sided": 0.084
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.84,
+       "ci": [
+        -2.21,
+        -1.48
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -3.3,
+       "ci": [
+        -3.68,
+        -2.94
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": 3.77,
+       "ci": [
+        3.36,
+        4.16
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": 3.76,
+       "ci": [
+        3.35,
+        4.14
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "12": {
+     "window": 12,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      77707,
+      62588,
+      53593,
+      47958,
+      44107,
+      40584,
+      37152,
+      33499,
+      29883,
+      26400,
+      23144,
+      20316,
+      17826,
+      15730,
+      13910,
+      12440,
+      11207,
+      10101,
+      9237
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      69.98,
+      68.5,
+      67.99,
+      68.22,
+      68.77,
+      69.41,
+      69.49,
+      69.25,
+      68.5,
+      67.34,
+      65.86,
+      64.07,
+      61.93,
+      59.99,
+      57.75,
+      55.82,
+      53.94,
+      51.89,
+      50.1
+     ],
+     "all_cause": [
+      76.01,
+      73.74,
+      72.88,
+      72.87,
+      73.39,
+      73.93,
+      73.95,
+      73.68,
+      72.93,
+      71.75,
+      70.2,
+      68.43,
+      66.43,
+      64.36,
+      62.16,
+      60.2,
+      58.32,
+      56.32,
+      54.58
+     ],
+     "cancer_specific_ci_lo": [
+      69.65,
+      68.13,
+      67.6,
+      67.78,
+      68.29,
+      68.91,
+      68.99,
+      68.72,
+      67.97,
+      66.75,
+      65.28,
+      63.4,
+      61.18,
+      59.17,
+      56.87,
+      54.87,
+      52.93,
+      50.83,
+      49.01
+     ],
+     "cancer_specific_ci_hi": [
+      70.3,
+      68.87,
+      68.41,
+      68.63,
+      69.19,
+      69.85,
+      69.98,
+      69.79,
+      69.08,
+      67.94,
+      66.52,
+      64.72,
+      62.66,
+      60.8,
+      58.62,
+      56.74,
+      54.8,
+      52.88,
+      51.15
+     ],
+     "all_cause_ci_lo": [
+      75.69,
+      73.37,
+      72.51,
+      72.42,
+      72.92,
+      73.46,
+      73.46,
+      73.17,
+      72.41,
+      71.22,
+      69.63,
+      67.74,
+      65.73,
+      63.6,
+      61.33,
+      59.24,
+      57.32,
+      55.28,
+      53.34
+     ],
+     "all_cause_ci_hi": [
+      76.32,
+      74.11,
+      73.3,
+      73.28,
+      73.81,
+      74.36,
+      74.44,
+      74.19,
+      73.48,
+      72.33,
+      70.83,
+      69.04,
+      67.12,
+      65.1,
+      63.01,
+      61.08,
+      59.2,
+      57.33,
+      55.69
+     ],
+     "plateau_end_cancer_specific": 8.5,
+     "plateau_end_cancer_specific_ci": [
+      8.0,
+      8.75
+     ],
+     "plateau_end_boot_median": 8.5,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 1.0,
+     "broken_stick_intercept": 68.8554004877929,
+     "broken_stick_slope_after_c_per_month": -1.9890155915756624,
+     "plateau_end_all_cause": 8.25,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -0.5,
+       "ci": [
+        -0.96,
+        -0.04
+       ],
+       "p_boot_two_sided": 0.04
+      },
+      "6-0_all_cause": {
+       "estimate": -2.06,
+       "ci": [
+        -2.52,
+        -1.63
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.77,
+       "ci": [
+        -2.09,
+        -1.46
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -3.15,
+       "ci": [
+        -3.46,
+        -2.87
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": 1.27,
+       "ci": [
+        0.96,
+        1.58
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": 1.09,
+       "ci": [
+        0.77,
+        1.36
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "18": {
+     "window": 18,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      77707,
+      62588,
+      53593,
+      47958,
+      44107,
+      40584,
+      37152,
+      33499,
+      29883,
+      26400,
+      23144,
+      20316,
+      17826,
+      15730,
+      13910,
+      12440,
+      11207,
+      10101,
+      9237
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      80.53,
+      79.61,
+      78.91,
+      78.71,
+      78.65,
+      78.6,
+      78.31,
+      77.74,
+      76.82,
+      75.62,
+      74.19,
+      72.54,
+      70.55,
+      68.6,
+      66.34,
+      64.3,
+      62.43,
+      60.2,
+      58.28
+     ],
+     "all_cause": [
+      87.27,
+      85.6,
+      84.58,
+      84.11,
+      84.01,
+      83.85,
+      83.53,
+      82.89,
+      81.99,
+      80.8,
+      79.34,
+      77.75,
+      75.89,
+      73.89,
+      71.65,
+      69.62,
+      67.74,
+      65.51,
+      63.62
+     ],
+     "cancer_specific_ci_lo": [
+      80.22,
+      79.28,
+      78.55,
+      78.34,
+      78.25,
+      78.19,
+      77.86,
+      77.27,
+      76.29,
+      75.06,
+      73.61,
+      71.87,
+      69.81,
+      67.77,
+      65.47,
+      63.38,
+      61.46,
+      59.25,
+      57.25
+     ],
+     "cancer_specific_ci_hi": [
+      80.8,
+      79.92,
+      79.28,
+      79.08,
+      79.05,
+      79.01,
+      78.72,
+      78.17,
+      77.3,
+      76.15,
+      74.73,
+      73.13,
+      71.2,
+      69.34,
+      67.19,
+      65.2,
+      63.42,
+      61.24,
+      59.35
+     ],
+     "all_cause_ci_lo": [
+      87.0,
+      85.29,
+      84.27,
+      83.78,
+      83.64,
+      83.45,
+      83.12,
+      82.46,
+      81.49,
+      80.26,
+      78.76,
+      77.13,
+      75.17,
+      73.11,
+      70.82,
+      68.82,
+      66.9,
+      64.53,
+      62.55
+     ],
+     "all_cause_ci_hi": [
+      87.52,
+      85.91,
+      84.93,
+      84.46,
+      84.37,
+      84.21,
+      83.89,
+      83.28,
+      82.46,
+      81.31,
+      79.88,
+      78.35,
+      76.54,
+      74.63,
+      72.49,
+      70.51,
+      68.7,
+      66.53,
+      64.74
+     ],
+     "plateau_end_cancer_specific": 7.5,
+     "plateau_end_cancer_specific_ci": [
+      7.25,
+      7.5
+     ],
+     "plateau_end_boot_median": 7.5,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 1.0,
+     "broken_stick_intercept": 78.83241624109876,
+     "broken_stick_slope_after_c_per_month": -1.9320540599026523,
+     "plateau_end_all_cause": 6.75,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -2.22,
+       "ci": [
+        -2.56,
+        -1.91
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -3.74,
+       "ci": [
+        -4.02,
+        -3.47
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.82,
+       "ci": [
+        -2.06,
+        -1.58
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -3.15,
+       "ci": [
+        -3.34,
+        -2.96
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -0.4,
+       "ci": [
+        -0.6,
+        -0.18
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -0.59,
+       "ci": [
+        -0.78,
+        -0.39
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "24": {
+     "window": 24,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      77707,
+      62588,
+      53593,
+      47958,
+      44107,
+      40584,
+      37152,
+      33499,
+      29883,
+      26400,
+      23144,
+      20316,
+      17826,
+      15730,
+      13910,
+      12440,
+      11207,
+      10101,
+      9237
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      84.84,
+      84.25,
+      83.65,
+      83.36,
+      83.12,
+      82.93,
+      82.54,
+      81.87,
+      80.91,
+      79.71,
+      78.4,
+      76.77,
+      74.89,
+      73.12,
+      71.04,
+      69.14,
+      67.15,
+      64.78,
+      62.93
+     ],
+     "all_cause": [
+      91.95,
+      90.64,
+      89.74,
+      89.2,
+      88.91,
+      88.61,
+      88.17,
+      87.46,
+      86.51,
+      85.34,
+      84.01,
+      82.43,
+      80.69,
+      78.9,
+      76.89,
+      75.01,
+      73.02,
+      70.71,
+      68.95
+     ],
+     "cancer_specific_ci_lo": [
+      84.6,
+      83.95,
+      83.31,
+      83.01,
+      82.73,
+      82.54,
+      82.13,
+      81.44,
+      80.41,
+      79.16,
+      77.81,
+      76.09,
+      74.16,
+      72.35,
+      70.23,
+      68.26,
+      66.2,
+      63.79,
+      61.91
+     ],
+     "cancer_specific_ci_hi": [
+      85.09,
+      84.55,
+      83.98,
+      83.71,
+      83.46,
+      83.31,
+      82.94,
+      82.3,
+      81.38,
+      80.25,
+      78.96,
+      77.37,
+      75.58,
+      73.87,
+      71.94,
+      70.07,
+      68.08,
+      65.83,
+      64.0
+     ],
+     "all_cause_ci_lo": [
+      91.74,
+      90.37,
+      89.44,
+      88.88,
+      88.56,
+      88.26,
+      87.79,
+      87.06,
+      86.08,
+      84.86,
+      83.48,
+      81.84,
+      80.05,
+      78.25,
+      76.18,
+      74.24,
+      72.2,
+      69.87,
+      68.05
+     ],
+     "all_cause_ci_hi": [
+      92.14,
+      90.87,
+      89.99,
+      89.5,
+      89.21,
+      88.94,
+      88.51,
+      87.84,
+      86.91,
+      85.78,
+      84.49,
+      82.98,
+      81.3,
+      79.57,
+      77.68,
+      75.8,
+      73.88,
+      71.71,
+      70.0
+     ],
+     "plateau_end_cancer_specific": 6.75,
+     "plateau_end_cancer_specific_ci": [
+      6.5,
+      7.25
+     ],
+     "plateau_end_boot_median": 6.75,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 1.0,
+     "broken_stick_intercept": 83.54466977487658,
+     "broken_stick_slope_after_c_per_month": -1.7670132026771443,
+     "plateau_end_all_cause": 6.5,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -2.3,
+       "ci": [
+        -2.61,
+        -2.03
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -3.78,
+       "ci": [
+        -4.03,
+        -3.56
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.47,
+       "ci": [
+        -1.69,
+        -1.27
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -2.75,
+       "ci": [
+        -2.9,
+        -2.6
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -0.83,
+       "ci": [
+        -1.02,
+        -0.65
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -1.03,
+       "ci": [
+        -1.2,
+        -0.9
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    }
+   }
+  },
+  "AC": {
+   "label": "Colorectal adenocarcinoma (distant)",
+   "n_distant": 147014,
+   "B": 500,
+   "windows": {
+    "3": {
+     "window": 3,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      147014,
+      134077,
+      123280,
+      115056,
+      108674,
+      103228,
+      98550,
+      94223,
+      90311,
+      86581,
+      82818,
+      79368,
+      75885,
+      72695,
+      69494,
+      66562,
+      63681,
+      60995,
+      58522
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      18.26,
+      16.04,
+      13.54,
+      11.77,
+      10.81,
+      10.15,
+      9.81,
+      9.77,
+      9.77,
+      10.07,
+      10.05,
+      10.3,
+      10.19,
+      10.26,
+      10.12,
+      9.95,
+      10.18,
+      10.17,
+      10.39
+     ],
+     "all_cause": [
+      20.55,
+      17.81,
+      15.03,
+      13.09,
+      12.0,
+      11.2,
+      10.79,
+      10.7,
+      10.69,
+      10.97,
+      10.92,
+      11.19,
+      11.05,
+      11.12,
+      10.92,
+      10.77,
+      11.01,
+      11.02,
+      11.22
+     ],
+     "cancer_specific_ci_lo": [
+      18.07,
+      15.86,
+      13.34,
+      11.57,
+      10.63,
+      9.96,
+      9.61,
+      9.59,
+      9.57,
+      9.87,
+      9.86,
+      10.09,
+      9.98,
+      10.04,
+      9.88,
+      9.74,
+      9.97,
+      9.96,
+      10.15
+     ],
+     "cancer_specific_ci_hi": [
+      18.46,
+      16.24,
+      13.73,
+      11.95,
+      11.0,
+      10.35,
+      10.02,
+      9.98,
+      9.96,
+      10.27,
+      10.27,
+      10.51,
+      10.4,
+      10.49,
+      10.35,
+      10.21,
+      10.42,
+      10.42,
+      10.64
+     ],
+     "all_cause_ci_lo": [
+      20.35,
+      17.61,
+      14.83,
+      12.89,
+      11.82,
+      11.01,
+      10.59,
+      10.51,
+      10.48,
+      10.75,
+      10.72,
+      10.97,
+      10.83,
+      10.89,
+      10.68,
+      10.53,
+      10.79,
+      10.78,
+      10.97
+     ],
+     "all_cause_ci_hi": [
+      20.75,
+      18.01,
+      15.22,
+      13.29,
+      12.2,
+      11.41,
+      10.99,
+      10.91,
+      10.88,
+      11.18,
+      11.13,
+      11.4,
+      11.28,
+      11.35,
+      11.16,
+      11.02,
+      11.25,
+      11.28,
+      11.49
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 13.54932874170638,
+     "broken_stick_slope_after_c_per_month": -0.26795463347491694,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -8.45,
+       "ci": [
+        -8.72,
+        -8.16
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -9.76,
+       "ci": [
+        -10.05,
+        -9.46
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -6.5,
+       "ci": [
+        -6.75,
+        -6.2
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -7.46,
+       "ci": [
+        -7.72,
+        -7.17
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -1.95,
+       "ci": [
+        -2.24,
+        -1.69
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -2.3,
+       "ci": [
+        -2.58,
+        -2.04
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "6": {
+     "window": 6,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      147014,
+      134077,
+      123280,
+      115056,
+      108674,
+      103228,
+      98550,
+      94223,
+      90311,
+      86581,
+      82818,
+      79368,
+      75885,
+      72695,
+      69494,
+      66562,
+      63681,
+      60995,
+      58522
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      27.61,
+      24.93,
+      22.16,
+      20.29,
+      19.41,
+      18.83,
+      18.8,
+      18.75,
+      18.97,
+      19.14,
+      19.19,
+      19.29,
+      19.05,
+      19.31,
+      19.18,
+      19.22,
+      19.19,
+      19.29,
+      19.35
+     ],
+     "all_cause": [
+      30.95,
+      27.67,
+      24.55,
+      22.46,
+      21.41,
+      20.69,
+      20.57,
+      20.45,
+      20.69,
+      20.81,
+      20.82,
+      20.89,
+      20.63,
+      20.9,
+      20.74,
+      20.77,
+      20.74,
+      20.81,
+      20.84
+     ],
+     "cancer_specific_ci_lo": [
+      27.4,
+      24.7,
+      21.93,
+      20.07,
+      19.18,
+      18.6,
+      18.56,
+      18.52,
+      18.74,
+      18.88,
+      18.92,
+      19.02,
+      18.8,
+      19.02,
+      18.9,
+      18.96,
+      18.92,
+      18.98,
+      19.04
+     ],
+     "cancer_specific_ci_hi": [
+      27.85,
+      25.16,
+      22.41,
+      20.53,
+      19.64,
+      19.08,
+      19.03,
+      19.0,
+      19.23,
+      19.41,
+      19.47,
+      19.56,
+      19.32,
+      19.63,
+      19.48,
+      19.56,
+      19.52,
+      19.62,
+      19.69
+     ],
+     "all_cause_ci_lo": [
+      30.71,
+      27.44,
+      24.3,
+      22.22,
+      21.18,
+      20.46,
+      20.33,
+      20.21,
+      20.43,
+      20.53,
+      20.55,
+      20.63,
+      20.36,
+      20.6,
+      20.45,
+      20.48,
+      20.42,
+      20.48,
+      20.51
+     ],
+     "all_cause_ci_hi": [
+      31.18,
+      27.89,
+      24.8,
+      22.73,
+      21.65,
+      20.96,
+      20.81,
+      20.7,
+      20.96,
+      21.09,
+      21.1,
+      21.16,
+      20.91,
+      21.23,
+      21.05,
+      21.1,
+      21.05,
+      21.16,
+      21.21
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 22.374084403484677,
+     "broken_stick_slope_after_c_per_month": -0.2522181670268833,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -8.81,
+       "ci": [
+        -9.15,
+        -8.48
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -10.38,
+       "ci": [
+        -10.72,
+        -10.03
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -7.31,
+       "ci": [
+        -7.55,
+        -7.06
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -8.49,
+       "ci": [
+        -8.73,
+        -8.21
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -1.5,
+       "ci": [
+        -1.75,
+        -1.25
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -1.89,
+       "ci": [
+        -2.15,
+        -1.64
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "9": {
+     "window": 9,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      147014,
+      134077,
+      123280,
+      115056,
+      108674,
+      103228,
+      98550,
+      94223,
+      90311,
+      86581,
+      82818,
+      79368,
+      75885,
+      72695,
+      69494,
+      66562,
+      63681,
+      60995,
+      58522
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      34.38,
+      32.0,
+      29.54,
+      28.1,
+      27.31,
+      27.0,
+      26.89,
+      26.91,
+      27.0,
+      27.03,
+      27.25,
+      27.34,
+      27.29,
+      27.32,
+      27.31,
+      27.23,
+      27.16,
+      27.05,
+      27.02
+     ],
+     "all_cause": [
+      38.4,
+      35.41,
+      32.61,
+      30.97,
+      29.99,
+      29.57,
+      29.35,
+      29.29,
+      29.35,
+      29.33,
+      29.54,
+      29.61,
+      29.53,
+      29.55,
+      29.46,
+      29.36,
+      29.27,
+      29.19,
+      29.14
+     ],
+     "cancer_specific_ci_lo": [
+      34.15,
+      31.75,
+      29.29,
+      27.84,
+      27.03,
+      26.74,
+      26.61,
+      26.63,
+      26.73,
+      26.74,
+      26.96,
+      27.07,
+      27.02,
+      27.01,
+      26.97,
+      26.87,
+      26.82,
+      26.71,
+      26.68
+     ],
+     "cancer_specific_ci_hi": [
+      34.61,
+      32.23,
+      29.8,
+      28.36,
+      27.58,
+      27.28,
+      27.16,
+      27.21,
+      27.27,
+      27.32,
+      27.58,
+      27.65,
+      27.62,
+      27.66,
+      27.66,
+      27.6,
+      27.52,
+      27.4,
+      27.38
+     ],
+     "all_cause_ci_lo": [
+      38.16,
+      35.18,
+      32.35,
+      30.69,
+      29.75,
+      29.3,
+      29.07,
+      29.02,
+      29.05,
+      29.04,
+      29.23,
+      29.31,
+      29.24,
+      29.25,
+      29.1,
+      29.01,
+      28.93,
+      28.84,
+      28.79
+     ],
+     "all_cause_ci_hi": [
+      38.63,
+      35.65,
+      32.87,
+      31.27,
+      30.27,
+      29.85,
+      29.65,
+      29.6,
+      29.62,
+      29.63,
+      29.87,
+      29.94,
+      29.89,
+      29.89,
+      29.83,
+      29.73,
+      29.68,
+      29.55,
+      29.51
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 29.914859422151753,
+     "broken_stick_slope_after_c_per_month": -0.2179766592728843,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -7.49,
+       "ci": [
+        -7.79,
+        -7.18
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -9.05,
+       "ci": [
+        -9.36,
+        -8.72
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -6.28,
+       "ci": [
+        -6.5,
+        -6.06
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -7.43,
+       "ci": [
+        -7.64,
+        -7.2
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -1.21,
+       "ci": [
+        -1.46,
+        -0.98
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -1.62,
+       "ci": [
+        -1.88,
+        -1.37
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "12": {
+     "window": 12,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      147014,
+      134077,
+      123280,
+      115056,
+      108674,
+      103228,
+      98550,
+      94223,
+      90311,
+      86581,
+      82818,
+      79368,
+      75885,
+      72695,
+      69494,
+      66562,
+      63681,
+      60995,
+      58522
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      40.59,
+      38.49,
+      36.48,
+      35.14,
+      34.49,
+      34.13,
+      33.92,
+      34.11,
+      34.19,
+      34.37,
+      34.39,
+      34.55,
+      34.41,
+      34.4,
+      34.21,
+      34.06,
+      33.91,
+      33.68,
+      33.64
+     ],
+     "all_cause": [
+      45.16,
+      42.46,
+      40.16,
+      38.6,
+      37.78,
+      37.26,
+      36.96,
+      37.07,
+      37.13,
+      37.26,
+      37.24,
+      37.35,
+      37.17,
+      37.14,
+      36.92,
+      36.77,
+      36.59,
+      36.37,
+      36.29
+     ],
+     "cancer_specific_ci_lo": [
+      40.35,
+      38.23,
+      36.21,
+      34.86,
+      34.21,
+      33.85,
+      33.62,
+      33.81,
+      33.9,
+      34.08,
+      34.09,
+      34.26,
+      34.11,
+      34.08,
+      33.85,
+      33.71,
+      33.55,
+      33.34,
+      33.26
+     ],
+     "cancer_specific_ci_hi": [
+      40.85,
+      38.73,
+      36.75,
+      35.41,
+      34.76,
+      34.43,
+      34.22,
+      34.42,
+      34.5,
+      34.69,
+      34.72,
+      34.9,
+      34.78,
+      34.78,
+      34.58,
+      34.43,
+      34.27,
+      34.05,
+      34.02
+     ],
+     "all_cause_ci_lo": [
+      44.92,
+      42.2,
+      39.87,
+      38.32,
+      37.53,
+      36.99,
+      36.66,
+      36.76,
+      36.82,
+      36.96,
+      36.94,
+      37.05,
+      36.86,
+      36.79,
+      36.55,
+      36.41,
+      36.21,
+      36.0,
+      35.88
+     ],
+     "all_cause_ci_hi": [
+      45.4,
+      42.72,
+      40.42,
+      38.86,
+      38.08,
+      37.55,
+      37.26,
+      37.39,
+      37.46,
+      37.58,
+      37.61,
+      37.73,
+      37.52,
+      37.5,
+      37.29,
+      37.16,
+      36.96,
+      36.74,
+      36.68
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 36.84805603728531,
+     "broken_stick_slope_after_c_per_month": -0.21614894584106223,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -6.66,
+       "ci": [
+        -6.95,
+        -6.38
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -8.2,
+       "ci": [
+        -8.49,
+        -7.9
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -5.45,
+       "ci": [
+        -5.64,
+        -5.24
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -6.56,
+       "ci": [
+        -6.76,
+        -6.36
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -1.21,
+       "ci": [
+        -1.43,
+        -0.99
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -1.64,
+       "ci": [
+        -1.86,
+        -1.41
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "18": {
+     "window": 18,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      147014,
+      134077,
+      123280,
+      115056,
+      108674,
+      103228,
+      98550,
+      94223,
+      90311,
+      86581,
+      82818,
+      79368,
+      75885,
+      72695,
+      69494,
+      66562,
+      63681,
+      60995,
+      58522
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      51.03,
+      49.6,
+      47.96,
+      46.94,
+      46.43,
+      46.23,
+      46.13,
+      46.11,
+      46.11,
+      46.12,
+      46.04,
+      45.94,
+      45.75,
+      45.61,
+      45.37,
+      45.14,
+      44.92,
+      44.66,
+      44.43
+     ],
+     "all_cause": [
+      56.47,
+      54.49,
+      52.57,
+      51.35,
+      50.68,
+      50.32,
+      50.1,
+      49.99,
+      49.97,
+      49.93,
+      49.8,
+      49.66,
+      49.43,
+      49.29,
+      49.02,
+      48.78,
+      48.57,
+      48.32,
+      48.06
+     ],
+     "cancer_specific_ci_lo": [
+      50.78,
+      49.33,
+      47.69,
+      46.67,
+      46.15,
+      45.94,
+      45.82,
+      45.82,
+      45.8,
+      45.81,
+      45.7,
+      45.61,
+      45.41,
+      45.26,
+      45.0,
+      44.77,
+      44.53,
+      44.26,
+      44.02
+     ],
+     "cancer_specific_ci_hi": [
+      51.31,
+      49.88,
+      48.23,
+      47.23,
+      46.73,
+      46.55,
+      46.45,
+      46.43,
+      46.44,
+      46.46,
+      46.38,
+      46.29,
+      46.12,
+      45.98,
+      45.74,
+      45.53,
+      45.29,
+      45.04,
+      44.83
+     ],
+     "all_cause_ci_lo": [
+      56.23,
+      54.22,
+      52.3,
+      51.08,
+      50.39,
+      50.03,
+      49.79,
+      49.7,
+      49.64,
+      49.59,
+      49.45,
+      49.31,
+      49.06,
+      48.9,
+      48.64,
+      48.39,
+      48.17,
+      47.91,
+      47.64
+     ],
+     "all_cause_ci_hi": [
+      56.71,
+      54.75,
+      52.83,
+      51.65,
+      51.0,
+      50.65,
+      50.43,
+      50.32,
+      50.29,
+      50.25,
+      50.15,
+      50.0,
+      49.81,
+      49.67,
+      49.39,
+      49.19,
+      48.97,
+      48.7,
+      48.49
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 48.55945952133337,
+     "broken_stick_slope_after_c_per_month": -0.24622417146211104,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -4.91,
+       "ci": [
+        -5.16,
+        -4.65
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -6.37,
+       "ci": [
+        -6.62,
+        -6.11
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -4.09,
+       "ci": [
+        -4.27,
+        -3.9
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -5.12,
+       "ci": [
+        -5.28,
+        -4.94
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -0.82,
+       "ci": [
+        -1.01,
+        -0.63
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -1.26,
+       "ci": [
+        -1.45,
+        -1.07
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "24": {
+     "window": 24,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      147014,
+      134077,
+      123280,
+      115056,
+      108674,
+      103228,
+      98550,
+      94223,
+      90311,
+      86581,
+      82818,
+      79368,
+      75885,
+      72695,
+      69494,
+      66562,
+      63681,
+      60995,
+      58522
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      59.46,
+      58.28,
+      56.95,
+      56.05,
+      55.59,
+      55.26,
+      55.13,
+      55.03,
+      54.96,
+      54.9,
+      54.76,
+      54.62,
+      54.31,
+      54.04,
+      53.72,
+      53.43,
+      53.0,
+      52.66,
+      52.34
+     ],
+     "all_cause": [
+      65.54,
+      63.83,
+      62.25,
+      61.18,
+      60.55,
+      60.08,
+      59.83,
+      59.66,
+      59.56,
+      59.43,
+      59.28,
+      59.11,
+      58.77,
+      58.5,
+      58.13,
+      57.84,
+      57.38,
+      57.02,
+      56.66
+     ],
+     "cancer_specific_ci_lo": [
+      59.2,
+      58.01,
+      56.66,
+      55.76,
+      55.28,
+      54.97,
+      54.84,
+      54.73,
+      54.65,
+      54.57,
+      54.42,
+      54.29,
+      53.96,
+      53.67,
+      53.34,
+      53.05,
+      52.6,
+      52.27,
+      51.94
+     ],
+     "cancer_specific_ci_hi": [
+      59.72,
+      58.55,
+      57.21,
+      56.33,
+      55.86,
+      55.57,
+      55.46,
+      55.38,
+      55.29,
+      55.24,
+      55.1,
+      54.98,
+      54.68,
+      54.4,
+      54.12,
+      53.82,
+      53.38,
+      53.07,
+      52.74
+     ],
+     "all_cause_ci_lo": [
+      65.29,
+      63.57,
+      61.97,
+      60.88,
+      60.25,
+      59.77,
+      59.53,
+      59.36,
+      59.23,
+      59.11,
+      58.94,
+      58.77,
+      58.43,
+      58.15,
+      57.77,
+      57.47,
+      56.97,
+      56.6,
+      56.25
+     ],
+     "all_cause_ci_hi": [
+      65.78,
+      64.09,
+      62.5,
+      61.47,
+      60.83,
+      60.39,
+      60.15,
+      59.99,
+      59.9,
+      59.78,
+      59.62,
+      59.47,
+      59.15,
+      58.87,
+      58.52,
+      58.24,
+      57.75,
+      57.41,
+      57.1
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 57.66018722966262,
+     "broken_stick_slope_after_c_per_month": -0.2984823691369136,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -4.33,
+       "ci": [
+        -4.57,
+        -4.1
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -5.71,
+       "ci": [
+        -5.92,
+        -5.51
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -3.4,
+       "ci": [
+        -3.58,
+        -3.24
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -4.37,
+       "ci": [
+        -4.52,
+        -4.22
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -0.92,
+       "ci": [
+        -1.09,
+        -0.76
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -1.34,
+       "ci": [
+        -1.5,
+        -1.19
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    }
+   }
+  },
+  "PANC": {
+   "label": "Pancreatic adenocarcinoma (distant)",
+   "n_distant": 75634,
+   "B": 500,
+   "windows": {
+    "3": {
+     "window": 3,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      75634,
+      62601,
+      49494,
+      40696,
+      34755,
+      29893,
+      26125,
+      22821,
+      20179,
+      17784,
+      15701,
+      13974,
+      12373,
+      11000,
+      9876,
+      8771,
+      7812,
+      7019,
+      6332
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      41.91,
+      40.78,
+      36.24,
+      32.74,
+      31.21,
+      29.49,
+      28.9,
+      28.24,
+      27.7,
+      27.37,
+      27.1,
+      26.55,
+      26.29,
+      25.7,
+      25.59,
+      24.62,
+      24.13,
+      23.69,
+      23.23
+     ],
+     "all_cause": [
+      45.06,
+      43.41,
+      38.42,
+      34.59,
+      32.95,
+      31.16,
+      30.48,
+      29.86,
+      29.29,
+      28.9,
+      28.48,
+      27.93,
+      27.7,
+      27.25,
+      27.1,
+      26.0,
+      25.26,
+      24.72,
+      24.38
+     ],
+     "cancer_specific_ci_lo": [
+      41.57,
+      40.44,
+      35.83,
+      32.3,
+      30.76,
+      28.96,
+      28.32,
+      27.6,
+      27.07,
+      26.67,
+      26.41,
+      25.84,
+      25.58,
+      24.86,
+      24.69,
+      23.68,
+      23.03,
+      22.66,
+      22.22
+     ],
+     "cancer_specific_ci_hi": [
+      42.24,
+      41.15,
+      36.7,
+      33.21,
+      31.64,
+      29.95,
+      29.46,
+      28.79,
+      28.26,
+      28.1,
+      27.81,
+      27.33,
+      27.15,
+      26.49,
+      26.45,
+      25.46,
+      25.02,
+      24.66,
+      24.31
+     ],
+     "all_cause_ci_lo": [
+      44.71,
+      43.06,
+      38.03,
+      34.15,
+      32.5,
+      30.62,
+      29.93,
+      29.2,
+      28.65,
+      28.2,
+      27.79,
+      27.2,
+      26.95,
+      26.43,
+      26.19,
+      25.04,
+      24.22,
+      23.63,
+      23.4
+     ],
+     "all_cause_ci_hi": [
+      45.4,
+      43.79,
+      38.87,
+      35.05,
+      33.41,
+      31.64,
+      31.04,
+      30.44,
+      29.84,
+      29.57,
+      29.16,
+      28.68,
+      28.53,
+      28.12,
+      27.93,
+      26.9,
+      26.23,
+      25.68,
+      25.46
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 36.818032859514894,
+     "broken_stick_slope_after_c_per_month": -0.8657788627703159,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -13.02,
+       "ci": [
+        -13.69,
+        -12.42
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -14.58,
+       "ci": [
+        -15.25,
+        -13.9
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -9.18,
+       "ci": [
+        -9.78,
+        -8.62
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -10.47,
+       "ci": [
+        -11.03,
+        -9.89
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -3.84,
+       "ci": [
+        -4.57,
+        -3.2
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -4.11,
+       "ci": [
+        -4.87,
+        -3.45
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "6": {
+     "window": 6,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      75634,
+      62601,
+      49494,
+      40696,
+      34755,
+      29893,
+      26125,
+      22821,
+      20179,
+      17784,
+      15701,
+      13974,
+      12373,
+      11000,
+      9876,
+      8771,
+      7812,
+      7019,
+      6332
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      59.9,
+      58.45,
+      54.41,
+      51.64,
+      50.15,
+      48.56,
+      47.92,
+      47.24,
+      46.48,
+      46.07,
+      45.48,
+      44.99,
+      44.09,
+      43.25,
+      42.86,
+      41.81,
+      40.91,
+      40.79,
+      39.78
+     ],
+     "all_cause": [
+      64.06,
+      62.06,
+      57.61,
+      54.53,
+      52.97,
+      51.33,
+      50.57,
+      49.84,
+      49.04,
+      48.59,
+      47.97,
+      47.46,
+      46.5,
+      45.62,
+      45.12,
+      44.04,
+      43.02,
+      42.8,
+      41.91
+     ],
+     "cancer_specific_ci_lo": [
+      59.58,
+      58.07,
+      53.97,
+      51.12,
+      49.61,
+      48.01,
+      47.28,
+      46.59,
+      45.81,
+      45.35,
+      44.71,
+      44.24,
+      43.26,
+      42.3,
+      41.82,
+      40.72,
+      39.82,
+      39.59,
+      38.7
+     ],
+     "cancer_specific_ci_hi": [
+      60.22,
+      58.81,
+      54.87,
+      52.12,
+      50.69,
+      49.1,
+      48.53,
+      47.86,
+      47.13,
+      46.75,
+      46.21,
+      45.77,
+      44.88,
+      44.28,
+      43.85,
+      42.87,
+      41.96,
+      41.92,
+      40.85
+     ],
+     "all_cause_ci_lo": [
+      63.73,
+      61.7,
+      57.19,
+      54.02,
+      52.43,
+      50.76,
+      49.95,
+      49.14,
+      48.37,
+      47.89,
+      47.2,
+      46.66,
+      45.64,
+      44.62,
+      44.09,
+      42.98,
+      42.05,
+      41.66,
+      40.83
+     ],
+     "all_cause_ci_hi": [
+      64.35,
+      62.41,
+      58.06,
+      55.03,
+      53.49,
+      51.84,
+      51.16,
+      50.46,
+      49.66,
+      49.32,
+      48.73,
+      48.26,
+      47.3,
+      46.62,
+      46.11,
+      45.11,
+      44.09,
+      43.95,
+      43.0
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 55.785679374458105,
+     "broken_stick_slope_after_c_per_month": -0.9657969763529224,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -11.98,
+       "ci": [
+        -12.76,
+        -11.3
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -13.49,
+       "ci": [
+        -14.25,
+        -12.8
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -8.26,
+       "ci": [
+        -8.71,
+        -7.86
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -9.53,
+       "ci": [
+        -9.97,
+        -9.1
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -3.72,
+       "ci": [
+        -4.34,
+        -3.14
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -3.95,
+       "ci": [
+        -4.56,
+        -3.42
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "9": {
+     "window": 9,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      75634,
+      62601,
+      49494,
+      40696,
+      34755,
+      29893,
+      26125,
+      22821,
+      20179,
+      17784,
+      15701,
+      13974,
+      12373,
+      11000,
+      9876,
+      8771,
+      7812,
+      7019,
+      6332
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      70.29,
+      69.16,
+      66.15,
+      64.09,
+      62.89,
+      61.49,
+      60.92,
+      60.13,
+      59.51,
+      58.72,
+      58.03,
+      57.44,
+      56.52,
+      55.46,
+      55.32,
+      54.06,
+      53.25,
+      52.26,
+      51.1
+     ],
+     "all_cause": [
+      75.02,
+      73.39,
+      70.02,
+      67.67,
+      66.37,
+      64.92,
+      64.26,
+      63.51,
+      62.85,
+      61.96,
+      61.11,
+      60.45,
+      59.54,
+      58.54,
+      58.3,
+      57.02,
+      56.03,
+      55.05,
+      54.08
+     ],
+     "cancer_specific_ci_lo": [
+      69.96,
+      68.77,
+      65.75,
+      63.64,
+      62.39,
+      60.94,
+      60.3,
+      59.54,
+      58.78,
+      58.0,
+      57.26,
+      56.69,
+      55.67,
+      54.53,
+      54.28,
+      52.95,
+      52.16,
+      51.16,
+      49.87
+     ],
+     "cancer_specific_ci_hi": [
+      70.62,
+      69.52,
+      66.59,
+      64.56,
+      63.36,
+      62.04,
+      61.51,
+      60.69,
+      60.14,
+      59.39,
+      58.82,
+      58.29,
+      57.49,
+      56.47,
+      56.35,
+      55.09,
+      54.25,
+      53.39,
+      52.21
+     ],
+     "all_cause_ci_lo": [
+      74.7,
+      73.01,
+      69.62,
+      67.23,
+      65.85,
+      64.4,
+      63.67,
+      62.88,
+      62.2,
+      61.26,
+      60.3,
+      59.61,
+      58.64,
+      57.68,
+      57.33,
+      55.94,
+      54.94,
+      53.94,
+      52.91
+     ],
+     "all_cause_ci_hi": [
+      75.33,
+      73.74,
+      70.42,
+      68.13,
+      66.82,
+      65.47,
+      64.84,
+      64.04,
+      63.44,
+      62.59,
+      61.91,
+      61.31,
+      60.46,
+      59.52,
+      59.32,
+      58.08,
+      57.04,
+      56.14,
+      55.28
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 67.83788701561463,
+     "broken_stick_slope_after_c_per_month": -0.9481286463157587,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -9.37,
+       "ci": [
+        -9.95,
+        -8.79
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -10.75,
+       "ci": [
+        -11.35,
+        -10.22
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -6.2,
+       "ci": [
+        -6.59,
+        -5.87
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -7.35,
+       "ci": [
+        -7.7,
+        -7.01
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -3.17,
+       "ci": [
+        -3.57,
+        -2.68
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -3.41,
+       "ci": [
+        -3.82,
+        -2.93
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "12": {
+     "window": 12,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      75634,
+      62601,
+      49494,
+      40696,
+      34755,
+      29893,
+      26125,
+      22821,
+      20179,
+      17784,
+      15701,
+      13974,
+      12373,
+      11000,
+      9876,
+      8771,
+      7812,
+      7019,
+      6332
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      77.12,
+      76.37,
+      74.11,
+      72.59,
+      71.54,
+      70.46,
+      69.72,
+      68.94,
+      68.32,
+      67.56,
+      66.76,
+      66.42,
+      65.38,
+      64.44,
+      63.68,
+      62.43,
+      61.14,
+      60.2,
+      59.24
+     ],
+     "all_cause": [
+      82.24,
+      80.97,
+      78.4,
+      76.62,
+      75.53,
+      74.43,
+      73.56,
+      72.72,
+      72.03,
+      71.23,
+      70.35,
+      69.95,
+      68.92,
+      68.01,
+      67.24,
+      66.02,
+      64.67,
+      63.64,
+      62.77
+     ],
+     "cancer_specific_ci_lo": [
+      76.83,
+      76.03,
+      73.72,
+      72.14,
+      71.05,
+      69.91,
+      69.14,
+      68.33,
+      67.7,
+      66.86,
+      66.04,
+      65.66,
+      64.56,
+      63.47,
+      62.74,
+      61.35,
+      60.12,
+      59.09,
+      58.12
+     ],
+     "cancer_specific_ci_hi": [
+      77.44,
+      76.71,
+      74.5,
+      73.0,
+      71.97,
+      70.95,
+      70.27,
+      69.49,
+      68.93,
+      68.25,
+      67.51,
+      67.21,
+      66.2,
+      65.32,
+      64.57,
+      63.39,
+      62.09,
+      61.21,
+      60.41
+     ],
+     "all_cause_ci_lo": [
+      81.97,
+      80.66,
+      78.07,
+      76.24,
+      75.08,
+      73.96,
+      72.97,
+      72.12,
+      71.39,
+      70.57,
+      69.59,
+      69.18,
+      68.05,
+      67.08,
+      66.27,
+      65.02,
+      63.57,
+      62.48,
+      61.67
+     ],
+     "all_cause_ci_hi": [
+      82.51,
+      81.26,
+      78.75,
+      77.04,
+      75.95,
+      74.88,
+      74.02,
+      73.26,
+      72.62,
+      71.9,
+      71.04,
+      70.69,
+      69.7,
+      68.82,
+      68.09,
+      66.97,
+      65.67,
+      64.64,
+      63.92
+     ],
+     "plateau_end_cancer_specific": 0.0,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.0
+     ],
+     "plateau_end_boot_median": 0.0,
+     "plateau_prop_boot_gt0": 0.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 75.99633831072782,
+     "broken_stick_slope_after_c_per_month": -0.9211501017921195,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -7.41,
+       "ci": [
+        -7.9,
+        -6.95
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -8.68,
+       "ci": [
+        -9.21,
+        -8.27
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -4.54,
+       "ci": [
+        -4.83,
+        -4.21
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -5.61,
+       "ci": [
+        -5.89,
+        -5.31
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -2.87,
+       "ci": [
+        -3.28,
+        -2.48
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -3.07,
+       "ci": [
+        -3.44,
+        -2.72
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "18": {
+     "window": 18,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      75634,
+      62601,
+      49494,
+      40696,
+      34755,
+      29893,
+      26125,
+      22821,
+      20179,
+      17784,
+      15701,
+      13974,
+      12373,
+      11000,
+      9876,
+      8771,
+      7812,
+      7019,
+      6332
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      84.96,
+      84.6,
+      83.37,
+      82.36,
+      81.55,
+      80.89,
+      80.24,
+      79.57,
+      78.93,
+      78.16,
+      77.29,
+      76.62,
+      75.79,
+      74.8,
+      74.03,
+      72.73,
+      71.52,
+      70.66,
+      69.54
+     ],
+     "all_cause": [
+      90.5,
+      89.65,
+      88.14,
+      86.92,
+      86.06,
+      85.37,
+      84.64,
+      83.96,
+      83.3,
+      82.53,
+      81.62,
+      80.9,
+      80.08,
+      79.2,
+      78.41,
+      77.07,
+      75.77,
+      74.92,
+      73.92
+     ],
+     "cancer_specific_ci_lo": [
+      84.69,
+      84.3,
+      83.03,
+      81.97,
+      81.1,
+      80.42,
+      79.73,
+      79.0,
+      78.33,
+      77.49,
+      76.57,
+      75.88,
+      75.01,
+      73.99,
+      73.1,
+      71.76,
+      70.46,
+      69.62,
+      68.44
+     ],
+     "cancer_specific_ci_hi": [
+      85.2,
+      84.89,
+      83.7,
+      82.72,
+      81.96,
+      81.34,
+      80.73,
+      80.04,
+      79.45,
+      78.72,
+      77.94,
+      77.32,
+      76.51,
+      75.64,
+      74.9,
+      73.66,
+      72.48,
+      71.65,
+      70.58
+     ],
+     "all_cause_ci_lo": [
+      90.28,
+      89.41,
+      87.86,
+      86.57,
+      85.68,
+      84.97,
+      84.21,
+      83.47,
+      82.78,
+      81.96,
+      80.96,
+      80.22,
+      79.34,
+      78.4,
+      77.49,
+      76.09,
+      74.73,
+      73.82,
+      72.84
+     ],
+     "all_cause_ci_hi": [
+      90.7,
+      89.89,
+      88.42,
+      87.26,
+      86.41,
+      85.76,
+      85.06,
+      84.38,
+      83.8,
+      83.05,
+      82.24,
+      81.5,
+      80.76,
+      79.92,
+      79.19,
+      77.99,
+      76.68,
+      75.9,
+      74.9
+     ],
+     "plateau_end_cancer_specific": 0.5,
+     "plateau_end_cancer_specific_ci": [
+      0.0,
+      0.75
+     ],
+     "plateau_end_boot_median": 0.5,
+     "plateau_prop_boot_gt0": 0.922,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 84.91195286370427,
+     "broken_stick_slope_after_c_per_month": -0.8377985652611606,
+     "plateau_end_all_cause": 0.0,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -4.72,
+       "ci": [
+        -5.11,
+        -4.35
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -5.86,
+       "ci": [
+        -6.21,
+        -5.54
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -2.6,
+       "ci": [
+        -2.86,
+        -2.36
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -3.58,
+       "ci": [
+        -3.79,
+        -3.37
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -2.12,
+       "ci": [
+        -2.41,
+        -1.82
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -2.28,
+       "ci": [
+        -2.54,
+        -2.01
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    },
+    "24": {
+     "window": 24,
+     "landmark": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+     ],
+     "n_at_risk": [
+      75634,
+      62601,
+      49494,
+      40696,
+      34755,
+      29893,
+      26125,
+      22821,
+      20179,
+      17784,
+      15701,
+      13974,
+      12373,
+      11000,
+      9876,
+      8771,
+      7812,
+      7019,
+      6332
+     ],
+     "sparse": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ],
+     "cancer_specific": [
+      88.74,
+      88.64,
+      87.87,
+      87.18,
+      86.5,
+      85.86,
+      85.38,
+      84.76,
+      84.2,
+      83.45,
+      82.69,
+      82.11,
+      81.3,
+      80.29,
+      79.56,
+      78.6,
+      77.86,
+      76.8,
+      75.76
+     ],
+     "all_cause": [
+      94.48,
+      93.91,
+      92.92,
+      92.06,
+      91.36,
+      90.7,
+      90.16,
+      89.57,
+      89.0,
+      88.21,
+      87.39,
+      86.82,
+      86.04,
+      85.19,
+      84.43,
+      83.54,
+      82.72,
+      81.69,
+      80.74
+     ],
+     "cancer_specific_ci_lo": [
+      88.5,
+      88.35,
+      87.56,
+      86.84,
+      86.1,
+      85.42,
+      84.92,
+      84.29,
+      83.64,
+      82.88,
+      82.04,
+      81.42,
+      80.56,
+      79.52,
+      78.74,
+      77.75,
+      76.97,
+      75.87,
+      74.8
+     ],
+     "cancer_specific_ci_hi": [
+      88.96,
+      88.89,
+      88.14,
+      87.48,
+      86.85,
+      86.23,
+      85.8,
+      85.2,
+      84.7,
+      84.0,
+      83.28,
+      82.72,
+      82.02,
+      81.05,
+      80.4,
+      79.52,
+      78.78,
+      77.81,
+      76.88
+     ],
+     "all_cause_ci_lo": [
+      94.3,
+      93.71,
+      92.69,
+      91.77,
+      91.04,
+      90.34,
+      89.79,
+      89.15,
+      88.54,
+      87.69,
+      86.84,
+      86.19,
+      85.39,
+      84.47,
+      83.66,
+      82.71,
+      81.84,
+      80.8,
+      79.72
+     ],
+     "all_cause_ci_hi": [
+      94.64,
+      94.1,
+      93.14,
+      92.3,
+      91.63,
+      91.02,
+      90.51,
+      89.96,
+      89.41,
+      88.69,
+      87.91,
+      87.39,
+      86.63,
+      85.82,
+      85.11,
+      84.34,
+      83.54,
+      82.66,
+      81.76
+     ],
+     "plateau_end_cancer_specific": 1.5,
+     "plateau_end_cancer_specific_ci": [
+      0.8687500000000004,
+      2.3812499999999943
+     ],
+     "plateau_end_boot_median": 1.5,
+     "plateau_prop_boot_gt0": 1.0,
+     "plateau_prop_boot_ge3": 0.0,
+     "broken_stick_intercept": 88.65825766581563,
+     "broken_stick_slope_after_c_per_month": -0.740191055165893,
+     "plateau_end_all_cause": 0.25,
+     "differences": {
+      "6-0_cancer_specific": {
+       "estimate": -3.36,
+       "ci": [
+        -3.68,
+        -3.01
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-0_all_cause": {
+       "estimate": -4.32,
+       "ci": [
+        -4.59,
+        -4.05
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_cancer_specific": {
+       "estimate": -1.56,
+       "ci": [
+        -1.8,
+        -1.34
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "3-0_all_cause": {
+       "estimate": -2.42,
+       "ci": [
+        -2.58,
+        -2.26
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_cancer_specific": {
+       "estimate": -1.8,
+       "ci": [
+        -2.03,
+        -1.55
+       ],
+       "p_boot_two_sided": 0.0
+      },
+      "6-3_all_cause": {
+       "estimate": -1.9,
+       "ci": [
+        -2.09,
+        -1.7
+       ],
+       "p_boot_two_sided": 0.0
+      }
+     }
+    }
+   }
+  }
+ },
+ "model_comparison_NEC": {
+  "primary_window": 12,
+  "n_points": 19,
+  "bic_formula": "n*log(SSE/n) + k*log(n); k = 3 (broken-stick: b0,b1,c), 2 (linear), 3 (quadratic), 4 (natural cubic spline, 3 df + intercept; knots 0,6,12,18)",
+  "caveat": "The 19 landmark points are overlapping-window estimates from the same patients and are strongly autocorrelated; SSE/BIC are descriptive, not likelihood-valid inference.",
+  "by_window": {
+   "3": {
+    "point": {
+     "broken_stick": {
+      "sse": 130.69918695305697,
+      "k": 3,
+      "bic": 45.47404593143145,
+      "c": 11.75,
+      "intercept": 29.576714036723548,
+      "slope_after_c": -1.9780849403813676
+     },
+     "linear": {
+      "sse": 260.4760980902408,
+      "k": 2,
+      "bic": 55.63224831139023,
+      "coef": [
+       32.013648790014685,
+       -0.533936799451506
+      ]
+     },
+     "quadratic": {
+      "sse": 151.3245549656051,
+      "k": 3,
+      "bic": 48.25808744959275,
+      "coef": [
+       27.438984703839672,
+       1.0806505250808693,
+       -0.08969929580735415
+      ]
+     },
+     "ns3": {
+      "sse": 131.84277994134706,
+      "k": 4,
+      "bic": 48.58400819402496,
+      "coef": [
+       28.605982378709612,
+       0.21144674104644134,
+       -0.0001443088094375571,
+       -0.1441547881128403
+      ]
+     }
+    },
+    "bootstrap": {
+     "B": 2000,
+     "delta_bic_linear_minus_bs_median": 6.363348857848504,
+     "delta_bic_linear_minus_bs_ci": [
+      -2.3081501405733675,
+      20.039288229810595
+     ],
+     "prop_bs_better_than_linear_by_gt2": 0.7815,
+     "prop_bs_better_than_linear_by_gt6": 0.53,
+     "prop_linear_better_than_bs_by_gt2": 0.031,
+     "delta_bic_quadratic_minus_bs_median": 1.9660786326156767,
+     "prop_bs_better_than_quadratic_by_gt2": 0.4925,
+     "delta_bic_ns3_minus_bs_median": 2.571106916285693,
+     "prop_bs_better_than_ns3_by_gt2": 0.609,
+     "prop_best_model": {
+      "broken_stick": 0.683,
+      "linear": 0.1005,
+      "quadratic": 0.0975,
+      "ns3": 0.119
+     },
+     "plateau_c_boot_quartiles": [
+      9.0,
+      11.5,
+      12.5
+     ]
+    }
+   },
+   "6": {
+    "point": {
+     "broken_stick": {
+      "sse": 47.60542217163114,
+      "k": 3,
+      "bic": 26.28496298579247,
+      "c": 9.25,
+      "intercept": 49.95271527958003,
+      "slope_after_c": -2.2477932839457315
+     },
+     "linear": {
+      "sse": 311.44048867056597,
+      "k": 2,
+      "bic": 59.02749452918265,
+      "coef": [
+       53.96840875191669,
+       -1.0081364845793932
+      ]
+     },
+     "quadratic": {
+      "sse": 45.59035222794335,
+      "k": 3,
+      "bic": 25.463202616886235,
+      "coef": [
+       46.828992335881374,
+       1.5116575446095606,
+       -0.1399885571771642
+      ]
+     },
+     "ns3": {
+      "sse": 32.16729434250919,
+      "k": 4,
+      "bic": 21.781469734279863,
+      "coef": [
+       46.306258655091845,
+       1.3853001383373207,
+       -0.24684506744177884,
+       0.2748786365008334
+      ]
+     }
+    },
+    "bootstrap": {
+     "B": 2000,
+     "delta_bic_linear_minus_bs_median": 21.196233032276144,
+     "delta_bic_linear_minus_bs_ci": [
+      2.8188031832491123,
+      43.14122501144292
+     ],
+     "prop_bs_better_than_linear_by_gt2": 0.9825,
+     "prop_bs_better_than_linear_by_gt6": 0.941,
+     "prop_linear_better_than_bs_by_gt2": 0.003,
+     "delta_bic_quadratic_minus_bs_median": 1.885229934701922,
+     "prop_bs_better_than_quadratic_by_gt2": 0.4955,
+     "delta_bic_ns3_minus_bs_median": -3.189220528167583,
+     "prop_bs_better_than_ns3_by_gt2": 0.2115,
+     "prop_best_model": {
+      "broken_stick": 0.3005,
+      "linear": 0.001,
+      "quadratic": 0.1185,
+      "ns3": 0.58
+     },
+     "plateau_c_boot_quartiles": [
+      8.0,
+      9.0,
+      10.5
+     ]
+    }
+   },
+   "9": {
+    "point": {
+     "broken_stick": {
+      "sse": 29.85196695513772,
+      "k": 3,
+      "bic": 17.417740247267503,
+      "c": 7.75,
+      "intercept": 63.7726499615594,
+      "slope_after_c": -2.516703740752018
+     },
+     "linear": {
+      "sse": 287.633611339872,
+      "k": 2,
+      "bic": 57.51659961432789,
+      "coef": [
+       69.43768578333751,
+       -1.4793878458608913
+      ]
+     },
+     "quadratic": {
+      "sse": 50.08927433835479,
+      "k": 3,
+      "bic": 27.25130743539963,
+      "coef": [
+       62.68904036451361,
+       0.9024870078416629,
+       -0.132326380761253
+      ]
+     },
+     "ns3": {
+      "sse": 32.23978937033674,
+      "k": 4,
+      "bic": 21.824241616843352,
+      "coef": [
+       61.8735079660075,
+       0.9414838190552506,
+       -0.2636315913649041,
+       0.31982219616049234
+      ]
+     }
+    },
+    "bootstrap": {
+     "B": 2000,
+     "delta_bic_linear_minus_bs_median": 27.92234067101323,
+     "delta_bic_linear_minus_bs_ci": [
+      5.0790462286481475,
+      46.508855261859914
+     ],
+     "prop_bs_better_than_linear_by_gt2": 0.985,
+     "prop_bs_better_than_linear_by_gt6": 0.9695,
+     "prop_linear_better_than_bs_by_gt2": 0.0055,
+     "delta_bic_quadratic_minus_bs_median": 5.686472977785467,
+     "prop_bs_better_than_quadratic_by_gt2": 0.7165,
+     "delta_bic_ns3_minus_bs_median": 1.1781276190027832,
+     "prop_bs_better_than_ns3_by_gt2": 0.4265,
+     "prop_best_model": {
+      "broken_stick": 0.563,
+      "linear": 0.002,
+      "quadratic": 0.0795,
+      "ns3": 0.3555
+     },
+     "plateau_c_boot_quartiles": [
+      6.75,
+      7.75,
+      8.75
+     ]
+    }
+   },
+   "12": {
+    "point": {
+     "broken_stick": {
+      "sse": 10.661164505084662,
+      "k": 3,
+      "bic": -2.1454782520924116,
+      "c": 6.75,
+      "intercept": 72.25531107350923,
+      "slope_after_c": -2.4628981567251915
+     },
+     "linear": {
+      "sse": 199.2088357549903,
+      "k": 2,
+      "bic": 50.5372576611348,
+      "coef": [
+       78.22651089222762,
+       -1.6572676571326745
+      ]
+     },
+     "quadratic": {
+      "sse": 33.05873186403029,
+      "k": 3,
+      "bic": 19.356405261047442,
+      "coef": [
+       72.58241247116759,
+       0.3347670797120509,
+       -0.11066859649137382
+      ]
+     },
+     "ns3": {
+      "sse": 11.278724245003751,
+      "k": 4,
+      "bic": 1.8688599882082357,
+      "coef": [
+       71.33995288742284,
+       0.6565837835776883,
+       -0.2777598637069737,
+       0.3828870919015728
+      ]
+     }
+    },
+    "bootstrap": {
+     "B": 2000,
+     "delta_bic_linear_minus_bs_median": 33.162766483315636,
+     "delta_bic_linear_minus_bs_ci": [
+      3.329731821115694,
+      57.414052245907726
+     ],
+     "prop_bs_better_than_linear_by_gt2": 0.979,
+     "prop_bs_better_than_linear_by_gt6": 0.9575,
+     "prop_linear_better_than_bs_by_gt2": 0.0075,
+     "delta_bic_quadratic_minus_bs_median": 8.593506959596276,
+     "prop_bs_better_than_quadratic_by_gt2": 0.804,
+     "delta_bic_ns3_minus_bs_median": -0.18269879212451734,
+     "prop_bs_better_than_ns3_by_gt2": 0.329,
+     "prop_best_model": {
+      "broken_stick": 0.4755,
+      "linear": 0.002,
+      "quadratic": 0.0605,
+      "ns3": 0.462
+     },
+     "plateau_c_boot_quartiles": [
+      6.0,
+      6.75,
+      7.75
+     ]
+    }
+   },
+   "18": {
+    "point": {
+     "broken_stick": {
+      "sse": 23.753975250375298,
+      "k": 3,
+      "bic": 13.076224346649925,
+      "c": 6.75,
+      "intercept": 80.2775790971508,
+      "slope_after_c": -2.788214026852288
+     },
+     "linear": {
+      "sse": 210.57621466691035,
+      "k": 2,
+      "bic": 51.59164275202558,
+      "coef": [
+       87.2666346296205,
+       -1.9016305436826404
+      ]
+     },
+     "quadratic": {
+      "sse": 23.730707837029748,
+      "k": 3,
+      "bic": 13.05760441027454,
+      "coef": [
+       81.28133909909873,
+       0.21082670238386853,
+       -0.11735873589258393
+      ]
+     },
+     "ns3": {
+      "sse": 14.79713436232306,
+      "k": 4,
+      "bic": 7.027652531750851,
+      "coef": [
+       80.8708437335176,
+       0.09165143680654997,
+       -0.20447401154449807,
+       0.22562399139057968
+      ]
+     }
+    },
+    "bootstrap": {
+     "B": 2000,
+     "delta_bic_linear_minus_bs_median": 31.718616511009127,
+     "delta_bic_linear_minus_bs_ci": [
+      11.66495075056282,
+      51.724964542001686
+     ],
+     "prop_bs_better_than_linear_by_gt2": 0.999,
+     "prop_bs_better_than_linear_by_gt6": 0.995,
+     "prop_linear_better_than_bs_by_gt2": 0.0,
+     "delta_bic_quadratic_minus_bs_median": 2.0655149330405393,
+     "prop_bs_better_than_quadratic_by_gt2": 0.501,
+     "delta_bic_ns3_minus_bs_median": -2.5139219980879766,
+     "prop_bs_better_than_ns3_by_gt2": 0.191,
+     "prop_best_model": {
+      "broken_stick": 0.328,
+      "linear": 0.0,
+      "quadratic": 0.102,
+      "ns3": 0.57
+     },
+     "plateau_c_boot_quartiles": [
+      6.25,
+      6.75,
+      7.5
+     ]
+    }
+   },
+   "24": {
+    "point": {
+     "broken_stick": {
+      "sse": 15.280856222140024,
+      "k": 3,
+      "bic": 4.694391868664409,
+      "c": 5.75,
+      "intercept": 83.81086344772432,
+      "slope_after_c": -2.3986982997293347
+     },
+     "linear": {
+      "sse": 140.44479777246525,
+      "k": 2,
+      "bic": 43.89601310406567,
+      "coef": [
+       89.7440664235672,
+       -1.7989771543510122
+      ]
+     },
+     "quadratic": {
+      "sse": 35.587394994094744,
+      "k": 3,
+      "bic": 20.75681487057093,
+      "coef": [
+       85.26029135354419,
+       -0.21646830610759643,
+       -0.08791715823574543
+      ]
+     },
+     "ns3": {
+      "sse": 12.996635916889232,
+      "k": 4,
+      "bic": 4.562535731142796,
+      "coef": [
+       83.88472392746638,
+       0.23153821692874188,
+       -0.25756497412979085,
+       0.3773763640423988
+      ]
+     }
+    },
+    "bootstrap": {
+     "B": 2000,
+     "delta_bic_linear_minus_bs_median": 28.23989642216379,
+     "delta_bic_linear_minus_bs_ci": [
+      4.7765224622530615,
+      52.49500860772828
+     ],
+     "prop_bs_better_than_linear_by_gt2": 0.991,
+     "prop_bs_better_than_linear_by_gt6": 0.964,
+     "prop_linear_better_than_bs_by_gt2": 0.0005,
+     "delta_bic_quadratic_minus_bs_median": 8.994773662146136,
+     "prop_bs_better_than_quadratic_by_gt2": 0.829,
+     "delta_bic_ns3_minus_bs_median": -1.7569878767904674,
+     "prop_bs_better_than_ns3_by_gt2": 0.192,
+     "prop_best_model": {
+      "broken_stick": 0.3645,
+      "linear": 0.0,
+      "quadratic": 0.0405,
+      "ns3": 0.595
+     },
+     "plateau_c_boot_quartiles": [
+      5.25,
+      5.75,
+      6.5
+     ]
+    }
+   }
+  }
+ },
+ "runtime_minutes": 0.6,
+ "software": {
+  "python": "3.13.6",
+  "numpy": "2.2.0",
+  "pandas": "2.3.3",
+  "matplotlib": "3.10.8"
+ },
+ "figures": [
+  "figures/output/A02_fig1_nec_window_panels.png",
+  "figures/output/A02_fig2_diff60_vs_window.png"
+ ]
+}

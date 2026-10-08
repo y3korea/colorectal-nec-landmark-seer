@@ -1,0 +1,7 @@
+# Python 3.13.6 (versions used for the verified reproduction run, 2026-10-08)
+numpy==2.2.0
+pandas==2.3.3
+scipy==1.17.1
+matplotlib==3.10.8
+# R 4.5.3 with data.table 1.18.4, survival 3.8.6, sandwich 3.1.1, jsonlite 2.0.0, cmprsk 2.2.12, muhaz 1.2.6.5
+# -> install with: Rscript R/install_packages.R

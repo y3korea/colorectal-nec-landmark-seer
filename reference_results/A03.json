@@ -1,0 +1,636 @@
+{
+ "id": "A03",
+ "B": 2000,
+ "seeds": {
+  "NEC": 20261007,
+  "SCLC": 20260929,
+  "AC": 20260930,
+  "PANC": 20260931
+ },
+ "window_months": 12,
+ "n": {
+  "NEC": 908,
+  "SCLC": 77707,
+  "AC": 147014,
+  "PANC": 75634
+ },
+ "margins_status": "post hoc (not pre-specified in the 2026-09-28 protocol); primary clinically anchored margin +-5 points, approx. the observed 6.7-point colorectal-AC decline",
+ "primary_margin": 5,
+ "referenced_anchors": {
+  "plateau_end_months": 6.75,
+  "source": "task reproduction anchors / A01 broken-stick fit (not computed in A03)"
+ },
+ "point_cif12": {
+  "NEC": {
+   "0": 72.29,
+   "3": 71.62,
+   "6": 72.33,
+   "12": 60.03,
+   "24": 30.51
+  },
+  "SCLC": {
+   "0": 69.98,
+   "3": 68.22,
+   "6": 69.49,
+   "12": 61.93,
+   "24": 38.61
+  },
+  "AC": {
+   "0": 40.59,
+   "3": 35.14,
+   "6": 33.92,
+   "12": 34.41,
+   "24": 31.67
+  },
+  "PANC": {
+   "0": 77.12,
+   "3": 72.59,
+   "6": 69.72,
+   "12": 65.38,
+   "24": 51.24
+  }
+ },
+ "nrisk": {
+  "NEC": {
+   "0": 908,
+   "3": 553,
+   "6": 396,
+   "12": 169,
+   "24": 48
+  },
+  "SCLC": {
+   "0": 77707,
+   "3": 47958,
+   "6": 37152,
+   "12": 17826,
+   "24": 5672
+  },
+  "AC": {
+   "0": 147014,
+   "3": 115056,
+   "6": 98550,
+   "12": 75885,
+   "24": 44906
+  },
+  "PANC": {
+   "0": 75634,
+   "3": 40696,
+   "6": 26125,
+   "12": 12373,
+   "24": 3515
+  }
+ },
+ "reproduction": [
+  {
+   "cohort": "NEC",
+   "quantity": "CIF12 at landmark 0",
+   "mine": 72.29,
+   "manuscript": 72.29,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "CIF12 at landmark 3",
+   "mine": 71.62,
+   "manuscript": 71.62,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "CIF12 at landmark 6",
+   "mine": 72.33,
+   "manuscript": 72.33,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "CIF12 at landmark 12",
+   "mine": 60.03,
+   "manuscript": 60.03,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "CIF12 at landmark 24",
+   "mine": 30.51,
+   "manuscript": 30.51,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "n at risk landmark 0",
+   "mine": 908,
+   "manuscript": 908,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "n at risk landmark 3",
+   "mine": 553,
+   "manuscript": 553,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "n at risk landmark 6",
+   "mine": 396,
+   "manuscript": 396,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "n at risk landmark 12",
+   "mine": 169,
+   "manuscript": 169,
+   "ok": true
+  },
+  {
+   "cohort": "NEC",
+   "quantity": "n at risk landmark 24",
+   "mine": 48,
+   "manuscript": 48,
+   "ok": true
+  },
+  {
+   "cohort": "SCLC",
+   "quantity": "CIF12 at landmark 0",
+   "mine": 69.98,
+   "manuscript": 69.98,
+   "ok": true
+  },
+  {
+   "cohort": "SCLC",
+   "quantity": "CIF12 at landmark 6",
+   "mine": 69.49,
+   "manuscript": 69.49,
+   "ok": true
+  },
+  {
+   "cohort": "SCLC",
+   "quantity": "CIF12 at landmark 12",
+   "mine": 61.93,
+   "manuscript": 61.93,
+   "ok": true
+  },
+  {
+   "cohort": "AC",
+   "quantity": "CIF12 at landmark 0",
+   "mine": 40.59,
+   "manuscript": 40.59,
+   "ok": true
+  },
+  {
+   "cohort": "AC",
+   "quantity": "CIF12 at landmark 6",
+   "mine": 33.92,
+   "manuscript": 33.92,
+   "ok": true
+  },
+  {
+   "cohort": "AC",
+   "quantity": "CIF12 at landmark 12",
+   "mine": 34.41,
+   "manuscript": 34.41,
+   "ok": true
+  },
+  {
+   "cohort": "PANC",
+   "quantity": "CIF12 at landmark 0",
+   "mine": 77.12,
+   "manuscript": 77.12,
+   "ok": true
+  },
+  {
+   "cohort": "PANC",
+   "quantity": "CIF12 at landmark 6",
+   "mine": 69.72,
+   "manuscript": 69.72,
+   "ok": true
+  },
+  {
+   "cohort": "PANC",
+   "quantity": "CIF12 at landmark 12",
+   "mine": 65.38,
+   "manuscript": 65.38,
+   "ok": true
+  }
+ ],
+ "within_NEC": [
+  {
+   "contrast": "NEC 6 minus 0 months",
+   "estimate": 0.0343374926950446,
+   "boot_mean": -0.013314163544720035,
+   "boot_sd": 2.0723989849957856,
+   "ci90": [
+    -3.4727487381339577,
+    3.41617881133669
+   ],
+   "ci95": [
+    -4.216326817709186,
+    4.022799012555272
+   ],
+   "B": 2000,
+   "p_resolution": 0.0005,
+   "margins": [
+    {
+     "margin": 3,
+     "ci90_within": false,
+     "p_lower": 0.08,
+     "p_upper": 0.0715,
+     "p_tost": 0.08,
+     "equivalent_alpha05": false,
+     "p_tost_holm_across_contrasts": 0.222
+    },
+    {
+     "margin": 4,
+     "ci90_within": true,
+     "p_lower": 0.0325,
+     "p_upper": 0.0255,
+     "p_tost": 0.0325,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.065
+    },
+    {
+     "margin": 5,
+     "ci90_within": true,
+     "p_lower": 0.0105,
+     "p_upper": 0.0085,
+     "p_tost": 0.0105,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.021
+    },
+    {
+     "margin": 6.7,
+     "ci90_within": true,
+     "p_lower": 0.0,
+     "p_upper": 0.0005,
+     "p_tost": 0.0005,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.001
+    }
+   ],
+   "largest_decline_excluded_95": 4.216326817709186,
+   "largest_decline_excluded_90": 3.4727487381339577,
+   "wording": "NEC 6 minus 0 months: the 12-month cancer-death probability changed by +0.03 points (95% CI -4.2 to 4.0); no decline was detected, and a decline larger than 4.2 points is excluded by the lower 95% limit. Under a post hoc equivalence margin of ±5 points (approximately the observed 6.7-point colorectal-adenocarcinoma decline), the change was equivalent to zero (90% CI -3.5 to 3.4; bootstrap TOST P = 0.011); equivalence also held at ±4 points (P = 0.033) and did not hold at ±3 points (P = 0.080)."
+  },
+  {
+   "contrast": "NEC 3 minus 0 months",
+   "estimate": -0.672112761767238,
+   "boot_mean": -0.6891252268517506,
+   "boot_sd": 1.4592269543427163,
+   "ci90": [
+    -3.1332644256316833,
+    1.7113556324163324
+   ],
+   "ci95": [
+    -3.6180800341427157,
+    2.214211471688044
+   ],
+   "B": 2000,
+   "p_resolution": 0.0005,
+   "margins": [
+    {
+     "margin": 3,
+     "ci90_within": false,
+     "p_lower": 0.0595,
+     "p_upper": 0.0045,
+     "p_tost": 0.0595,
+     "equivalent_alpha05": false,
+     "p_tost_holm_across_contrasts": 0.222
+    },
+    {
+     "margin": 4,
+     "ci90_within": true,
+     "p_lower": 0.013,
+     "p_upper": 0.0005,
+     "p_tost": 0.013,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.052
+    },
+    {
+     "margin": 5,
+     "ci90_within": true,
+     "p_lower": 0.0025,
+     "p_upper": 0.0,
+     "p_tost": 0.0025,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.01
+    },
+    {
+     "margin": 6.7,
+     "ci90_within": true,
+     "p_lower": 0.0,
+     "p_upper": 0.0,
+     "p_tost": 0.0,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.0
+    }
+   ],
+   "largest_decline_excluded_95": 3.6180800341427157,
+   "largest_decline_excluded_90": 3.1332644256316833,
+   "wording": "NEC 3 minus 0 months: the 12-month cancer-death probability changed by -0.67 points (95% CI -3.6 to 2.2); no decline was detected, and a decline larger than 3.6 points is excluded by the lower 95% limit. Under a post hoc equivalence margin of ±5 points (approximately the observed 6.7-point colorectal-adenocarcinoma decline), the change was equivalent to zero (90% CI -3.1 to 1.7; bootstrap TOST P = 0.003); equivalence also held at ±4 points (P = 0.013) and did not hold at ±3 points (P = 0.059)."
+  },
+  {
+   "contrast": "NEC 6 minus 3 months",
+   "estimate": 0.7064502544622826,
+   "boot_mean": 0.6758110633070306,
+   "boot_sd": 1.4848296704194175,
+   "ci90": [
+    -1.8311276743457554,
+    3.0750924292085213
+   ],
+   "ci95": [
+    -2.2902859653375853,
+    3.5752181461583996
+   ],
+   "B": 2000,
+   "p_resolution": 0.0005,
+   "margins": [
+    {
+     "margin": 3,
+     "ci90_within": false,
+     "p_lower": 0.0045,
+     "p_upper": 0.0555,
+     "p_tost": 0.0555,
+     "equivalent_alpha05": false,
+     "p_tost_holm_across_contrasts": 0.222
+    },
+    {
+     "margin": 4,
+     "ci90_within": true,
+     "p_lower": 0.0005,
+     "p_upper": 0.0145,
+     "p_tost": 0.0145,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.052
+    },
+    {
+     "margin": 5,
+     "ci90_within": true,
+     "p_lower": 0.0,
+     "p_upper": 0.0045,
+     "p_tost": 0.0045,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.013499999999999998
+    },
+    {
+     "margin": 6.7,
+     "ci90_within": true,
+     "p_lower": 0.0,
+     "p_upper": 0.0,
+     "p_tost": 0.0,
+     "equivalent_alpha05": true,
+     "p_tost_holm_across_contrasts": 0.0
+    }
+   ],
+   "largest_decline_excluded_95": 2.2902859653375853,
+   "largest_decline_excluded_90": 1.8311276743457554,
+   "wording": "NEC 6 minus 3 months: the 12-month cancer-death probability changed by +0.71 points (95% CI -2.3 to 3.6); no decline was detected, and a decline larger than 2.3 points is excluded by the lower 95% limit. Under a post hoc equivalence margin of ±5 points (approximately the observed 6.7-point colorectal-adenocarcinoma decline), the change was equivalent to zero (90% CI -1.8 to 3.1; bootstrap TOST P = 0.004); equivalence also held at ±4 points (P = 0.015) and did not hold at ±3 points (P = 0.056)."
+  },
+  {
+   "contrast": "NEC 12 minus 0 months",
+   "estimate": -12.260788011030954,
+   "boot_mean": -12.227285970527069,
+   "boot_sd": 4.125689893011679,
+   "ci90": [
+    -19.157836256314383,
+    -5.731450395413323
+   ],
+   "ci95": [
+    -20.65234878234576,
+    -4.576896034454454
+   ],
+   "B": 2000,
+   "p_resolution": 0.0005,
+   "margins": [
+    {
+     "margin": 3,
+     "ci90_within": false,
+     "p_lower": 0.989,
+     "p_upper": 0.0,
+     "p_tost": 0.989,
+     "equivalent_alpha05": false,
+     "p_tost_holm_across_contrasts": 0.989
+    },
+    {
+     "margin": 4,
+     "ci90_within": false,
+     "p_lower": 0.9825,
+     "p_upper": 0.0,
+     "p_tost": 0.9825,
+     "equivalent_alpha05": false,
+     "p_tost_holm_across_contrasts": 0.9825
+    },
+    {
+     "margin": 5,
+     "ci90_within": false,
+     "p_lower": 0.9685,
+     "p_upper": 0.0,
+     "p_tost": 0.9685,
+     "equivalent_alpha05": false,
+     "p_tost_holm_across_contrasts": 0.9685
+    },
+    {
+     "margin": 6.7,
+     "ci90_within": false,
+     "p_lower": 0.916,
+     "p_upper": 0.0,
+     "p_tost": 0.916,
+     "equivalent_alpha05": false,
+     "p_tost_holm_across_contrasts": 0.916
+    }
+   ],
+   "largest_decline_excluded_95": 20.65234878234576,
+   "largest_decline_excluded_90": 19.157836256314383,
+   "wording": "NEC 12 minus 0 months: the 12-month cancer-death probability declined by 12.3 points (95% CI -20.7 to -4.6); a decline was detected (upper 95% limit below 0) and equivalence to 'no change' is rejected at every post hoc margin tested (90% CI -19.2 to -5.7)."
+  }
+ ],
+ "cross_tumour": [
+  {
+   "contrast": "(NEC 6-0 change) minus (SCLC 6-0 change)",
+   "estimate": 0.531412969087171,
+   "boot_mean": 0.48544104305518704,
+   "boot_sd": 2.081783401966799,
+   "ci90": [
+    -2.9727971453830677,
+    3.824799403934302
+   ],
+   "ci95": [
+    -3.8046262229881416,
+    4.53344737606655
+   ],
+   "B": 2000,
+   "p_resolution": 0.0005,
+   "margins": [
+    {
+     "margin": 3,
+     "ci90_within": false,
+     "p_lower": 0.05,
+     "p_upper": 0.111,
+     "p_tost": 0.111,
+     "equivalent_alpha05": false
+    },
+    {
+     "margin": 5,
+     "ci90_within": true,
+     "p_lower": 0.0045,
+     "p_upper": 0.012,
+     "p_tost": 0.012,
+     "equivalent_alpha05": true
+    },
+    {
+     "margin": 6.7,
+     "ci90_within": true,
+     "p_lower": 0.0,
+     "p_upper": 0.001,
+     "p_tost": 0.001,
+     "equivalent_alpha05": true
+    }
+   ],
+   "lower_limit_95": -3.8046262229881416,
+   "lower_limit_90": -2.9727971453830677,
+   "lower_limit_note": "positive lower limit = NEC 6-0 change exceeds the comparator 6-0 change by at least this amount",
+   "comparator": "SCLC",
+   "comparator_change": {
+    "estimate": -0.49707547639212635,
+    "ci95": [
+     -0.9051794688859183,
+     -0.04827590865677693
+    ]
+   },
+   "nec_change": {
+    "estimate": 0.0343374926950446,
+    "ci95": [
+     -4.216326817709186,
+     4.022799012555272
+    ]
+   },
+   "wording": "(NEC 6-0 change) minus (SCLC 6-0 change): +0.53 points (95% CI -3.8 to 4.5). No difference between the 6-month changes was detected, and under a post hoc margin of ±5 points they were equivalent (90% CI -3.0 to 3.8; bootstrap TOST P = 0.012); equivalence did not hold at ±3 points (P = 0.111). 'Similar plateau' should therefore be worded as 'no difference detected; equivalent within ±5 points'."
+  },
+  {
+   "contrast": "(NEC 6-0 change) minus (AC 6-0 change)",
+   "estimate": 6.6975641645540875,
+   "boot_mean": 6.648204412873993,
+   "boot_sd": 2.076381769949693,
+   "ci90": [
+    3.1735411645532086,
+    10.1022298274066
+   ],
+   "ci95": [
+    2.4850573334111754,
+    10.689134326546172
+   ],
+   "B": 2000,
+   "p_resolution": 0.0005,
+   "margins": [
+    {
+     "margin": 3,
+     "ci90_within": false,
+     "p_lower": 0.0,
+     "p_upper": 0.9565,
+     "p_tost": 0.9565,
+     "equivalent_alpha05": false
+    },
+    {
+     "margin": 5,
+     "ci90_within": false,
+     "p_lower": 0.0,
+     "p_upper": 0.7945,
+     "p_tost": 0.7945,
+     "equivalent_alpha05": false
+    },
+    {
+     "margin": 6.7,
+     "ci90_within": false,
+     "p_lower": 0.0,
+     "p_upper": 0.4895,
+     "p_tost": 0.4895,
+     "equivalent_alpha05": false
+    }
+   ],
+   "lower_limit_95": 2.4850573334111754,
+   "lower_limit_90": 3.1735411645532086,
+   "lower_limit_note": "positive lower limit = NEC 6-0 change exceeds the comparator 6-0 change by at least this amount",
+   "comparator": "AC",
+   "comparator_change": {
+    "estimate": -6.663226671859043,
+    "ci95": [
+     -6.9587008025263515,
+     -6.373168502287171
+    ]
+   },
+   "nec_change": {
+    "estimate": 0.0343374926950446,
+    "ci95": [
+     -4.216326817709186,
+     4.022799012555272
+    ]
+   },
+   "wording": "(NEC 6-0 change) minus (AC 6-0 change): +6.70 points (95% CI 2.5 to 10.7). The NEC change exceeded the comparator change (lower 95% limit 2.5 > 0); the two were not equivalent at any post hoc margin tested (bootstrap TOST P = 0.489 even at ±6.7 points)."
+  },
+  {
+   "contrast": "(NEC 6-0 change) minus (PANC 6-0 change)",
+   "estimate": 7.44176041850038,
+   "boot_mean": 7.408329496446781,
+   "boot_sd": 2.093689721742238,
+   "ci90": [
+    3.8977640129939983,
+    10.846776447570187
+   ],
+   "ci95": [
+    3.1698621608742683,
+    11.48075531300546
+   ],
+   "B": 2000,
+   "p_resolution": 0.0005,
+   "margins": [
+    {
+     "margin": 3,
+     "ci90_within": false,
+     "p_lower": 0.0,
+     "p_upper": 0.979,
+     "p_tost": 0.979,
+     "equivalent_alpha05": false
+    },
+    {
+     "margin": 5,
+     "ci90_within": false,
+     "p_lower": 0.0,
+     "p_upper": 0.877,
+     "p_tost": 0.877,
+     "equivalent_alpha05": false
+    },
+    {
+     "margin": 6.7,
+     "ci90_within": false,
+     "p_lower": 0.0,
+     "p_upper": 0.6385,
+     "p_tost": 0.6385,
+     "equivalent_alpha05": false
+    }
+   ],
+   "lower_limit_95": 3.1698621608742683,
+   "lower_limit_90": 3.8977640129939983,
+   "lower_limit_note": "positive lower limit = NEC 6-0 change exceeds the comparator 6-0 change by at least this amount",
+   "comparator": "PANC",
+   "comparator_change": {
+    "estimate": -7.407422925805335,
+    "ci95": [
+     -7.934292566151995,
+     -6.898368913172443
+    ]
+   },
+   "nec_change": {
+    "estimate": 0.0343374926950446,
+    "ci95": [
+     -4.216326817709186,
+     4.022799012555272
+    ]
+   },
+   "wording": "(NEC 6-0 change) minus (PANC 6-0 change): +7.44 points (95% CI 3.2 to 11.5). The NEC change exceeded the comparator change (lower 95% limit 3.2 > 0); the two were not equivalent at any post hoc margin tested (bootstrap TOST P = 0.638 even at ±6.7 points)."
+  }
+ ],
+ "holm_note": "Holm step-down applied to the bootstrap TOST P-values of the four within-NEC contrasts within each margin (family size 4); supplementary, the primary criterion remains the 90% percentile CI inside the margin",
+ "methods_sentence": "Equivalence margins (±3, ±4, ±5 and ±6.7 percentage points) were chosen after the analysis protocol of 28 September 2026 and are reported as post hoc sensitivity framings; ±5 points, approximately the observed 6.7-point decline in colorectal adenocarcinoma, is used as the primary clinically anchored margin. TOST P-values are bootstrap approximations (proportion of 2000 patient-level resamples at or beyond each bound; resolution 1/2000, values below this are reported as <0.001).",
+ "runtime_minutes": 0.38
+}

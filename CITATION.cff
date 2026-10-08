@@ -1,0 +1,61 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article below and this repository."
+title: "Conditional one-year cancer mortality shows no early decline in distant-stage colorectal neuroendocrine carcinoma: a SEER landmark analysis with cross-tumor comparison"
+type: software
+license: MIT
+version: "1.0.0"
+date-released: "2026-10-08"
+# repository-code: "https://github.com/<owner>/colorectal-nec-landmark-seer"   # add when the GitHub repository is created
+# doi: "10.5281/zenodo.<id>"                                                    # add when the Zenodo record is minted
+keywords:
+  - neuroendocrine carcinoma
+  - colorectal neoplasms
+  - conditional survival
+  - landmark analysis
+  - Aalen-Johansen
+  - competing risks
+  - SEER Program
+authors:
+  - family-names: Wang
+    given-names: Jiang
+    orcid: "https://orcid.org/0009-0005-4201-494X"
+    affiliation: "Department of General Surgery, Baotou Central Hospital, Baotou, Inner Mongolia Autonomous Region, China"
+  - family-names: Zhang
+    given-names: Shuchun
+    orcid: "https://orcid.org/0009-0005-4365-4500"
+    affiliation: "Department of General Surgery, Baotou Central Hospital, Baotou, Inner Mongolia Autonomous Region, China"
+  - family-names: Liang
+    given-names: Wei
+    orcid: "https://orcid.org/0009-0007-1772-1540"
+    affiliation: "Department of Public Health, Kyungwoon University, Gumi, Gyeongsangbuk-do, Republic of Korea"
+  - family-names: Choi
+    given-names: Wansuk
+    orcid: "https://orcid.org/0000-0003-1324-6723"
+    affiliation: "Department of Physical Therapy, College of Health Sciences, Kyungwoon University, Gumi, Gyeongsangbuk-do, Republic of Korea"
+    email: wschoi@ikw.ac.kr
+contact:
+  - family-names: Choi
+    given-names: Wansuk
+    orcid: "https://orcid.org/0000-0003-1324-6723"
+    affiliation: "Department of Physical Therapy, College of Health Sciences, Kyungwoon University, 730 Gangdong-ro, Sandong-eup, Gumi-si, Gyeongsangbuk-do 39160, Republic of Korea"
+    email: wschoi@ikw.ac.kr
+preferred-citation:
+  type: article
+  title: "Conditional one-year cancer mortality shows no early decline in distant-stage colorectal neuroendocrine carcinoma: a SEER landmark analysis with cross-tumor comparison"
+  journal: "International Journal of Cancer"
+  status: submitted
+  year: 2026
+  authors:
+    - family-names: Wang
+      given-names: Jiang
+      orcid: "https://orcid.org/0009-0005-4201-494X"
+    - family-names: Zhang
+      given-names: Shuchun
+      orcid: "https://orcid.org/0009-0005-4365-4500"
+    - family-names: Liang
+      given-names: Wei
+      orcid: "https://orcid.org/0009-0007-1772-1540"
+    - family-names: Choi
+      given-names: Wansuk
+      orcid: "https://orcid.org/0000-0003-1324-6723"
+      email: wschoi@ikw.ac.kr

@@ -1,0 +1,32 @@
+# ---- SEER data and anything derived at the patient level: NEVER commit (SEER Research Data Use Agreement) ----
+data/*
+!data/README.md
+!data/raw/
+data/raw/*
+!data/raw/.gitkeep
+work/
+*.txt
+!requirements.txt
+!**/requirements.txt
+cohort_*.csv
+flow_all.csv
+*.dic
+*.sl
+*.rds
+*.RData
+*.rda
+.Rhistory
+
+# ---- run outputs (regenerate with ./run_all.sh); only reference_results/ is versioned ----
+results/
+!reference_results/
+figures/output/
+
+# ---- tooling ----
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.DS_Store
+.Rproj.user/
+.venv/
+venv/
