@@ -3,8 +3,8 @@ message: "If you use this code, please cite the article below and this repositor
 title: "Conditional one-year cancer mortality shows no early decline in distant-stage colorectal neuroendocrine carcinoma: a SEER landmark analysis with cross-tumor comparison"
 type: software
 license: MIT
-version: "1.0.0"
-date-released: "2026-10-08"
+version: "1.0.1"
+date-released: "2026-10-09"
 repository-code: "https://github.com/y3korea/colorectal-nec-landmark-seer"
 doi: "10.5281/zenodo.23249641"
 identifiers:
