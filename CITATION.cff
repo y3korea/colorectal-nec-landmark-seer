@@ -5,8 +5,8 @@ type: software
 license: MIT
 version: "1.0.0"
 date-released: "2026-10-08"
-# repository-code: "https://github.com/<owner>/colorectal-nec-landmark-seer"   # add when the GitHub repository is created
-# doi: "10.5281/zenodo.<id>"                                                    # add when the Zenodo record is minted
+repository-code: "https://github.com/y3korea/colorectal-nec-landmark-seer"
+# doi: added after the first Zenodo release (see README)
 keywords:
   - neuroendocrine carcinoma
   - colorectal neoplasms

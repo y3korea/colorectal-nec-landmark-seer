@@ -1,7 +1,6 @@
 # notebooks/
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/<account>/colorectal-nec-landmark-seer/blob/main/notebooks/reproduce_colab.ipynb)
-<!-- Replace <account> with the GitHub account that hosts the repository. -->
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/y3korea/colorectal-nec-landmark-seer/blob/main/notebooks/reproduce_colab.ipynb)
 
 `reproduce_colab.ipynb` reproduces every SEER-based result and figure of the manuscript from **your own** SEER*Stat exports, in Google Colab or in a local Jupyter session. It is a guided front end to the same pipeline as `run_all.py`; nothing in it changes the analysis.
 
@@ -41,7 +40,7 @@ Corresponding author and maintainer: Wansuk Choi, Department of Physical Therapy
 
 1. Open the notebook: *File ▸ Upload notebook* (select `notebooks/reproduce_colab.ipynb`), or *File ▸ Open notebook ▸ GitHub* and paste the repository URL, or use the badge above.
 2. Fill in the form in Section 1:
-   * `REPO_SOURCE = "github"` with `REPO_URL` (replace `<account>`; a private repository needs a token in the URL or a Drive copy), optional `REPO_REF` (branch, tag or commit); or `REPO_SOURCE = "drive"` with `REPO_DRIVE_PATH` pointing to the repository folder copied to Drive, e.g. `/content/drive/MyDrive/.../02_GitHub_Repository/colorectal-nec-landmark-seer`. The code is always copied to `/content/colorectal-nec-landmark-seer` (VM disk), so no derived file is ever written to Drive.
+   * `REPO_SOURCE = "github"` with `REPO_URL` (default: https://github.com/y3korea/colorectal-nec-landmark-seer.git), optional `REPO_REF` (branch, tag or commit); or `REPO_SOURCE = "drive"` with `REPO_DRIVE_PATH` pointing to the repository folder copied to Drive, e.g. `/content/drive/MyDrive/.../02_GitHub_Repository/colorectal-nec-landmark-seer`. The code is always copied to `/content/colorectal-nec-landmark-seer` (VM disk), so no derived file is ever written to Drive.
    * `DATA_DIR`: Drive folder with the four exports, e.g. `/content/drive/MyDrive/SEER_exports`; `COPY_DATA_TO_RUNTIME` copies them to the VM disk for faster reading.
    * `MODE`, `BOOT`, `I_CONFIRM_DUA_PERMITS_CLOUD`, `MAKE_ZIP`, `CLEANUP_AT_END`.
 3. *Runtime ▸ Run all*, authorise the Drive mount, and wait.
@@ -75,7 +74,7 @@ The longest steps are A05R and A08 (multi-state Cox standardization, 3–5 min e
 
 | Symptom | Fix |
 |---|---|
-| `Set REPO_URL ...` | replace `<account>` in `REPO_URL`, or use `REPO_SOURCE = "drive"` |
+| `Set REPO_URL ...` | set `REPO_URL` to the repository address, or use `REPO_SOURCE = "drive"` |
 | `PermissionError: MODE='full'/'quick' processes SEER data on Google cloud` | tick `I_CONFIRM_DUA_PERMITS_CLOUD` only if your DUA allows it; otherwise run locally or choose `synthetic` |
 | `SEER exports not found` | check `DATA_DIR` and the four file names (Section 0); set `NEC_FILE_NEN/AC/LUNG/PANC` for other names |
 | header = specification shows `NO` | the export does not contain the 101 variables of the specification; re-export from SEER*Stat |

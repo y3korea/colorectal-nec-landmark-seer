@@ -1,0 +1,41 @@
+{
+  "upload_type": "software",
+  "title": "colorectal-nec-landmark-seer: reproducible analysis code for a SEER landmark study of conditional cancer mortality in distant-stage colorectal neuroendocrine carcinoma",
+  "description": "<p>Analysis code accompanying the manuscript <em>Conditional one-year cancer mortality shows no early decline in distant-stage colorectal neuroendocrine carcinoma: a SEER landmark analysis with cross-tumor comparison</em> (submitted to the International Journal of Cancer). The code rebuilds the study cohorts from SEER*Stat case-listing exports (SEER Research Data, 17 Registries, November 2025 submission), runs the landmark Aalen-Johansen, piecewise-exponential, smoothed-hazard, standardization and cross-tumor analyses (A01-A12), regenerates all figures, and checks the results against publication-safe reference results.</p><p><strong>No SEER data are included.</strong> SEER data must be requested from the SEER Program under a Research Data Use Agreement; reference results are aggregate only, with demographic cells based on 1-4 patients suppressed as required by the agreement. A synthetic-data generator and a Google Colab/Jupyter notebook allow the pipeline to be run end to end.</p>",
+  "creators": [
+    {
+      "name": "Wang, Jiang",
+      "affiliation": "Department of General Surgery, Baotou Central Hospital, Baotou, China",
+      "orcid": "0009-0005-4201-494X"
+    },
+    {
+      "name": "Zhang, Shuchun",
+      "affiliation": "Department of General Surgery, Baotou Central Hospital, Baotou, China",
+      "orcid": "0009-0005-4365-4500"
+    },
+    {
+      "name": "Liang, Wei",
+      "affiliation": "Department of Public Health, Kyungwoon University, Gumi, Republic of Korea",
+      "orcid": "0009-0007-1772-1540"
+    },
+    {
+      "name": "Choi, Wansuk",
+      "affiliation": "Department of Physical Therapy, College of Health Sciences, Kyungwoon University, Gumi, Republic of Korea",
+      "orcid": "0000-0003-1324-6723"
+    }
+  ],
+  "keywords": [
+    "neuroendocrine carcinoma",
+    "colorectal neoplasms",
+    "conditional survival",
+    "landmark analysis",
+    "Aalen-Johansen",
+    "competing risks",
+    "SEER Program",
+    "reproducible research"
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "language": "eng",
+  "version": "1.0.0"
+}
