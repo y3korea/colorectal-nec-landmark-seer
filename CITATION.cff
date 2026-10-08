@@ -6,7 +6,14 @@ license: MIT
 version: "1.0.0"
 date-released: "2026-10-08"
 repository-code: "https://github.com/y3korea/colorectal-nec-landmark-seer"
-# doi: added after the first Zenodo release (see README)
+doi: "10.5281/zenodo.23249641"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23249641"
+    description: "Zenodo archive of version 1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.23249640"
+    description: "Zenodo concept DOI (all versions)"
 keywords:
   - neuroendocrine carcinoma
   - colorectal neoplasms
